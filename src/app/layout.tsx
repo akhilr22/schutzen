@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
 import Navbar from "@/components/navbar/Navbar";
-import Home from "./page";
 
 
 
@@ -21,7 +20,7 @@ export default function RootLayout({
         className={` antialiased`}
       >
          <Navbar />
-         <Home/>
+       
         {children}
       </body>
     </html>
