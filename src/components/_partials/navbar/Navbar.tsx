@@ -9,7 +9,7 @@ import SlideBar from "@/components/ui/slidemenu/SlideBar";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [isOpen , setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <div className="navbar">
@@ -46,11 +46,13 @@ export default function Navbar() {
               <li>
                 <span>About</span>
               </li>
-              <li >
+              <li>
                 <span>Careers</span>
               </li>
-              <li >
-                <span>Contact us</span>
+              <li>
+                <span>
+                  Contact <span className="hidden custom-md:inline   ">us</span>
+                </span>
               </li>
             </ul>
           </div>

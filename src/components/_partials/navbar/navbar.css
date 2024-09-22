@@ -43,7 +43,7 @@
 }
 
 .navbar .demo-btn a {
-  @apply bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] text-white text-sm px-2 py-1 rounded-2xl cursor-pointer;
+  @apply bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] text-white text-sm px-1 py-1 rounded-2xl cursor-pointer;
 }
 
 .nav-btn-sub {
