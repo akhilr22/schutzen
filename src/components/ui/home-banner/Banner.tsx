@@ -26,7 +26,7 @@ const responsive = {
 export default function Banner() {
   return (
     <div>
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} infinite>
         <div>Item 1</div>
         <div>Item 2</div>
         <div>Item 3</div>

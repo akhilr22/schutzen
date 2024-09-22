@@ -1,22 +1,13 @@
 .navbar {
-  @apply flex items-center justify-between px-4 pt-10 pb-2;
+  @apply flex items-center justify-between px-4 sm:pt-3 py-2 top-2 ;
 }
-
-.navbar .nav-icon {
-  @apply mr-4;
-}
-
-
-
-
-
 
 .navbar .nav-list {
   @apply flex flex-1 justify-center;
 }
 
 .nav-list .gradient-border {
-  @apply p-[2px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px];
+  @apply hidden sm:block p-[2px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px];
 }
 
 .nav-list ul {
@@ -25,14 +16,16 @@
 
     sm:space-x-0 
     md:space-x-5
-    lg:space-x-12 
+    lg:space-x-10 
 
-
-     justify-center border-2 bg-white text-[#56c1af] border-transparent rounded-[28px];
+    py-[5px]
+    px-2
+     justify-center border-2  bg-[#fefaf5] dark:bg-[#181817] text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-[28px];
 }
 
 .nav-list li {
-  @apply text-sm 
+  @apply text-xs 
+  md:text-sm
   hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] 
   px-2 
   py-1
@@ -42,30 +35,35 @@
    duration-300 
    ease-in-out 
    transform
-    hover:-translate-y-[2px]
-     cursor-pointer
-      dark:text-[#58a5ad];
+   hover:-translate-y-[2px]
+   cursor-pointer
+   dark:hover:text-white
+
+ dark:text-[#60dbd9];
 }
 
 .navbar .demo-btn a {
   @apply bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] text-white text-sm px-2 py-1 rounded-2xl cursor-pointer;
 }
 
-
-.nav-btn-sub{
-  @apply relative flex items-center justify-center rounded-full w-[38px] h-[38px] transform transition-all bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md
+.nav-btn-sub {
+  @apply relative flex items-center justify-center rounded-full w-[38px] h-[38px] transform transition-all bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] ring-0 ring-gray-300 hover:ring-8  ring-opacity-30 duration-200 shadow-md;
 }
 
-.nav-btn-inner{
-  @apply flex flex-col justify-between w-[16px] h-[15px] transform transition-all duration-300 group-focus:-rotate-[45deg] origin-center
+.nav-btn-inner {
+  @apply flex flex-col justify-between w-[16px] h-[15px] transform transition-all duration-300 origin-center;
 }
 
-.nav-btn-inner .line-1{
-  @apply bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px]
+.nav-btn-inner .line-1 {
+  @apply bg-white h-[2px] w-1/2 rounded transform transition-all duration-300   origin-right delay-75;
 }
-.nav-btn-inner .line-2{
-  @apply bg-white h-[1px] rounded
+.nav-btn-inner .line-2 {
+  @apply bg-white h-[1px] rounded;
 }
-.nav-btn-inner .line-3{
-  @apply bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]
+.nav-btn-inner .line-3 {
+  @apply bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300  origin-left delay-75;
+}
+
+.mob-nav {
+  @apply fixed top-0;
 }
