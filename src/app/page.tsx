@@ -21,6 +21,7 @@ export default function Home() {
         <div className="w-full sm:w-5/6 h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex h-full">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
+
               <div className="p-4 flex-grow-[6]">
                 <div className="p-[2px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5] w-full h-full rounded-[26px] p-4 flex flex-col">
@@ -86,6 +87,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

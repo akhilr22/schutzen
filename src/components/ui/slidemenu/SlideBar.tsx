@@ -13,7 +13,7 @@ const SlideBar:React.FC<MenuBtnProps> = ({isOpen})=>{
 
         {/* Sidebar  -translate-x-full*/}
         <div
-          className={`absolute bg-black  text-white w-56 min-h-screen overflow-y-auto transition-transform transform ${isOpen ? '':'-translate-x-full '}  ease-in-out duration-300`}
+          className={`absolute bg-[#fefaf5]  text-black w-56 min-h-screen overflow-y-auto transition-transform transform ${isOpen ? '':'-translate-x-full '}  ease-in-out duration-300`}
           id="sidebar"
         >
           {/* Sidebar Content */}
