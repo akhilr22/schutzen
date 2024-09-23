@@ -4,7 +4,7 @@ import { data } from "./data/Data";
 export default function Home() {
   return (
     <>
-      <div className="min-h-[118vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#040b2b] via-[#619b28] to-[#3bc2d6] rounded-b-[80px] sm:mx-7 ">
+      <div className="min-h-[118vh] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#040b2b] via-[#619b28] to-[#3bc2d6] rounded-b-[80px]  ">
         <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#1c9ca5] min-h-60 rounded-3xl text-center">banner image or video to run</div>
@@ -29,7 +29,7 @@ export default function Home() {
                       <div className="h-1/2 flex-1 mt-3">
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry's
+                          been the industry
                         </p>
                       </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Home() {
                       <div className="h-1/2 flex-  mt-3">
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry's
+                          been the industry
                         </p>
                       </div>
                     </div>
@@ -63,7 +63,7 @@ export default function Home() {
                       <div className="h-1/2 flex-1  mt-3">
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry's
+                          been the industry
                         </p>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ export default function Home() {
                       <div className="h-1/2 flex-1  mt-3">
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry's
+                          been the industry
                         </p>
                       </div>
                     </div>
