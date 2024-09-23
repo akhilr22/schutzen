@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
-import Navbar from "@/components/_partials/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Schutzen Website",
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="">
       <body className={` bg-[#fefaf5] dark:bg-[#181817] `}>
         
          
@@ -21,5 +20,5 @@ export default function RootLayout({
     
       </body>
     </html>
-  );
+  );  
 }

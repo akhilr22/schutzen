@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "isotope-layout": "^3.0.6",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
+    "@types/isotope-layout": "^3.0.14",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
