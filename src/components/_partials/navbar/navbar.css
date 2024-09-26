@@ -15,7 +15,8 @@
 
 
     sm:space-x-0 
-    md:space-x-5
+    md:space-x-3
+    custom-md:space-x-5
     lg:space-x-10 
 
     py-[5px]

@@ -51,7 +51,7 @@ export default function Navbar() {
               </li>
               <li>
                 <span>
-                  Contact <span className="hidden custom-md:inline   ">us</span>
+                  Contact <span className="hidden custom-md:inline ">us</span>
                 </span>
               </li>
             </ul>
