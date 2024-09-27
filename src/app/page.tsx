@@ -162,7 +162,7 @@ export default function Home() {
       <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5"></div>
 
       <div className="text-center justify-center">
-        <h1 className="font-bold sm:text-xl md:text-2xl xl:text-4xl py-2">Wireless Vital Signs Monitoring</h1>
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2">Wireless Vital Signs Monitoring</h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6">
           <span className="">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
