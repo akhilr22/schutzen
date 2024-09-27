@@ -172,31 +172,31 @@ export default function Home() {
         </div>
         <div>
           <div className="sm:mx-auto h-auto py-20 mx-2">
-            <div className="h-auto  mb-9 flex xl:w-2/4  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
-            <div className="h-auto  mb-9 flex xl:w-2/4  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
