@@ -22,7 +22,7 @@ const config: Config = {
           
       },
       screens: {
-        'custom-md': '820px', // Add custom breakpoint at 776px
+        'custom-md': '850px', 
       }
     },
   },
