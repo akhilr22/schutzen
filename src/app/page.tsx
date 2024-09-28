@@ -4,7 +4,9 @@ import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 
-import webImg from '@/app/assets/SchutzenWebsite-000.png'
+import cornerimg from "@/app/assets/box-icon-preview.png";
+
+import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
   return (
     <>
@@ -36,7 +38,7 @@ export default function Home() {
                     <div className="flex flex-col h-full ">
                       <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1 mt-3">
-                        X
+                        easy
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                           been the industry
@@ -169,8 +171,6 @@ export default function Home() {
         </div>
       </div>
 
-      
-
       <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5"></div>
 
       <div className="text-center justify-center">
@@ -216,15 +216,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="banner-two h-auto  pt-20 sm:px-15 md:px-25 mx-2 md:mx-6 sm:mx-12 rounded-2xl ">
+      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl ">
         <div className="flex   ">
           <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3">
-          <div className="bg-white h-96 my-7  rounded-xl" >
-
-          </div>
+            <div className="bg-white h-96 my-7  rounded-xl"></div>
           </div>
           <div className="w-7/12">
-
             <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl">
               <span>Webinar Event: Leveraging Technology to Reduce Post-Acute Care Re-hospitalizations</span>
             </div>
@@ -236,15 +233,47 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Image
-              src={webImg}
-              alt="no image"
-              
-               />
+              <Image src={webImg} alt="no image" />
             </div>
           </div>
         </div>
       </div>
+
+      <div className="h-full flex">
+        <div className="w-24 sm:w-64 h-96 mx-auto relative">
+          <div className="absolute right-0 w-[15px]">
+            <Image src={cornerimg} alt="Description" layout="fixed" />
+          </div>
+          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
+            <div className="bg-black w-full h-full"></div>
+          </div>
+        </div>
+        <div className="w-24 sm:w-64 h-96 mx-auto relative">
+          <div className="absolute right-0 w-[15px]">
+            <Image src={cornerimg} alt="Description" layout="fixed" />
+          </div>
+          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
+            <div className="bg-black w-full h-full"></div>
+          </div>
+        </div>
+        <div className="w-24 sm:w-64 h-96 mx-auto relative">
+          <div className="absolute right-0 w-[15px]">
+            <Image src={cornerimg} alt="Description" layout="fixed" />
+          </div>
+          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
+            <div className="bg-black w-full h-full"></div>
+          </div>
+        </div>
+        <div className="w-24 sm:w-64 h-96 mx-auto relative">
+          <div className="absolute right-0 w-[15px]">
+            <Image src={cornerimg} alt="Description" layout="fixed" />
+          </div>
+          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
+            <div className="bg-black w-full h-full"></div>
+          </div>
+        </div>
+      </div>
+      
     </>
   );
 }
