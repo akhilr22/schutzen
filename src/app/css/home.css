@@ -31,3 +31,15 @@
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1BB07E", endColorstr="#62AE16", GradientType=1 );
 }
+
+.banner-two{
+  background: hsla(100, 50%, 52%, 1);
+
+background: linear-gradient(315deg, hsla(100, 50%, 52%, 1) 8%, hsla(197, 69%, 43%, 1) 21%, hsla(197, 89%, 24%, 1) 34%, hsla(0, 0%, 0%, 1) 55%);
+
+background: -moz-linear-gradient(315deg, hsla(100, 50%, 52%, 1) 8%, hsla(197, 69%, 43%, 1) 21%, hsla(197, 89%, 24%, 1) 34%, hsla(0, 0%, 0%, 1) 55%);
+
+background: -webkit-linear-gradient(315deg, hsla(100, 50%, 52%, 1) 8%, hsla(197, 69%, 43%, 1) 21%, hsla(197, 89%, 24%, 1) 34%, hsla(0, 0%, 0%, 1) 55%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#71C248", endColorstr="#228DB7", GradientType=1 );
+}

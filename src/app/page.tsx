@@ -1,18 +1,27 @@
 import Navbar from "@/components/_partials/navbar/Navbar";
 import { data } from "./data/Data";
-import '@/app/css/home.css'
+import "@/app/css/home.css";
+import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+import Image from "next/image";
+
+import webImg from '@/app/assets/SchutzenWebsite-000.png'
 export default function Home() {
   return (
     <>
       <div className="dashboard rounded-b-[40px] sm:mx-12">
         <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
-          <div className="bg-[#000000] min-h-60 rounded-3xl text-center border-green-500">banner image or video to run</div>
+          <div className="bg-[#000000] min-h-60 rounded-3xl text-center border-green-500">
+            banner image or video to run
+          </div>
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">{data.home_h1_text1}</h1>
             <span className="block mx-auto max-w-xl ">
               <p>{data.home_p_text1}</p>
             </span>
+          </div>
+          <div className="justify-center flex mx-auto">
+            <ReqDemoBtn />
           </div>
         </div>
       </div>
@@ -26,7 +35,8 @@ export default function Home() {
                   <div className="bg-[#fefaf5] dark:bg-black dark:text-white  w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full ">
                       <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
-                      <div className="h-1/2 flex-1 mt-3">X
+                      <div className="h-1/2 flex-1 mt-3">
+                        X
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                           been the industry
@@ -95,7 +105,7 @@ export default function Home() {
       <div className="flex justify-end sm:mx-12 xl:mx-0">
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 ">
-            <div className=" xl:w-1/2 h-auto  p-6 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
+            <div className=" xl:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
               <div>
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
               </div>
@@ -159,6 +169,8 @@ export default function Home() {
         </div>
       </div>
 
+      
+
       <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5"></div>
 
       <div className="text-center justify-center">
@@ -199,6 +211,36 @@ export default function Home() {
               <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="banner-two h-auto  pt-20 sm:px-15 md:px-25 mx-2 md:mx-6 sm:mx-12 rounded-2xl ">
+        <div className="flex   ">
+          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3">
+          <div className="bg-white h-96 my-7  rounded-xl" >
+
+          </div>
+          </div>
+          <div className="w-7/12">
+
+            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl">
+              <span>Webinar Event: Leveraging Technology to Reduce Post-Acute Care Re-hospitalizations</span>
+            </div>
+            <div className="text-start pl-4 w-10/12 md:w-8/12">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries,
+              </p>
+            </div>
+            <div>
+              <Image
+              src={webImg}
+              alt="no image"
+              
+               />
             </div>
           </div>
         </div>
