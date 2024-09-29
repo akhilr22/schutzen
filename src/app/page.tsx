@@ -3,8 +3,11 @@ import { data } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
-
-import cornerimg from "@/app/assets/box-icon-preview.png";
+import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
+import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
+import Box_img_R_I from "@/components/ui/footer-blocks/Box_Img_R_I";
+import Box_img_R_O from "@/components/ui/footer-blocks/Box_Img_R_O";
+import cornerImg from "@/app/assets/box-icon-preview.png";
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
@@ -238,42 +241,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="h-full flex">
-        <div className="w-24 sm:w-64 h-96 mx-auto relative">
-          <div className="absolute right-0 w-[15px]">
-            <Image src={cornerimg} alt="Description" layout="fixed" />
-          </div>
-          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
-            <div className="bg-black w-full h-full"></div>
-          </div>
-        </div>
-        <div className="w-24 sm:w-64 h-96 mx-auto relative">
-          <div className="absolute right-0 w-[15px]">
-            <Image src={cornerimg} alt="Description" layout="fixed" />
-          </div>
-          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
-            <div className="bg-black w-full h-full"></div>
-          </div>
-        </div>
-        <div className="w-24 sm:w-64 h-96 mx-auto relative">
-          <div className="absolute right-0 w-[15px]">
-            <Image src={cornerimg} alt="Description" layout="fixed" />
-          </div>
-          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
-            <div className="bg-black w-full h-full"></div>
-          </div>
-        </div>
-        <div className="w-24 sm:w-64 h-96 mx-auto relative">
-          <div className="absolute right-0 w-[15px]">
-            <Image src={cornerimg} alt="Description" layout="fixed" />
-          </div>
-          <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
-            <div className="bg-black w-full h-full"></div>
-          </div>
-        </div>
+      <div className="flex gap-4 justify-around mt-20">
+        <Box_img_L_I cornerImg={cornerImg} />
+        <Box_img_L_O cornerImg={cornerImg} />
+        <Box_img_R_I cornerImg={cornerImg} />
+        <Box_img_R_O cornerImg={cornerImg} />
       </div>
-      
     </>
   );
 }
