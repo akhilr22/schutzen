@@ -1,19 +1,20 @@
 import Navbar from "@/components/_partials/navbar/Navbar";
 import { data } from "./data/Data";
 import "@/app/css/home.css";
+import "@/app/css/animate.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
 import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
 import Box_img_R_I from "@/components/ui/footer-blocks/Box_Img_R_I";
 import Box_img_R_O from "@/components/ui/footer-blocks/Box_Img_R_O";
-import cornerImg from "@/app/assets/box-icon-preview.png";
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
+  
   return (
     <>
-      <div className="dashboard rounded-b-[40px] sm:mx-12">
+      <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
         <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#000000] min-h-60 rounded-3xl text-center border-green-500">
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center min-h-fit sm:mt-14  ">
+      <div className="flex justify-center min-h-fit sm:mt-14 scroll_animate">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex h-full">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
@@ -52,7 +53,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 flex-grow-[5]">
+              <div className="p-4 flex-grow-[5] scroll_animate">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
@@ -69,7 +70,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="sm:w-1/2 w-full flex flex-col h-full">
+            <div className="sm:w-1/2 w-full flex flex-col h-full scroll_animate">
               <div className="p-4 flex-grow-[5]">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
@@ -87,7 +88,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 flex-grow-[6]">
+              <div className="p-4 flex-grow-[6] scroll_animate">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
@@ -107,10 +108,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 scroll_animate">
         <div className="flex w-full xl:w-5/6 ">
-          <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 ">
-            <div className=" xl:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
+          <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
+            <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
               <div>
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
               </div>
@@ -174,9 +175,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5"></div>
+      <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate"></div>
 
-      <div className="text-center justify-center">
+      <div className="text-center justify-center scroll_animate">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2">Wireless Vital Signs Monitoring</h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6">
           <span className="">
@@ -186,32 +187,32 @@ export default function Home() {
           </span>
         </div>
         <div>
-          <div className="sm:mx-auto h-auto py-20 mx-2">
-            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+          <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
+            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto ">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
@@ -219,7 +220,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl ">
+      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate">
         <div className="flex   ">
           <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3">
             <div className="bg-white h-96 my-7  rounded-xl"></div>
@@ -241,11 +242,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 justify-around mt-20">
-        <Box_img_L_I cornerImg={cornerImg} />
-        <Box_img_L_O cornerImg={cornerImg} />
-        <Box_img_R_I cornerImg={cornerImg} />
-        <Box_img_R_O cornerImg={cornerImg} />
+      <div className="flex gap-4 justify-around mt-20 scroll_animate">
+        <Box_img_L_I  />
+        <Box_img_L_O  />
+        {/* <Box_img_R_I  />
+        <Box_img_R_O  /> */}
       </div>
     </>
   );

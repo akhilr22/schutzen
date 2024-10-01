@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Box_Img_L_I({ cornerImg }) {
+import cornerImg from '@/app/assets/box-icon-preview.png'
+
+export default function Box_Img_L_I() {
     return (
 
         <div className="h-full flex">
