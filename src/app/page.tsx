@@ -112,11 +112,11 @@ export default function Home() {
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
-              <div>
+              <div className="scroll_animate">
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
               </div>
-              <div className="pb-4">
-                <p>
+              <div className="pb-4 scroll_animate">
+                <p className="scroll_animate">
                   <span>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -124,7 +124,7 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-              <div className="flex">
+              <div className="flex scroll_animate">
                 <div className="w-1/2 mr-2">
                   <div className="py-2">
                     <h3 className="font-bold">Lorethxpsum</h3>
@@ -167,7 +167,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate">
                 {"Load More >>>"}
               </span>
             </div>
@@ -222,21 +222,21 @@ export default function Home() {
 
       <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate">
         <div className="flex   ">
-          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3">
+          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate">
             <div className="bg-white h-96 my-7  rounded-xl"></div>
           </div>
           <div className="w-7/12">
-            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl">
+            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl scroll_animate">
               <span>Webinar Event: Leveraging Technology to Reduce Post-Acute Care Re-hospitalizations</span>
             </div>
-            <div className="text-start pl-4 w-10/12 md:w-8/12">
+            <div className="text-start pl-4 w-10/12 md:w-8/12 scroll_animate">
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries,
               </p>
             </div>
-            <div>
+            <div className="scroll_animate">
               <Image src={webImg} alt="no image" />
             </div>
           </div>
