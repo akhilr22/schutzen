@@ -5,6 +5,7 @@ import "@/app/css/animate.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 import cornerImg from "@/app/assets/box-icon-preview.png";
+import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
 
 // import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
 // import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
@@ -18,9 +19,10 @@ export default function Home() {
       <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
         <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
-          <div className="bg-[#000000] min-h-60 rounded-3xl text-center border-green-500">
+          <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
           </div>
+
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">{data.home_h1_text1}</h1>
             <span className="block mx-auto max-w-xl ">
@@ -267,12 +269,12 @@ export default function Home() {
                 <div className="bg-black w-full h-full">
                   <div className="h-2/6 "></div>
                   <div className="h-4/6  p-4">
-                    <div className="w-36 h-36 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full">
+                    <div className="w-28 h-28 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full my-3">
                       <div className="bg-black w-full h-full rounded-full "></div>
                     </div>
 
-                    <div className="text-start">
-                      <h1 className="font-bold text-md w-5/6">
+                    <div className="text-start mb-5">
+                      <h1 className="font-bold text-md w-5/6 my-3">
                         Hospitals (Medical, Surgical, and Specialty Care Units)
                       </h1>
                       <p className="text-sm ">
@@ -281,7 +283,7 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate">
+                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate ">
                       {"Load More >>>"}
                     </span>
                   </div>
@@ -293,7 +295,28 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 ">
-                <div className="bg-black w-full h-full"></div>
+                <div className="bg-black w-full h-full">
+                  <div className="h-2/6 "></div>
+                  <div className="h-4/6  p-4">
+                    <div className="w-28 h-28 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full my-3">
+                      <div className="bg-black w-full h-full rounded-full "></div>
+                    </div>
+
+                    <div className="text-start mb-5">
+                      <h1 className="font-bold text-md w-5/6 my-3">
+                        Hospitals (Medical, Surgical, and Specialty Care Units)
+                      </h1>
+                      <p className="text-sm ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry standard dummy
+                      </p>
+                    </div>
+
+                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate ">
+                      {"Load More >>>"}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -327,7 +350,28 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0">
-                <div className="bg-black w-full h-full"></div>
+                <div className="bg-black w-full h-full">
+                  <div className="h-2/6 "></div>
+                  <div className="h-4/6  p-4">
+                    <div className="w-28 h-28 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full my-3">
+                      <div className="bg-black w-full h-full rounded-full "></div>
+                    </div>
+
+                    <div className="text-start mb-5">
+                      <h1 className="font-bold text-md w-5/6 my-3">
+                        Hospitals (Medical, Surgical, and Specialty Care Units)
+                      </h1>
+                      <p className="text-sm ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry standard dummy
+                      </p>
+                    </div>
+
+                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate ">
+                      {"Load More >>>"}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -335,7 +379,28 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0">
-                <div className="bg-black w-full h-full"></div>
+                <div className="bg-black w-full h-full">
+                  <div className="h-2/6 "></div>
+                  <div className="h-4/6  p-4">
+                    <div className="w-28 h-28 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full my-3">
+                      <div className="bg-black w-full h-full rounded-full "></div>
+                    </div>
+
+                    <div className="text-start mb-5">
+                      <h1 className="font-bold text-md w-5/6 my-3">
+                        Hospitals (Medical, Surgical, and Specialty Care Units)
+                      </h1>
+                      <p className="text-sm ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry standard dummy
+                      </p>
+                    </div>
+
+                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate ">
+                      {"Load More >>>"}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -357,7 +422,7 @@ export default function Home() {
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
 
-      <div className="flex mt-20 scroll_animate w-full">
+      <div className="flex scroll_animate w-full">
         {/* Left Box */}
         <div className="h-full basis-1/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
@@ -374,7 +439,30 @@ export default function Home() {
         <div className="h-full basis-2/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
-              <div className="bg-black w-full h-full"></div>
+              <div className="bg-black w-full h-full flex p-5">
+                <div className=" w-2/3 scroll_animate">
+                  <Image src={footerImg} alt="Description" layout="fixed" className="rounded-2xl" />
+                </div>
+                <div className=" w-1/3 pl-3 scroll_animate">
+                  <span className="font-bold text-sm scroll_animate"> Hospitals (Medical, Surgical, and Specialty Care Units)</span>
+                  <p className="text-xs my-3 scroll_animate">
+                    {" "}
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using Content here, content here, making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                  </p>
+                  <p  className="text-xs my-3 scroll_animate">
+                    default model text, and a search for lorem ipsum will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).
+                  </p>
+                  <p  className="text-xs my-3 scroll_animate">
+                    It is a long established fact that a reader will d over the years, sometimes by accident, sometimes
+                    on purpose (injected humour and the like).
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

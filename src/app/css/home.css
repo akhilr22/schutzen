@@ -1,4 +1,6 @@
-
+body{
+  @apply mb-56
+}
 
 .load-more-banner {
   background: hsla(0, 0%, 0%, 1);
@@ -45,3 +47,5 @@ background: -webkit-linear-gradient(315deg, hsla(100, 50%, 52%, 1) 8%, hsla(197,
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#71C248", endColorstr="#228DB7", GradientType=1 );
 }
+
+
