@@ -250,8 +250,8 @@ export default function Home() {
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
 
-      <div className="footer scroll_animate">
-        <div className="flex ">
+      <div className="footer ">
+        <div className="flex scroll_animate">
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
@@ -335,7 +335,7 @@ export default function Home() {
 
         {/* next section */}
 
-        <div className="flex ">
+        <div className="flex scroll_animate">
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
