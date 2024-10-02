@@ -443,7 +443,7 @@ export default function Home() {
                 <div className=" w-2/3 scroll_animate">
                   <Image src={footerImg} alt="Description" layout="fixed" className="rounded-2xl" />
                 </div>
-                <div className=" w-1/3 pl-3 scroll_animate">
+                <div className=" w-1/3 pl-3 scroll_animate overflow-hidden">
                   <span className="font-bold text-sm scroll_animate"> Hospitals (Medical, Surgical, and Specialty Care Units)</span>
                   <p className="text-xs my-3 scroll_animate">
                     {" "}
