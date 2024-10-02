@@ -443,7 +443,7 @@ export default function Home() {
                 <div className=" w-2/3 scroll_animate">
                   <Image src={footerImg} alt="Description" layout="fixed" className="rounded-2xl" />
                 </div>
-                <div className=" w-1/3 pl-3 scroll_animate overflow-hidden">
+                <div className=" w-1/3 pl-3 scroll_animate overflow-hidden xl:overflow-visible">
                   <span className="font-bold text-sm scroll_animate"> Hospitals (Medical, Surgical, and Specialty Care Units)</span>
                   <p className="text-xs my-3 scroll_animate">
                     {" "}
@@ -457,7 +457,7 @@ export default function Home() {
                     Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
                     humour and the like).
                   </p>
-                  <p  className="text-xs my-3 ">
+                  <p  className="text-xs my-3 scroll_animate">
                     It is a long established fact that a reader will d over the years, sometimes by accident, sometimes
                     on purpose (injected humour and the like).
                   </p>
