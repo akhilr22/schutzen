@@ -4,14 +4,15 @@ import "@/app/css/home.css";
 import "@/app/css/animate.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
-import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
-import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
-import Box_img_R_I from "@/components/ui/footer-blocks/Box_Img_R_I";
-import Box_img_R_O from "@/components/ui/footer-blocks/Box_Img_R_O";
+import cornerImg from "@/app/assets/box-icon-preview.png";
+
+// import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
+// import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
+// import Box_img_R_I from "@/components/ui/footer-blocks/Box_Img_R_I";
+// import Box_img_R_O from "@/components/ui/footer-blocks/Box_Img_R_O";
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
-  
   return (
     <>
       <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
@@ -203,7 +204,7 @@ export default function Home() {
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" >
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
@@ -242,11 +243,153 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 justify-around mt-20 scroll_animate">
-        <Box_img_L_I  />
-        <Box_img_L_O  />
-        {/* <Box_img_R_I  />
-        <Box_img_R_O  /> */}
+
+      <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
+        <span>Patient Monitoring for Hospitals and Beyond</span>
+      </div>
+
+      <div className="footer scroll_animate">
+        <div className="flex ">
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute right-0 w-[15px]">
+                <Image src={cornerImg} alt="Description" layout="fixed" />
+              </div>
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
+                <div className="bg-black w-full h-full">
+                  <div className="h-2/6 "></div>
+                  <div className="h-4/6  p-4">
+                    <div className="w-36 h-36 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] rounded-full">
+                      <div className="bg-black w-full h-full rounded-full "></div>
+                    </div>
+
+                    <div className="text-start">
+                      <h1 className="font-bold text-md w-5/6">
+                        Hospitals (Medical, Surgical, and Specialty Care Units)
+                      </h1>
+                      <p className="text-sm ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry standard dummy
+                      </p>
+                    </div>
+
+                    <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate">
+                      {"Load More >>>"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 ">
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
+                <div className="absolute left-0 w-[15px]">
+                  <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+                </div>
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* next section */}
+
+        <div className="flex ">
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute right-0 w-[15px]">
+                <Image src={cornerImg} alt="Description" layout="fixed" />
+              </div>
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0 ">
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0">
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0">
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-full flex-1 footer-box">
+            <div className="w-full h-[500px] mx-auto relative">
+              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0 pt-0">
+                <div className="absolute left-0 w-[15px]">
+                  <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+                </div>
+                <div className="bg-black w-full h-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
+        <span>Patient Monitoring for Hospitals and Beyond</span>
+      </div>
+
+      <div className="flex mt-20 scroll_animate w-full">
+        {/* Left Box */}
+        <div className="h-full basis-1/4 flex-grow footer-box">
+          <div className="w-full h-[500px] mx-auto relative">
+            <div className="absolute right-0 w-[15px]">
+              <Image src={cornerImg} alt="Description" layout="fixed" />
+            </div>
+            <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
+              <div className="bg-black w-full h-full"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle Box - Takes double the width */}
+        <div className="h-full basis-2/4 flex-grow footer-box">
+          <div className="w-full h-[500px] mx-auto relative">
+            <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
+              <div className="bg-black w-full h-full"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Box */}
+        <div className="h-full basis-1/4 flex-grow footer-box">
+          <div className="w-full h-[500px] mx-auto relative">
+            <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
+              <div className="absolute left-0 w-[15px]">
+                <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+              </div>
+              <div className="bg-black w-full h-full"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

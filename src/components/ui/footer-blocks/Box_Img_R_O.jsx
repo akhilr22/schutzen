@@ -11,8 +11,9 @@ export default function Box_Img_R_O() {
                     <Image src={cornerImg} alt="Description" layout="fixed" />
                 </div>
                 <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px]">
-                    <div className="bg-black w-full h-full"></div>
+                    <div className="bg-black w-full h-full" style={{ marginLeft: '-1px' }}></div>
                 </div>
+
             </div>
         </div>
     )
