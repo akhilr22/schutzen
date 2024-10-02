@@ -14,6 +14,8 @@ import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
+
+  
   return (
     <>
       <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
