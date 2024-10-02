@@ -457,7 +457,7 @@ export default function Home() {
                     Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
                     humour and the like).
                   </p>
-                  <p  className="text-xs my-3 scroll_animate">
+                  <p  className="text-xs my-3 ">
                     It is a long established fact that a reader will d over the years, sometimes by accident, sometimes
                     on purpose (injected humour and the like).
                   </p>
