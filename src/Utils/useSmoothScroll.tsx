@@ -10,13 +10,13 @@ const useSmoothScroll = () => {
 
     // Handle the wheel event to adjust speed
     const handleWheel = (ev: WheelEvent) => {
-      speed += ev.deltaY * 0.075; // Adjust the scrolling speed factor
+      speed += ev.deltaY * 0.5; // Adjust the scrolling speed factor
       ev.preventDefault(); // Prevent default scrolling behavior
     };
 
     // Update function for smooth scrolling
     const update = (deltaTime: number) => {
-      const easingFactor =  0.96; // Smoother easing factor
+      const easingFactor =  0.92; // Smoother easing factor
       speed *= easingFactor; // Gradually slow down speed
     };
 
