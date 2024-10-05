@@ -257,7 +257,7 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
-                <Image src={cornerImg} alt="Description" layout="fixed" />
+                <Image src={cornerImg} alt="Description"   style={{ objectFit: 'contain' }} />
               </div>
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
                 <div className="bg-black w-full h-full"></div>
@@ -327,7 +327,7 @@ export default function Home() {
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
                 <div className="absolute left-0 w-[15px]">
-                  <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+                  <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
                 </div>
                 <div className="bg-black w-full h-full"></div>
               </div>
@@ -341,7 +341,7 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
-                <Image src={cornerImg} alt="Description" layout="fixed" />
+                <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} />
               </div>
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0 ">
                 <div className="bg-black w-full h-full"></div>
@@ -411,7 +411,7 @@ export default function Home() {
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0 pt-0">
                 <div className="absolute left-0 w-[15px]">
-                  <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+                  <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
                 </div>
                 <div className="bg-black w-full h-full"></div>
               </div>
@@ -429,7 +429,7 @@ export default function Home() {
         <div className="h-full basis-1/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute right-0 w-[15px]">
-              <Image src={cornerImg} alt="Description" layout="fixed" />
+              <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} />
             </div>
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
               <div className="bg-black w-full h-full"></div>
@@ -443,7 +443,7 @@ export default function Home() {
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
               <div className="bg-black w-full h-full flex p-5">
                 <div className=" w-2/3 scroll_animate">
-                  <Image src={footerImg} alt="Description" layout="fixed" className="rounded-2xl" />
+                  <Image src={footerImg} alt="Description" style={{ objectFit: 'contain' }} className="rounded-2xl" />
                 </div>
                 <div className=" w-1/3 pl-3 scroll_animate overflow-hidden xl:overflow-visible">
                   <span className="font-bold text-sm scroll_animate"> Hospitals (Medical, Surgical, and Specialty Care Units)</span>
@@ -474,7 +474,7 @@ export default function Home() {
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
               <div className="absolute left-0 w-[15px]">
-                <Image src={cornerImg} alt="Description" layout="fixed" className="transform rotate-180" />
+                <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
               </div>
               <div className="bg-black w-full h-full"></div>
             </div>

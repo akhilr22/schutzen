@@ -1,5 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useEffect } from "react";
 
 const useSmoothScroll = () => {
@@ -15,7 +16,7 @@ const useSmoothScroll = () => {
 
     // Update function for smooth scrolling
     const update = (deltaTime: number) => {
-      const easingFactor = 0.95; // Smoother easing factor
+      const easingFactor =  0.96; // Smoother easing factor
       speed *= easingFactor; // Gradually slow down speed
     };
 

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./css/globals.css";
 import SmoothScroll from "@/Utils/useSmoothScroll";
 
+
+
 export const metadata: Metadata = {
   title: "Schutzen Website",
   description: "Schutzen Website",
