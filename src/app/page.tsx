@@ -15,7 +15,7 @@ import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
   return (
     <>
-      <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
+      <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden">
         <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center min-h-fit sm:mt-14 ">
+      <div className="flex justify-center min-h-fit sm:mt-14 overflow-x-hidden">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex h-full">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 " data-aos="zoom-in">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in ">
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
@@ -169,7 +169,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate">
+              <span className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] bg-clip-text text-transparent scroll_animate" data-aos="zoom-in-up">
                 {"Load More >>>"}
               </span>
             </div>
@@ -177,11 +177,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate"></div>
+      <div className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden" data-aos="fade-right"></div>
 
-      <div className="text-center justify-center scroll_animate">
-        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2">Wireless Vital Signs Monitoring</h1>
-        <div className="mx-auto text-center md:w-2/5 mt-3 px-6">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">Wireless Vital Signs Monitoring</h1>
+        <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -191,30 +191,30 @@ export default function Home() {
         <div>
           <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto ">
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate " data-aos="fade-right">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-down-right">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-down-left">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-left">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-right">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-up-right">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"  data-aos="fade-up-left">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
-              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate" data-aos="fade-left">
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate">
+      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden">
         <div className="flex   ">
           <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate">
             <div className="bg-white h-96 my-7  rounded-xl"></div>
@@ -245,7 +245,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
+      <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate ">
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
 

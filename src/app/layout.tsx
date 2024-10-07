@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark " style={{scrollBehavior:'smooth'}}>
+    <html lang="en" className="dark ">
        <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
         <SmoothScroll/>
