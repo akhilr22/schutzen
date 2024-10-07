@@ -1,7 +1,6 @@
 import Navbar from "@/components/_partials/navbar/Navbar";
 import { data } from "./data/Data";
 import "@/app/css/home.css";
-import "@/app/css/animate.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 import cornerImg from "@/app/assets/box-icon-preview.png";
@@ -14,8 +13,6 @@ import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
-
-  
   return (
     <>
       <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12">
@@ -37,11 +34,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center min-h-fit sm:mt-14 scroll_animate">
+      <div className="flex justify-center min-h-fit sm:mt-14 ">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex h-full">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
-              <div className="p-4 flex-grow-[6]">
+              <div className="p-4 flex-grow-[6]" data-aos="fade-right">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5] dark:bg-black dark:text-white  w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full ">
@@ -58,7 +55,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 flex-grow-[5] scroll_animate">
+              <div className="p-4 flex-grow-[5] " data-aos="fade-right">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
@@ -75,7 +72,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="sm:w-1/2 w-full flex flex-col h-full scroll_animate">
+            <div className="sm:w-1/2 w-full flex flex-col h-full" data-aos="fade-left">
               <div className="p-4 flex-grow-[5]">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
@@ -93,7 +90,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 flex-grow-[6] scroll_animate">
+              <div className="p-4 flex-grow-[6] " data-aos="fade-left">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
@@ -113,14 +110,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 scroll_animate">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 "data-aos="zoom-in">
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
-              <div className="scroll_animate">
+              <div className="" data-aos="zoom-in-up">
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
               </div>
-              <div className="pb-4 scroll_animate">
+              <div className="pb-4 " data-aos="zoom-in-up">
                 <p className="scroll_animate">
                   <span>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -257,7 +254,7 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
-                <Image src={cornerImg} alt="Description"   style={{ objectFit: 'contain' }} />
+                <Image src={cornerImg} alt="Description" style={{ objectFit: "contain" }} />
               </div>
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
                 <div className="bg-black w-full h-full"></div>
@@ -327,7 +324,12 @@ export default function Home() {
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
                 <div className="absolute left-0 w-[15px]">
-                  <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
+                  <Image
+                    src={cornerImg}
+                    alt="Description"
+                    style={{ objectFit: "contain" }}
+                    className="transform rotate-180"
+                  />
                 </div>
                 <div className="bg-black w-full h-full"></div>
               </div>
@@ -341,7 +343,7 @@ export default function Home() {
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
-                <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} />
+                <Image src={cornerImg} alt="Description" style={{ objectFit: "contain" }} />
               </div>
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pt-0 ">
                 <div className="bg-black w-full h-full"></div>
@@ -411,7 +413,12 @@ export default function Home() {
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0 pt-0">
                 <div className="absolute left-0 w-[15px]">
-                  <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
+                  <Image
+                    src={cornerImg}
+                    alt="Description"
+                    style={{ objectFit: "contain" }}
+                    className="transform rotate-180"
+                  />
                 </div>
                 <div className="bg-black w-full h-full"></div>
               </div>
@@ -429,7 +436,7 @@ export default function Home() {
         <div className="h-full basis-1/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute right-0 w-[15px]">
-              <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} />
+              <Image src={cornerImg} alt="Description" style={{ objectFit: "contain" }} />
             </div>
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
               <div className="bg-black w-full h-full"></div>
@@ -443,10 +450,13 @@ export default function Home() {
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
               <div className="bg-black w-full h-full flex p-5">
                 <div className=" w-2/3 scroll_animate">
-                  <Image src={footerImg} alt="Description" style={{ objectFit: 'contain' }} className="rounded-2xl" />
+                  <Image src={footerImg} alt="Description" style={{ objectFit: "contain" }} className="rounded-2xl" />
                 </div>
                 <div className=" w-1/3 pl-3 scroll_animate overflow-hidden xl:overflow-visible">
-                  <span className="font-bold text-sm scroll_animate"> Hospitals (Medical, Surgical, and Specialty Care Units)</span>
+                  <span className="font-bold text-sm scroll_animate">
+                    {" "}
+                    Hospitals (Medical, Surgical, and Specialty Care Units)
+                  </span>
                   <p className="text-xs my-3 scroll_animate">
                     {" "}
                     It is a long established fact that a reader will be distracted by the readable content of a page
@@ -454,12 +464,12 @@ export default function Home() {
                     distribution of letters, as opposed to using Content here, content here, making it look like
                     readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
                   </p>
-                  <p  className="text-xs my-3 scroll_animate">
+                  <p className="text-xs my-3 scroll_animate">
                     default model text, and a search for lorem ipsum will uncover many web sites still in their infancy.
                     Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
                     humour and the like).
                   </p>
-                  <p  className="text-xs my-3 scroll_animate">
+                  <p className="text-xs my-3 scroll_animate">
                     It is a long established fact that a reader will d over the years, sometimes by accident, sometimes
                     on purpose (injected humour and the like).
                   </p>
@@ -474,7 +484,12 @@ export default function Home() {
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
               <div className="absolute left-0 w-[15px]">
-                <Image src={cornerImg} alt="Description" style={{ objectFit: 'contain' }} className="transform rotate-180" />
+                <Image
+                  src={cornerImg}
+                  alt="Description"
+                  style={{ objectFit: "contain" }}
+                  className="transform rotate-180"
+                />
               </div>
               <div className="bg-black w-full h-full"></div>
             </div>

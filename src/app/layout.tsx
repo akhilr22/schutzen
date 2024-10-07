@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
 import SmoothScroll from "@/Utils/useSmoothScroll";
+import AOSInit from "@/Utils/AOSInit";
 
 
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark " style={{scrollBehavior:'smooth'}}>
+       <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
         <SmoothScroll/>
         {children} 
