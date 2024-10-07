@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 "data-aos="zoom-in">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 " data-aos="zoom-in">
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
@@ -127,7 +127,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex scroll_animate">
-                <div className="w-1/2 mr-2">
+                <div className="w-1/2 mr-2" data-aos="zoom-in-right">
                   <div className="py-2">
                     <h3 className="font-bold">Lorethxpsum</h3>
                     <p>
@@ -148,7 +148,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-1/2 mr-2">
+                <div className="w-1/2 mr-2" data-aos="zoom-in-left">
                   <div className="py-2">
                     <h3 className="font-bold">Lorethxpsum</h3>
                     <p>
