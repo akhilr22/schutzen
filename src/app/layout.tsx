@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
-import SmoothScroll from "@/Utils/useSmoothScroll";
+// import SmoothScroll from "@/Utils/useSmoothScroll";
 import AOSInit from "@/Utils/AOSInit";
 
 export const metadata: Metadata = {
@@ -17,7 +17,6 @@ export default function RootLayout({
     <html lang="en" className="dark ">
       <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
-        <SmoothScroll />
         {children}
       </body>
     </html>
