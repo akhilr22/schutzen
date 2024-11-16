@@ -6,41 +6,26 @@ import { useEffect } from "react";
 const useSmoothScroll = () => {
   useEffect(() => {
     let speed = 0;
-    let lastUpdateTime = performance.now();
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    let lastTouchY: number | null = null;
+    let lastUpdateTime = 0;
 
-    const handleScroll = (deltaY: number) => {
-      speed += deltaY * 0.1; // Adjust the scrolling speed factor
-    };
-
+    // Handle the wheel event to adjust speed
     const handleWheel = (ev: WheelEvent) => {
-      handleScroll(ev.deltaY);
-      ev.preventDefault();
+      speed += ev.deltaY * 0.15; // Adjust the scrolling speed factor
+      ev.preventDefault(); // Prevent default scrolling behavior
     };
 
-    const handleTouchMove = (ev: TouchEvent) => {
-      if (ev.touches.length > 1) return;
-
-      const currentTouchY = ev.touches[0].clientY;
-      const deltaY = lastTouchY !== null ? currentTouchY - lastTouchY : 0;
-      handleScroll(-deltaY);
-      lastTouchY = currentTouchY;
-    };
-
+    // Update function for smooth scrolling
     const update = (deltaTime: number) => {
-      const easingFactor = 0.85; // More gradual easing
-      speed *= easingFactor;
+      const easingFactor =  0.92; // Smoother easing factor
+      speed *= easingFactor; // Gradually slow down speed
     };
 
+    // Render function to scroll
     const render = () => {
-      const currentScroll = window.scrollY;
-      window.scrollTo({
-        top: currentScroll + speed,
-        behavior: 'auto'
-      });
+      window.scrollBy(0, speed); // Scroll the window by speed value
     };
 
+    // Main loop for smooth scrolling
     const gameLoop = (currentTime: number) => {
       const deltaTime = currentTime - lastUpdateTime;
       update(deltaTime);
@@ -49,27 +34,22 @@ const useSmoothScroll = () => {
       requestAnimationFrame(gameLoop);
     };
 
-    if (isTouchDevice) {
-      window.addEventListener("touchmove", handleTouchMove, { passive: false });
-    } else {
-      window.addEventListener("wheel", handleWheel, { passive: false });
-    }
-
+    // Attach the event listener and start the loop
+    window.addEventListener("wheel", handleWheel, { passive: false });
     requestAnimationFrame(gameLoop);
 
+    // Cleanup event listener on unmount
     return () => {
-      if (isTouchDevice) {
-        window.removeEventListener("touchmove", handleTouchMove);
-      } else {
-        window.removeEventListener("wheel", handleWheel);
-      }
+      window.removeEventListener("wheel", handleWheel);
     };
   }, []);
 };
 
-const SmoothScroll: React.FC = () => {
+const SmoothScroll = () => {
+  // Call the custom hook in this component
   useSmoothScroll();
-  return null;
+
+  return null; // No UI for this component, just smooth scrolling behavior
 };
 
 export default SmoothScroll;

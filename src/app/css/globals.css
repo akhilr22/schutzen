@@ -26,3 +26,11 @@ html {
   scrollbar-width: thin; /* Makes the scrollbar thinner */
   scrollbar-color: #212020 #000000; /* Thumb and track color */
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Customize scroll speed and behavior in specific sections */
+section {
+  scroll-margin-top: 20px; /* Adjust to control where scroll ends */
+}

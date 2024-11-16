@@ -110,10 +110,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in ">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up">
         <div className="flex w-full xl:w-5/6 ">
           <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
-            <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-36 ">
+            <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
               <div className="" data-aos="zoom-in-up">
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
               </div>
@@ -254,23 +254,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden">
+      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden" data-aos="zoom-in-up">
         <div className="flex   ">
-          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate">
+          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate"  data-aos="zoom-in">
             <div className="bg-white h-96 my-7  rounded-xl"></div>
           </div>
           <div className="w-7/12">
-            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl scroll_animate">
+            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl scroll_animate" data-aos="zoom-in-left">
               <span>Webinar Event: Leveraging Technology to Reduce Post-Acute Care Re-hospitalizations</span>
             </div>
-            <div className="text-start pl-4 w-10/12 md:w-8/12 scroll_animate">
+            <div className="text-start pl-4 w-10/12 md:w-8/12 scroll_animate" data-aos="zoom-in-left" >
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries,
               </p>
             </div>
-            <div className="scroll_animate">
+            <div className="scroll_animate" data-aos="zoom-in-left"> 
               <Image src={webImg} alt="no image" />
             </div>
           </div>
