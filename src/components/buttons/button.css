@@ -3,7 +3,7 @@
     --easing: linear;
     --c-color-1: rgba(109, 189, 73, 0.7); /* Updated to match the green shade */
     --c-color-2: #3bc2d6; /* Updated to match the blue shade */
-    --c-color-3: #000000; /* Matching the blue for consistent tone */
+    --c-color-3: #b2f98b; /* Matching the blue for consistent tone */
     --c-color-4: rgba(109, 189, 73, 0.7); /* Green shade */
     --c-shadow: rgba(109, 189, 73, 0.5); /* Green shadow */
     --c-shadow-inset-top: rgba(109, 189, 73, 0.9); /* Strong green for top inset */

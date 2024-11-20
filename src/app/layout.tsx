@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./css/globals.css";
 // import SmoothScroll from "@/Utils/useSmoothScroll";
 import AOSInit from "@/Utils/AOSInit";
+import { Footer } from "@/components/_partials/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Schutzen Website",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
         {children}
+        <Footer/>
       </body>
     </html>
   );
