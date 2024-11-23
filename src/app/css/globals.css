@@ -74,3 +74,33 @@ section {
     GradientType=1
   );
 }
+
+.stripe_line_vertical {
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 10%,
+    hsla(178, 97%, 63%, 1) 90%,
+    hsla(0, 0%, 9%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 10%,
+    hsla(178, 97%, 63%, 1) 90%,
+    hsla(0, 0%, 9%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 10%,
+    hsla(178, 97%, 63%, 1) 90%,
+    hsla(0, 0%, 9%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#14e734", GradientType=1 );
+}

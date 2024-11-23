@@ -10,8 +10,8 @@ import insta from "@/app/assets/instagram.png";
 import footerBg from "@/app/assets/footer-bg.png";
 export const Footer = () => {
   return (
-    <div>
-      <div></div>
+    <div className="mt-48">
+     
       <div
         className="bg-cover bg-center "
         style={{
