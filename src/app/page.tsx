@@ -1,4 +1,3 @@
-import Navbar from "@/components/_partials/navbar/Navbar";
 import { data } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <>
       <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden">
-        <Navbar />
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
@@ -181,7 +179,7 @@ export default function Home() {
       </div>
 
       <div
-        className="bg-gradient-to-r from-black to-green-500 h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
+        className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
       ></div>
 
@@ -254,23 +252,29 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden" data-aos="zoom-in-up">
+      <div
+        className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden"
+        data-aos="zoom-in-up"
+      >
         <div className="flex   ">
-          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate"  data-aos="zoom-in">
+          <div className="w-5/12 pl-3 sm:pl-5 md:pl-7 xl:pl-20 pr-3 scroll_animate" data-aos="zoom-in">
             <div className="bg-white h-96 my-7  rounded-xl"></div>
           </div>
           <div className="w-7/12">
-            <div className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl scroll_animate" data-aos="zoom-in-left">
+            <div
+              className="text-start p-4 w-full sm:w-9/12 font-bold text-xl sm:text-2xl xl:text-4xl scroll_animate"
+              data-aos="zoom-in-left"
+            >
               <span>Webinar Event: Leveraging Technology to Reduce Post-Acute Care Re-hospitalizations</span>
             </div>
-            <div className="text-start pl-4 w-10/12 md:w-8/12 scroll_animate" data-aos="zoom-in-left" >
+            <div className="text-start pl-4 w-10/12 md:w-8/12 scroll_animate" data-aos="zoom-in-left">
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries,
               </p>
             </div>
-            <div className="scroll_animate" data-aos="zoom-in-left"> 
+            <div className="scroll_animate" data-aos="zoom-in-left">
               <Image src={webImg} alt="no image" />
             </div>
           </div>
@@ -528,7 +532,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

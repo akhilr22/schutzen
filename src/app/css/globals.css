@@ -34,3 +34,43 @@ html {
 section {
   scroll-margin-top: 20px; /* Adjust to control where scroll ends */
 }
+
+.stripe_line {
+  background: hsla(189, 38%, 28%, 1);
+
+  background: linear-gradient(
+    180deg,
+    hsla(189, 38%, 28%, 0) 0%,
+    hsla(189, 38%, 28%, 1) 5%,
+    hsla(178, 97%, 63%, 1) 15%,
+    hsla(129, 84%, 49%, 1) 86%,
+    hsla(175, 74%, 17%, 1) 95%,
+    hsla(175, 74%, 17%, 0) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(189, 38%, 28%, 0) 0%,
+    hsla(189, 38%, 28%, 1) 5%,
+    hsla(178, 97%, 63%, 1) 15%,
+    hsla(129, 84%, 49%, 1) 86%,
+    hsla(175, 74%, 17%, 1) 95%,
+    hsla(175, 74%, 17%, 0) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(189, 38%, 28%, 0) 0%,
+    hsla(189, 38%, 28%, 1) 5%,
+    hsla(178, 97%, 63%, 1) 15%,
+    hsla(129, 84%, 49%, 1) 86%,
+    hsla(175, 74%, 17%, 1) 95%,
+    hsla(175, 74%, 17%, 0) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient(
+    startColorstr="#002C5A00",          
+    endColorstr="#0044FC00",            
+    GradientType=1
+  );
+}
