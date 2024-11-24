@@ -4,7 +4,9 @@ import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 import cornerImg from "@/app/assets/box-icon-preview.png";
 import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
-
+import homeBg from "@/app/assets/home-bg.png";
+import homeContent1 from "@/app/assets/hompage-content1.png";
+import homeContent2 from "@/app/assets/hompage-content2.png";
 // import Box_img_L_I from "@/components/ui/footer-blocks/Box_Img_L_I";
 // import Box_img_L_O from "@/components/ui/footer-blocks/Box_Img_L_O";
 // import Box_img_R_I from "@/components/ui/footer-blocks/Box_Img_R_I";
@@ -14,7 +16,15 @@ import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
   return (
     <>
-      <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden">
+      <div
+        className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden"
+        style={{
+          backgroundImage: `url(${homeBg.src})`,
+          backgroundSize: "cover", // Ensures the image covers the entire area
+          backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat", // Prevents tiling
+        }}
+      >
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
@@ -108,9 +118,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up">
+      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up" >
         <div className="flex w-full xl:w-5/6 ">
-          <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0">
+          <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0 "         style={{
+          backgroundImage: `url(${homeContent1.src})`,
+          backgroundSize: "cover", // Ensures the image covers the entire area
+          backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat", // Prevents tiling
+          
+        }}>
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
               <div className="" data-aos="zoom-in-up">
                 <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
@@ -253,7 +269,13 @@ export default function Home() {
       </div>
 
       <div
-        className="banner-two h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden"
+        className=" h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden "
+        style={{
+          backgroundImage: `url(${homeContent2.src})`,
+          backgroundSize: "cover", // Ensures the image covers the entire area
+          backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat", // Prevents tiling
+        }}
         data-aos="zoom-in-up"
       >
         <div className="flex   ">
