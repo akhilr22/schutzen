@@ -8,10 +8,10 @@ import twitter from "@/app/assets/twitter.png";
 import youtube from "@/app/assets/youtube.png";
 import insta from "@/app/assets/instagram.png";
 import footerBg from "@/app/assets/footer-bg.png";
+import Link from "next/link";
 export const Footer = () => {
   return (
     <div className="mt-48">
-     
       <div
         className="bg-cover bg-center "
         style={{
@@ -47,7 +47,10 @@ export const Footer = () => {
             <div className="">
               <ul>
                 <li>
-                  <span>Home</span>
+                  <Link href="/">
+                    {" "}
+                    <span>Home</span>
+                  </Link>
                 </li>
                 <li>
                   <span>Solutions</span>
@@ -56,12 +59,14 @@ export const Footer = () => {
                   <span>About</span>
                 </li>
                 <li>
-                  <span>Careers</span>
+                < Link href={'/careers'}>  <span>Careers</span></Link>
                 </li>
                 <li>
-                  <span>
-                    Contact <span className="hidden custom-md:inline ">us</span>
-                  </span>
+                  <Link href="/contact-us">
+                    <span>
+                      Contact <span className="hidden custom-md:inline ">us</span>
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -71,7 +76,7 @@ export const Footer = () => {
           </div>
         </div>
         <div
-          className="stripe_line mx-auto rounded-full my-5 scroll_animate overflow-x-hidden h-1 w-2/3"
+          className="stripe_line mx-auto rounded-full my-5 scroll_animate overflow-x-hidden h-[2px] w-2/3"
           data-aos="fade-right"
         ></div>
 

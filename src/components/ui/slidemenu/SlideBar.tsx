@@ -2,6 +2,7 @@
 import { MenuBtnProps } from '@/interface';
 import schutzenImg from "@/app/assets/schutzen-img.png";
 import Image from 'next/image';
+import { redirect } from 'next/navigation';
 
 
 const SlideBar:React.FC<MenuBtnProps> = ({isOpen})=>{
@@ -28,8 +29,8 @@ const SlideBar:React.FC<MenuBtnProps> = ({isOpen})=>{
             priority
           />
             <ul className="mt-4">
-              <li className="mb-2">
-                <a href="#" className="block hover:text-indigo-400">
+              <li className="mb-2" onClick={()=> redirect('/')}>
+                <a  className="block hover:text-indigo-400">
                   Home
                 </a>
               </li>
@@ -43,13 +44,13 @@ const SlideBar:React.FC<MenuBtnProps> = ({isOpen})=>{
                 About
                 </a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="block hover:text-indigo-400">
+              <li className="mb-2"  onClick={()=> redirect('/careers')}>
+                <a  className="block hover:text-indigo-400">
                 Careers
                 </a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="block hover:text-indigo-400">
+              <li className="mb-2" onClick={()=> redirect('/contact-us')}>
+                <a  className="block hover:text-indigo-400">
                 Contact us
                 </a>
               </li>

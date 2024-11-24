@@ -7,12 +7,13 @@ import MenuBtn from "@/components/buttons/MenuBtn";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import SlideBar from "@/components/ui/slidemenu/SlideBar";
 import { useState } from "react";
+import { redirect } from 'next/navigation'
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <div className="navbar">
+      <div className="navbar mt-8">
         {/* Logo on the left */}
         <div className="nav-icon">
           <Image
@@ -20,7 +21,7 @@ export default function Navbar() {
             src={schutzenImg}
             alt="Schutzen Logo"
             width={150}
-            height={50}
+            height={50} 
             priority
           />
           <Image
@@ -37,7 +38,7 @@ export default function Navbar() {
         <div className="nav-list">
           <div className="gradient-border">
             <ul>
-              <li>
+              <li  onClick={()=> redirect('/')}>
                 <span>Home</span>
               </li>
               <li>
@@ -46,11 +47,12 @@ export default function Navbar() {
               <li>
                 <span>About</span>
               </li>
-              <li>
+              <li onClick={()=> redirect('/careers')}>
                 <span>Careers</span>
               </li>
-              <li>
+              <li onClick={()=> redirect('/contact-us')} >
                 <span>
+                  
                   Contact <span className="hidden custom-md:inline ">us</span>
                 </span>
               </li>
