@@ -1,4 +1,5 @@
-import { data } from "./data/Data";
+import Navbar from "@/components/_partials/navbar/Navbar";
+import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
@@ -31,9 +32,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
-            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">{data.home_h1_text1}</h1>
+            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">{homePageData.banner.home_h1_text1}</h1>
             <span className="block mx-auto max-w-xl ">
-              <p>{data.home_p_text1}</p>
+              <p>{homePageData.banner.home_p_text1}</p>
             </span>
           </div>
           <div className="justify-center flex mx-auto">
@@ -52,10 +53,9 @@ export default function Home() {
                     <div className="flex flex-col h-full ">
                       <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1 mt-3">
-                        easy
+                        <h1>{homePageData.whyChooseUs.title_1}</h1>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry
+                        {homePageData.whyChooseUs.desc_1}
                         </p>
                       </div>
                     </div>
@@ -69,9 +69,9 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-  mt-3">
+                      <h1>{homePageData.whyChooseUs.title_2}</h1>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry
+                        {homePageData.whyChooseUs.desc_2}
                         </p>
                       </div>
                     </div>
@@ -87,10 +87,9 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1  mt-3">
-                        <h1>Easy to use</h1>
+                        <h1>{homePageData.whyChooseUs.title_3}</h1>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry
+                        {homePageData.whyChooseUs.desc_3}
                         </p>
                       </div>
                     </div>
@@ -104,9 +103,9 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1  mt-3">
+                      <h1>{homePageData.whyChooseUs.title_4}</h1>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry
+                        {homePageData.whyChooseUs.desc_4}
                         </p>
                       </div>
                     </div>
@@ -129,14 +128,12 @@ export default function Home() {
         }}>
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
               <div className="" data-aos="zoom-in-up">
-                <h1 className="text-5xl font-bold pb-4">{data.home_h1_text2}</h1>
+                <h1 className="text-5xl font-bold pb-4">{homePageData.features.title}</h1>
               </div>
               <div className="pb-4 " data-aos="zoom-in-up">
                 <p className="scroll_animate">
                   <span>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries,
+                  {homePageData.features.desc}
                   </span>
                 </p>
               </div>
