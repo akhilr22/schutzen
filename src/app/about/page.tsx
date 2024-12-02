@@ -48,6 +48,41 @@ export default function page() {
           </span>
         </div>
       </div>
+
+      <div className="mt-10">
+        <div className="flex justify-around text-start ">
+          {" "}
+          <div className="w-1/4 text-xl">
+            <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+          </div>
+          <div></div>
+        </div>
+        <div
+          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          data-aos="fade-right"
+        ></div>{" "}
+        <div className="flex justify-center text-start ">
+          {" "}
+          <div className="w-1/4 text-xl">
+            <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+          </div>
+        </div>
+        <div
+          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          data-aos="fade-right"
+        ></div>{" "}
+        <div className="flex justify-around text-start ">
+          {" "}
+          <div></div>
+          <div className="w-1/4 text-xl">
+            <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+          </div>
+        </div>
+        <div
+          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          data-aos="fade-right"
+        ></div>{" "}
+      </div>
     </div>
   );
 }
