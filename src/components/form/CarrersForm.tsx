@@ -1,51 +1,59 @@
 "use client";
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import Image from 'next/image';
-import { validationSchema } from '@/Utils/ValidationSchema';
-import React, { useRef } from 'react';
+
+import { Resolver, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import Image from "next/image";
+import { validationSchema } from "@/Utils/ValidationSchema";
+import React, { useRef } from "react";
 import upload from "@/app/assets/upload.png";
+
+// Define the form data structure
+interface FormData {
+  fullName: string;
+  mobileNumber: string;
+  email: string;
+  coverLetter?: File; // Optional
+  resume?: File; // Required by validation schema
+}
 
 
 export default function CareersForm() {
-  
-
   const {
     register,
     handleSubmit,
     setValue,
-    watch,
     formState: { errors },
-  } = useForm({
-    resolver: yupResolver(validationSchema),
+  } = useForm<FormData>({
+    resolver: yupResolver(validationSchema) as unknown as Resolver<FormData>, // Ensure proper typing
   });
 
-  const fullNameRef = useRef(null);
-  const mobileNumberRef = useRef(null);
-  const emailRef = useRef(null);
-  const coverLetterRef = useRef(null);
-  const resumeRef = useRef(null);
+  const fullNameRef = useRef<HTMLInputElement | null>(null);
+  const mobileNumberRef = useRef<HTMLInputElement | null>(null);
+  const emailRef = useRef<HTMLInputElement | null>(null);
+  const coverLetterRef = useRef<HTMLInputElement | null>(null);
+  const resumeRef = useRef<HTMLInputElement | null>(null);
 
-  const handleDivClick = (inputRef) => {
+  const handleDivClick = (inputRef: React.RefObject<HTMLInputElement>) => {
     if (inputRef.current) {
-
       inputRef.current.focus();
-
     }
   };
 
-  const onSubmit = (data) => {
-    console.log('Form Submitted:', data);
+  const onSubmit = (data: FormData) => {
+    console.log("Form Submitted:", data);
     // Handle form submission logic here (e.g., API call)
   };
 
-  const handleFileUpload = (e, fieldName) => {
-    const file = e.target.files[0];
+  const handleFileUpload = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    fieldName: keyof FormData
+  ) => {
+    const file = e.target.files?.[0];
     if (file) {
       setValue(fieldName, file); // Set file into the form state
     }
   };
-  
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="m-20 mx-52">
       <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[50px] h-full">
@@ -59,14 +67,20 @@ export default function CareersForm() {
               onClick={() => handleDivClick(fullNameRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">Full name*</label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">
+                  Full name*
+                </label>
                 <input
                   type="text"
-                  {...register('fullName')}
-                  ref={fullNameRef} // Attach the ref to the input field
+                  {...register("fullName")}
+                  ref={fullNameRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.fullName && <span className="text-red-500 text-sm">{errors.fullName.message}</span>}
+                {errors.fullName && (
+                  <span className="text-red-500 text-sm">
+                    {errors.fullName.message}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -76,14 +90,20 @@ export default function CareersForm() {
               onClick={() => handleDivClick(mobileNumberRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">Mobile Number*</label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">
+                  Mobile Number*
+                </label>
                 <input
                   type="text"
-                  {...register('mobileNumber')}
-                  ref={mobileNumberRef} // Attach the ref to the input field
+                  {...register("mobileNumber")}
+                  ref={mobileNumberRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.mobileNumber && <span className="text-red-500 text-sm">{errors.mobileNumber.message}</span>}
+                {errors.mobileNumber && (
+                  <span className="text-red-500 text-sm">
+                    {errors.mobileNumber.message}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -93,14 +113,20 @@ export default function CareersForm() {
               onClick={() => handleDivClick(emailRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">Email ID*</label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">
+                  Email ID*
+                </label>
                 <input
                   type="email"
-                  {...register('email')}
-                  ref={emailRef} // Attach the ref to the input field
+                  {...register("email")}
+                  ref={emailRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
+                {errors.email && (
+                  <span className="text-red-500 text-sm">
+                    {errors.email.message}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -109,18 +135,26 @@ export default function CareersForm() {
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
               onClick={() => handleDivClick(coverLetterRef)}
             >
-              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-1">
-                <label htmlFor="coverLetter" className="text-gray-500 dark:text-gray-300 text-xl">Cover Letter*</label>
+              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
+                <label
+                  htmlFor="coverLetter"
+                  className="text-gray-500 dark:text-gray-300 text-xl"
+                >
+                  Cover Letter*
+                </label>
                 <input
                   type="file"
                   id="coverLetter"
                   className="hidden"
-                  ref={coverLetterRef} // Attach the ref to the input field
-                  onChange={(e) => handleFileUpload(e, 'coverLetter')}
+                  ref={coverLetterRef}
+                  onChange={(e) => handleFileUpload(e, "coverLetter")}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-
-                {errors.coverLetter && <span className="text-red-500 text-sm">{errors.coverLetter.message}</span>}
+                {errors.coverLetter && (
+                  <span className="text-red-500 text-sm">
+                    {errors.coverLetter.message}
+                  </span>
+                )}
               </div>
             </div>
 
@@ -129,25 +163,39 @@ export default function CareersForm() {
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
               onClick={() => handleDivClick(resumeRef)}
             >
-              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-1">
-                <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">Resume*</label>
+              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
+                <label
+                  htmlFor="resume"
+                  className="text-gray-500 dark:text-gray-300 text-xl"
+                >
+                  Resume*
+                </label>
                 <input
                   type="file"
                   id="resume"
                   className="hidden"
-                  ref={resumeRef} // Attach the ref to the input field
-                  onChange={(e) => handleFileUpload(e, 'resume')}
+                  ref={resumeRef}
+                  onChange={(e) => handleFileUpload(e, "resume")}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-                {errors.resume && <span className="text-red-500 text-sm">{errors.resume.message}</span>}
-                          
+                {errors.resume && (
+                  <span className="text-red-500 text-sm">
+                    {errors.resume.message}
+                  </span>
+                )}
               </div>
             </div>
 
-            <button type="submit" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full">
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full"
+            >
               Apply
             </button>
-            <button type="button" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full">
+            <button
+              type="button"
+              className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full"
+            >
               Book Demo
             </button>
           </div>

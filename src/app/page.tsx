@@ -1,4 +1,3 @@
-import Navbar from "@/components/_partials/navbar/Navbar";
 import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
