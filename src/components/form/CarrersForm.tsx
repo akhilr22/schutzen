@@ -109,7 +109,7 @@ export default function CareersForm() {
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
               onClick={() => handleDivClick(coverLetterRef)}
             >
-              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
+              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-1">
                 <label htmlFor="coverLetter" className="text-gray-500 dark:text-gray-300 text-xl">Cover Letter*</label>
                 <input
                   type="file"
@@ -118,7 +118,7 @@ export default function CareersForm() {
                   ref={coverLetterRef} // Attach the ref to the input field
                   onChange={(e) => handleFileUpload(e, 'coverLetter')}
                 />
-                <Image src={upload} alt="upload" className="w-7 h-7" />
+                <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
 
                 {errors.coverLetter && <span className="text-red-500 text-sm">{errors.coverLetter.message}</span>}
               </div>
@@ -129,7 +129,7 @@ export default function CareersForm() {
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
               onClick={() => handleDivClick(resumeRef)}
             >
-              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
+              <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-1">
                 <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">Resume*</label>
                 <input
                   type="file"
@@ -138,7 +138,7 @@ export default function CareersForm() {
                   ref={resumeRef} // Attach the ref to the input field
                   onChange={(e) => handleFileUpload(e, 'resume')}
                 />
-                <Image src={upload} alt="upload" className="w-7 h-7" />
+                <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
                 {errors.resume && <span className="text-red-500 text-sm">{errors.resume.message}</span>}
                           
               </div>
