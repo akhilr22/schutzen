@@ -75,6 +75,36 @@ section {
   );
 }
 
+.stripe_full {
+  background: hsla(189, 38%, 28%, 1);
+
+  background: linear-gradient(
+    360deg,
+    hsla(189, 38%, 28%, 1) 0%,
+    hsla(178, 97%, 63%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 100%,
+    hsla(175, 74%, 17%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(189, 38%, 28%, 1) 0%,
+    hsla(178, 97%, 63%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 100%,
+    hsla(175, 74%, 17%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(189, 38%, 28%, 1) 0%,
+    hsla(178, 97%, 63%, 1) 0%,
+    hsla(129, 84%, 49%, 1) 100%,
+    hsla(175, 74%, 17%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2c5a62", endColorstr="#44fcf5", GradientType=1 );
+}
+
 .stripe_line_vertical {
   background: hsla(0, 0%, 0%, 1);
 

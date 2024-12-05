@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "@/app/assets/aboutUs_bg.png";
+import bg2 from "@/app/assets/aboutBg-2.png";
 import boxIcon from "@/app/assets/box-cornner.png";
 import Image from "next/image";
 export default function page() {
@@ -51,7 +52,13 @@ export default function page() {
         </div>
       </div>
 
-      <div className="mt-10">
+      <div
+        className="mt-10 min-h-screen bg-[length:100vw_650px]  bg-[position:0_80%] "
+        style={{
+          backgroundImage: `url(${bg2.src})`,
+          backgroundRepeat: "no-repeat", // Prevents tiling
+        }}
+      >
         <div className="flex justify-around text-start ">
           {" "}
           <div className=" w-1/4 text-xl text-[#2ccdb5] flex">
@@ -61,7 +68,7 @@ export default function page() {
           <div></div>
         </div>
         <div
-          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          className=" stripe_full mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
           data-aos="fade-right"
         ></div>{" "}
         <div className="flex justify-center text-start ">
@@ -72,7 +79,7 @@ export default function page() {
           </div>
         </div>
         <div
-          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          className="stripe_full mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
           data-aos="fade-right"
         ></div>{" "}
         <div className="flex justify-around text-start ">
@@ -84,15 +91,15 @@ export default function page() {
           </div>
         </div>
         <div
-          className="stripe_line mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
+          className="stripe_full mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
           data-aos="fade-right"
         ></div>{" "}
         <div className="mt-28 flex justify-center items-center">
           <div
-            className="w-20 h-20 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-3xl scroll_animate mx-auto"
+            className="w-20 h-20 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
             data-aos="fade-right"
           >
-            <div className="w-full h-full bg-black rounded-3xl flex flex-col items-center justify-center">
+            <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center">
               <div className="text-center">
                 <div className="pt-7">
                   <span className="text-5xl block ">Empowering Healthcare Excellence</span>
@@ -101,7 +108,7 @@ export default function page() {
               </div>
 
               <div className="mt-6 w-full flex justify-center">
-                <div className="ml-6">
+                <div className="ml-6 text-[#2ccdb5]">
                   <div className="flex items-center">
                     <Image src={boxIcon} alt="boxImg" className="w-6 h-6 mr-3" />
                     <p>Enhance patient experiences and satisfaction</p>
@@ -116,7 +123,6 @@ export default function page() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
