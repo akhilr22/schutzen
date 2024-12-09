@@ -2,8 +2,8 @@ import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
-import cornerImg from "@/app/assets/box-icon-preview.png";
-import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
+// import cornerImg from "@/app/assets/box-icon-preview.png";
+// import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
 import homeBg from "@/app/assets/home-bg.png";
 import homeContent1 from "@/app/assets/hompage-content1.png";
 import homeContent2 from "@/app/assets/hompage-content2.png";
@@ -31,7 +31,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
-            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">{homePageData.banner.home_h1_text1}</h1>
+            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
+              {homePageData.banner.home_h1_text1}
+            </h1>
             <span className="block mx-auto max-w-xl ">
               <p>{homePageData.banner.home_p_text1}</p>
             </span>
@@ -53,9 +55,7 @@ export default function Home() {
                       <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1 mt-3">
                         <h1>{homePageData.whyChooseUs.title_1}</h1>
-                        <p>
-                        {homePageData.whyChooseUs.desc_1}
-                        </p>
+                        <p>{homePageData.whyChooseUs.desc_1}</p>
                       </div>
                     </div>
                   </div>
@@ -68,10 +68,8 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-  mt-3">
-                      <h1>{homePageData.whyChooseUs.title_2}</h1>
-                        <p>
-                        {homePageData.whyChooseUs.desc_2}
-                        </p>
+                        <h1>{homePageData.whyChooseUs.title_2}</h1>
+                        <p>{homePageData.whyChooseUs.desc_2}</p>
                       </div>
                     </div>
                   </div>
@@ -87,9 +85,7 @@ export default function Home() {
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1  mt-3">
                         <h1>{homePageData.whyChooseUs.title_3}</h1>
-                        <p>
-                        {homePageData.whyChooseUs.desc_3}
-                        </p>
+                        <p>{homePageData.whyChooseUs.desc_3}</p>
                       </div>
                     </div>
                   </div>
@@ -102,10 +98,8 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                       <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
                       <div className="h-1/2 flex-1  mt-3">
-                      <h1>{homePageData.whyChooseUs.title_4}</h1>
-                        <p>
-                        {homePageData.whyChooseUs.desc_4}
-                        </p>
+                        <h1>{homePageData.whyChooseUs.title_4}</h1>
+                        <p>{homePageData.whyChooseUs.desc_4}</p>
                       </div>
                     </div>
                   </div>
@@ -116,24 +110,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up" >
+      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up">
         <div className="flex w-full xl:w-5/6 ">
-          <div className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0 "         style={{
-          backgroundImage: `url(${homeContent1.src})`,
-          backgroundSize: "cover", // Ensures the image covers the entire area
-          backgroundPosition: "center", // Centers the image
-          backgroundRepeat: "no-repeat", // Prevents tiling
-          
-        }}>
+          <div
+            className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0 "
+            style={{
+              backgroundImage: `url(${homeContent1.src})`,
+              backgroundSize: "cover", // Ensures the image covers the entire area
+              backgroundPosition: "center", // Centers the image
+              backgroundRepeat: "no-repeat", // Prevents tiling
+            }}
+          >
             <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
               <div className="" data-aos="zoom-in-up">
                 <h1 className="text-5xl font-bold pb-4">{homePageData.features.title}</h1>
               </div>
               <div className="pb-4 " data-aos="zoom-in-up">
                 <p className="scroll_animate">
-                  <span>
-                  {homePageData.features.desc}
-                  </span>
+                  <span>{homePageData.features.desc}</span>
                 </p>
               </div>
               <div className="flex scroll_animate">
@@ -302,6 +296,8 @@ export default function Home() {
       <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate ">
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
+      {/* 
+
 
       <div className="footer ">
         <div className="flex scroll_animate">
@@ -391,9 +387,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* next section */}
+         //{/* next section /}
 
-        <div className="flex scroll_animate">
+<div className="flex scroll_animate">
           <div className="h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
@@ -486,7 +482,7 @@ export default function Home() {
       </div>
 
       <div className="flex scroll_animate w-full">
-        {/* Left Box */}
+        // {/* Left Box 
         <div className="h-full basis-1/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute right-0 w-[15px]">
@@ -498,7 +494,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Middle Box - Takes double the width */}
+        // {/* Middle Box - Takes double the width 
         <div className="h-full basis-2/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
@@ -533,7 +529,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Box */}
+        // {/* Right Box 
         <div className="h-full basis-1/4 flex-grow footer-box">
           <div className="w-full h-[500px] mx-auto relative">
             <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
@@ -550,6 +546,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+*/}
     </>
   );
 }
