@@ -7,25 +7,25 @@ export default function page() {
   return (
     <div>
       <div
-        className="min-h-screen bg-[length:100vw_450px]  bg-[position:0_80%]"
+        className="h-3/5 xl:min-h-screen bg-[length:100vw_250px] bg-[position:0_20%]  sm:bg-[length:100vw_310px]  sm:bg-[position:0_45%]   md:bg-[length:100vw_350px]  md:bg-[position:0_80%] xl:bg-[length:100vw_450px]  xl:bg-[position:0_80%]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundRepeat: "no-repeat", // Prevents tiling
-        }}
+        }}  
       >
         <div className="text-center justify-between w-2/3 mx-auto pt-32">
-          <h1 className="text-5xl mb-6">Transforming Healthcare through Innovation</h1>
-          <span className="text-2xl">
+          <h1 className="text-xl font-bold  mb-6">Transforming Healthcare through Innovation</h1>
+          <span className="text-sm md:text-2xl">
             At Schutzen Healthtech, we&apos;re driven by a singular mission, to revolutionize healthcare delivery
             through cutting-edge technology. We believe that innovation and compassion go hand-in-hand, and our goal is
             to empower hospitals to provide exceptional patient care.
           </span>
         </div>
       </div>
-      <div className="flex justify-center w-9/12 mx-auto">
+      <div className="flex justify-center w-9/12 mx-auto mt-14 sm:mt-36 md:mt-44">
         <div className="text-start w-3/5 my-auto">
-          <h1 className="text-5xl mb-5">Collaborating with Pioneering Solution Providers</h1>
-          <span className="text-2xl ">
+          <h1 className="font-bold text-xl md:text-2xl xl:text-5xl mb-5">Collaborating with Pioneering Solution Providers</h1>
+          <span className="text-sm md:text-xl  xl:text-2xl ">
             We collaborate with the world&apos;s most innovative medical technology companies to bring tailored
             solutions to hospitals. Our extensive network allows us to
           </span>
@@ -33,9 +33,9 @@ export default function page() {
         <div className="stripe_line_vertical w-[1px] min-h-72 mx-5"></div>
 
         <div className="text-[#3fc4ae] w-3/12 my-auto">
-          <h1 className="mb-8 text-xl">Identify and address specific pain points and challenges</h1>
-          <h1 className="mb-8 text-xl"> Introduce latest advancements in medical devices and software</h1>
-          <h1 className="mb-8 text-xl">Foster a culture of continuous improvement and innovation</h1>
+          <h1 className="mb-3 text-[10px] sm:text-[13px]  md:text-[18px]">Identify and address specific pain points and challenges</h1>
+          <h1 className="mb-3 text-[10px]  sm:text-[13px] md:text-[18px]"> Introduce latest advancements in medical devices and software</h1>
+          <h1 className="mb-3 text-[10px] sm:text-[13px] md:text-[18px] ">Foster a culture of continuous improvement and innovation</h1>
         </div>
       </div>
       <div
@@ -76,7 +76,7 @@ export default function page() {
           <div className="w-1/4 text-xl text-[#2ccdb5] flex my-5">
             <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
             <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
-          </div>
+          </div> 
         </div>
         <div
           className="stripe_full mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"

@@ -12,21 +12,9 @@
      cursor-pointer;
 }
 
-.footer-nav-list ul {
-  @apply flex
-  
-  
-      sm:space-x-0 
-      md:space-x-3
-      custom-md:space-x-5
-      lg:space-x-10 
-  
-      py-[5px]
-      px-2
-       justify-center border-2  text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-[28px];
-}
+
 
 .footer-bottom {
-  @apply flex items-center justify-between px-2 sm:pt-3 py-2 top-2 mt-8;
+  @apply flex items-center justify-between px-2 sm:pt-3 py-2 top-2 ;
 }
 

@@ -11,7 +11,7 @@ import footerBg from "@/app/assets/footer-bg.png";
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <div className="mt-48">
+    <div className="mt-28 md:mt-32">
       <div
         className="bg-cover bg-center "
         style={{
@@ -21,31 +21,38 @@ export const Footer = () => {
           width: "100%",
         }}
       >
-        <div className="footer-bottom">
-          {/* Logo on the left */}
-          <div className="nav-icon">
+              <div className="nav-icon flex w-screen  sm:hidden ">
             <Image
-              className="nav-logo hidden sm:block"
+              className="nav-logo mx-auto "  
               src={schutzenImg}
               alt="Schutzen Logo"
-              width={280}
+              width={160}
               height={80}
               priority
             />
+          </div>
+        <div
+          className="stripe_line mx-auto rounded-full my-5 scroll_animate overflow-x-hidden h-[2px] w-2/3 sm:hidden"
+          data-aos="fade-right"
+        ></div>
+        <div className="footer-bottom flex justify-between">
+          {/* Logo on the left */}
+          <div className="">
             <Image
-              className="nav-logo-sm block sm:hidden"
+              className=" hidden sm:block"
               src={schutzenImg}
               alt="Schutzen Logo"
-              width={150}
-              height={50}
+              width={160}
+              height={80}
               priority
             />
           </div>
 
           {/* Centered nav items */}
+
           <div className="footer-nav-list">
             <div className="">
-              <ul>
+              <ul className=" sm:flex sm:space-x-0 md:space-x-3 custom-md:space-x-5 lg:space-x-10 py-[5px] px-2 justify-center border-2  text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-[28px] text-center ">
                 <li>
                   <Link href="/">
                     {" "}
@@ -56,10 +63,16 @@ export const Footer = () => {
                   <span>Solutions</span>
                 </li>
                 <li>
-                 <Link href={'/about'}> <span>About</span> </Link>
+                  <Link href={"/about"}>
+                    {" "}
+                    <span>About</span>{" "}
+                  </Link>
                 </li>
                 <li>
-                < Link href={'/careers'}>  <span>Careers</span></Link>
+                  <Link href={"/careers"}>
+                    {" "}
+                    <span>Careers</span>
+                  </Link>
                 </li>
                 <li>
                   <Link href="/contact-us">
@@ -71,7 +84,7 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-36 ml-28">
+          <div className="">
             <ReqDemoBtn />
           </div>
         </div>
@@ -81,10 +94,10 @@ export const Footer = () => {
         ></div>
 
         <div className="flex justify-center gap-5 h-20">
-          <Image src={facebookImg} alt="Schutzen Logo" width={280} height={80} priority className="w-6 h-8" />
-          <Image src={twitter} alt="Schutzen Logo" width={280} height={80} priority className="w-6 h-7 pt-1" />
-          <Image src={youtube} alt="Schutzen Logo" width={280} height={80} priority className="w-6 h-9 pt-2" />
-          <Image src={insta} alt="Schutzen Logo" width={280} height={80} priority className="w-6 h-7 pt-2" />
+          <Image src={facebookImg} alt="Schutzen Logo" width={280} height={80} priority className="w-3 h-4 sm:w-6 sm:h-8" />
+          <Image src={twitter} alt="Schutzen Logo" width={280} height={80} priority className="w-3 h-4 pt-1 sm:w-6 sm:h-8" />
+          <Image src={youtube} alt="Schutzen Logo" width={280} height={80} priority className="w-3 h-5 pt-1 sm:w-6 sm:h-8 sm:pt-2" />
+          <Image src={insta} alt="Schutzen Logo" width={280} height={80} priority className="w-3 h-4 pt-1 sm:w-6 sm:h-8  sm:pt-2" />
         </div>
       </div>
     </div>
