@@ -304,20 +304,20 @@ export default function Home() {
       </div>
 
       <div className="footer ">
-        <div className="flex scroll_animate">
-          <div className="h-full flex-1 footer-box">
+        <div className="flex scroll_animate justify-center ml-20 md:ml-0">
+          <div className="hidden  md:block h-full flex-1 footer-box">
             <div className="w-full h-[500px] mx-auto relative">
               <div className="absolute right-0 w-[15px]">
                 <Image src={cornerImg} alt="Description" style={{ objectFit: "contain" }} />
               </div>
-              <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
+              <div className="absolute top-[14px] w-20 h-20 bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] md:pl-0">
                 <div className="bg-black w-full h-full"></div>
               </div>
             </div>
           </div>
 
           <div className="h-full flex-1 footer-box">
-            <div className="w-full h-[500px] mx-auto relative">
+            <div className="w-full h-[5   00px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0">
                 <div className="bg-black w-full h-full">
                   <div className="h-2/6 "></div>
@@ -375,7 +375,7 @@ export default function Home() {
           </div>
 
           <div className="h-full flex-1 footer-box">
-            <div className="w-full h-[500px] mx-auto relative">
+            <div className="hidden md:block w-full h-[500px] mx-auto relative">
               <div className="absolute top-[14px] w-full h-full bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-[1px] pl-0 pr-0">
                 <div className="absolute left-0 w-[15px]">
                   <Image
@@ -480,7 +480,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+<div className={'hidden'}>
+  
       <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
@@ -550,6 +551,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+
     </>
   );
 }
