@@ -16,7 +16,6 @@ interface FormData {
   resume?: File; // Required by validation schema
 }
 
-
 export default function CareersForm() {
   const {
     register,
@@ -44,10 +43,7 @@ export default function CareersForm() {
     // Handle form submission logic here (e.g., API call)
   };
 
-  const handleFileUpload = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    fieldName: keyof FormData
-  ) => {
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>, fieldName: keyof FormData) => {
     const file = e.target.files?.[0];
     if (file) {
       setValue(fieldName, file); // Set file into the form state
@@ -55,10 +51,10 @@ export default function CareersForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="m-20 mx-52">
+    <form onSubmit={handleSubmit(onSubmit)} className="m-5 mx-10 md:m-20 md:mx-52  xl:m-20 xl:mx-52">
       <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[50px] h-full">
         <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[50px] p-4 flex flex-col">
-          <div className="p-12">
+          <div className="p-0">
             <h1 className="text-3xl mb-8">Connect with us</h1>
 
             {/* Full Name Field */}
@@ -67,20 +63,14 @@ export default function CareersForm() {
               onClick={() => handleDivClick(fullNameRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">
-                  Full name*
-                </label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">Full name*</label>
                 <input
                   type="text"
                   {...register("fullName")}
                   ref={fullNameRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.fullName && (
-                  <span className="text-red-500 text-sm">
-                    {errors.fullName.message}
-                  </span>
-                )}
+                {errors.fullName && <span className="text-red-500 text-sm">{errors.fullName.message}</span>}
               </div>
             </div>
 
@@ -90,20 +80,14 @@ export default function CareersForm() {
               onClick={() => handleDivClick(mobileNumberRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">
-                  Mobile Number*
-                </label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">Mobile Number*</label>
                 <input
                   type="text"
                   {...register("mobileNumber")}
                   ref={mobileNumberRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.mobileNumber && (
-                  <span className="text-red-500 text-sm">
-                    {errors.mobileNumber.message}
-                  </span>
-                )}
+                {errors.mobileNumber && <span className="text-red-500 text-sm">{errors.mobileNumber.message}</span>}
               </div>
             </div>
 
@@ -113,20 +97,14 @@ export default function CareersForm() {
               onClick={() => handleDivClick(emailRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
-                <label className="text-gray-500 dark:text-gray-300 text-xl">
-                  Email ID*
-                </label>
+                <label className="text-gray-500 dark:text-gray-300 text-xl">Email ID*</label>
                 <input
                   type="email"
                   {...register("email")}
                   ref={emailRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
                 />
-                {errors.email && (
-                  <span className="text-red-500 text-sm">
-                    {errors.email.message}
-                  </span>
-                )}
+                {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
               </div>
             </div>
 
@@ -136,10 +114,7 @@ export default function CareersForm() {
               onClick={() => handleDivClick(coverLetterRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
-                <label
-                  htmlFor="coverLetter"
-                  className="text-gray-500 dark:text-gray-300 text-xl"
-                >
+                <label htmlFor="coverLetter" className="text-gray-500 dark:text-gray-300 text-xl">
                   Cover Letter*
                 </label>
                 <input
@@ -150,11 +125,7 @@ export default function CareersForm() {
                   onChange={(e) => handleFileUpload(e, "coverLetter")}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-                {errors.coverLetter && (
-                  <span className="text-red-500 text-sm">
-                    {errors.coverLetter.message}
-                  </span>
-                )}
+                {errors.coverLetter && <span className="text-red-500 text-sm">{errors.coverLetter.message}</span>}
               </div>
             </div>
 
@@ -164,10 +135,7 @@ export default function CareersForm() {
               onClick={() => handleDivClick(resumeRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
-                <label
-                  htmlFor="resume"
-                  className="text-gray-500 dark:text-gray-300 text-xl"
-                >
+                <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">
                   Resume*
                 </label>
                 <input
@@ -178,24 +146,14 @@ export default function CareersForm() {
                   onChange={(e) => handleFileUpload(e, "resume")}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-                {errors.resume && (
-                  <span className="text-red-500 text-sm">
-                    {errors.resume.message}
-                  </span>
-                )}
+                {errors.resume && <span className="text-red-500 text-sm">{errors.resume.message}</span>}
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full"
-            >
+            <button type="submit" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full">
               Apply
             </button>
-            <button
-              type="button"
-              className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full"
-            >
+            <button type="button" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full">
               Book Demo
             </button>
           </div>
