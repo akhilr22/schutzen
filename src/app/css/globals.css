@@ -134,3 +134,8 @@ section {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#14e734", GradientType=1 );
 }
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling caused by the effect */
+}

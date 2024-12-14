@@ -25,6 +25,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat", // Prevents tiling
         }}
       >
+        
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
           <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run

@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className="dark ">
       <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
+        
         <div className=" sm:mx-12 overflow-x-hidden">
           <Navbar />
         </div>
