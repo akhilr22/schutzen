@@ -34,7 +34,7 @@ const SlideBar:React.FC<MenuBtnProps> = ({isOpen})=>{
                   Home
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2"  onClick={()=> redirect('/solutions')}>
                 <a href="#" className="block hover:text-indigo-400">
                 Solutions
                 </a>

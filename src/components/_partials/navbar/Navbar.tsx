@@ -66,7 +66,7 @@ export default function Navbar() {
 
         {/* Menu button */}
       </div>
-      <div className="mob-nav">
+      <div className="mob-nav z-20 ">
         <SlideBar isOpen={isOpen} setOpen={setOpen} />
       </div>
     </>
