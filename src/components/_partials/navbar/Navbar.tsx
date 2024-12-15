@@ -41,7 +41,7 @@ export default function Navbar() {
               <li  onClick={()=> redirect('/')}>
                 <span>Home</span>
               </li>
-              <li>
+              <li onClick={()=> redirect('/solutions')}>
                 <span>Solutions</span>
               </li>
               <li onClick={()=> redirect('/about')}>
