@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-before-interactive-script-outside-document */
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -9,8 +8,8 @@ const VantaBackground = () => {
 
   useEffect(() => {
     const setVantaEffect = () => {
-      if (window?.VANTA && vantaRef.current) {
-        window?.VANTA.NET?.({
+      if (window.VANTA && vantaRef.current) {
+        window.VANTA.BIRDS?.({
           el: vantaRef.current,
           mouseControls: true,
           touchControls: true,
@@ -19,9 +18,9 @@ const VantaBackground = () => {
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          color: 0x6fff3f,
           backgroundColor: 0x0,
-          showDots: false
+          color1: 0x43e842,
+          color2: 0x11d6c8
         });
       }
     };
@@ -47,10 +46,10 @@ const VantaBackground = () => {
         src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"
         strategy="beforeInteractive"
       />
-      <Script
+      {/* <Script
         src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
           strategy="beforeInteractive"
-      />
+      /> */}
       
       <div
         ref={vantaRef}
