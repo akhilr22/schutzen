@@ -3,29 +3,20 @@ import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 
-import homeBg from "@/app/assets/home-bg.png";
+// import homeBg from "@/app/assets/home-bg.png";
 import homeContent1 from "@/app/assets/hompage-content1.png";
 import homeContent2 from "@/app/assets/hompage-content2.png";
-
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
   return (
     <>
-      <div
-        className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden"
-        style={{
-          backgroundImage: `url(${homeBg.src})`,
-          backgroundSize: "cover", // Ensures the image covers the entire area
-          backgroundPosition: "center", // Centers the image
-          backgroundRepeat: "no-repeat", // Prevents tiling
-        }}
-      >
-        
+      
+      <div className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden">
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
-          <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
+          {/* <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
-          </div>
+          </div> */}
 
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
@@ -118,7 +109,7 @@ export default function Home() {
               backgroundRepeat: "no-repeat", // Prevents tiling
             }}
           >
-            <div className=" md:w-1/2 h-auto  p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
+            <div className=" md:w-1/2 h-auto p-6 sm:p-0 dark:text-white pt-5 md:pt-14 xl:pt-24 ">
               <div className="" data-aos="zoom-in-up">
                 <h1 className="text-5xl font-bold pb-4">{homePageData.features.title}</h1>
               </div>
@@ -293,7 +284,6 @@ export default function Home() {
       <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate ">
         <span>Patient Monitoring for Hospitals and Beyond</span>
       </div>
-      
     </>
   );
 }
