@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <>
       <div
-        className="h-screen"
+        className=" h-3/5 xl:min-h-screen bg-[length:100vw_250px] bg-[position:0_70%]  sm:bg-[length:100vw_310px]  sm:bg-[position:0_45%]   md:bg-[length:100vw_350px]  md:bg-[position:0_80%] xl:bg-[length:100vw_450px]  xl:bg-[position:0_80%] "
         style={{
           backgroundImage: `url(${contactBg.src})`,
           backgroundSize: "cover", // Ensures the image covers the entire area
@@ -18,9 +18,9 @@ const Page = () => {
           width: "100%",
         }}
       >
-        <div className="flex-1 text-center mx-auto justify-center mt-32 pb-4">
-          <h2 className="text-5xl p-4">Get in Touch with Us</h2>
-          <div className=" w-1/2 text-center mx-auto justify- text-xl">
+        <div className="flex-1 text-center mx-auto justify-center sm:mt-20 xl:mt-32 xl:pb-4">
+          <h2 className="sm:text-5xl text-xl font-bold sm:font-normal p-4">Get in Touch with Us</h2>
+          <div className=" mx-8 md:w-1/2 text-center md:mx-auto justify-center sm:text-xl text-[13px]">
             <p>
               <span>
                 we&apos;re here to help you with any questions or inquiries you have about our solutions. Whether you
@@ -31,62 +31,65 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-24">
+        <div className="flex justify-center mt-10 mx-5 xl:mt-24">
           <div
-            className="w-20 h-20 sm:w-1/3 sm:h-96 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[80px] scroll_animate "
+            className=" sm:w-4/5 md:w-3/5 xl:w-1/3 sm:h-96 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[80px] scroll_animate "
             data-aos="zoom-in"
           >
-            <div className="w-full h-full bg-black rounded-[80px] px-12 py-16">
-              <Image src={calenderIcon} alt="calender" className="w-7 h-7 " />
-              <h1 className="text-4xl py-2">Schedule a demo</h1>
+            <div className="w-full h-full bg-black rounded-[80px] px-7 py-7 md:px-12 md:py-16">
+            <div className="mx-3"> 
+                <Image src={calenderIcon} alt="calender" className="w-7 h-7" />
+              <h1 className="text-xl font-bold md:font-normal sm:text-2xl md:text-4xl py-2">Schedule a demo</h1>
               <p>
-                <span className="text-xl">
+                <span className=" text-sm md:text-xl">
                   Talk to an expert on your needs.Discuss your needs, learn about the solutions or request a product
                   demo
                 </span>
               </p>
-              <div className="my-8">
-                <ReqDemoBtn />
+             </div>
+              <div className="xl:my-8 my-3">
+                <ReqDemoBtn show={true} />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-between my-14 mx-40  items-center  ">
-        <div className="  w-1/2 h-full   px-8 text-start">
-          <h1 className="text-5xl">
+      <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
+        <div className="  w-2/3 md:w-1/2 h-full  mx-auto my-5 xl:px-8 text-start">
+          <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center md:text-start">
             Feel free to reach out to us using any of these methods. Our team is always available to offer personalized
             support and guidance.
           </h1>
         </div>
-        <div className="stripe_line_vertical w-[1px] min-h-96"></div>
-        <div className="w-1/2 h-36 px-8 flex flex-col items-center justify-center gap-4">
+        <div className="stripe_line_vertical hidden md:block w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
+        <div className="stripe_line md:hidden w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
+        <div className="xl:w-1/2  h-36 px-1  xl:px-8 flex flex-col items-center justify-center gap-4">
           {/* Email */}
           <div
-            className="w-20 h-20 sm:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
+            className=" w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
             data-aos="fade-right"
           >
-            <div className="w-full h-full bg-black rounded-full flex items-center justify-center text-center">
-              <Image src={email} alt="email" className="w-6 h-6 mr-2" />
-              <span className="text-3xl text-white">hasan@schutzenhealth.com</span>
+            <div className="w-full h-full bg-black rounded-full flex items-center justify-center text-center overflow-hidden">
+              <Image src={email} alt="email" className="md:w-4 md:h-4 xl:w-6 xl:h-6 w-4 h-4 mr-2" />
+              <span className="text-xl md:text-[18px] xl:text-3xl text-white">hasan@schutzenhealth.com</span>
             </div>
           </div>
 
           {/* Phone */}
           <div
-            className="w-20 h-20 sm:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
+            className=" w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
             data-aos="fade-right"
           >
             <div className="w-full h-full bg-black rounded-full flex items-center justify-center text-center">
-              <Image src={phone} alt="phone" className="w-6 h-6 mr-2" />
-              <span className="text-3xl text-white">+91 9025250901</span>
+              <Image src={phone} alt="phone" className="md:w-4 md:h-4 xl:w-6 xl:h-6 w-4 h-4 mr-2" />
+              <span className="text-xl md:text-[18px] xl:text-3xl text-white">+91 9025250901</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex mx-auto justify-center w-5/12 ">
+      <div className="flex mx-auto justify-center w-4/5 md:w-5/12 ">
         <span className="text-center text-xl">
           We look forward to connecting with you and supporting your journey toward improved patient care. Thank you for
           considering us as your partner in patient monitoring.

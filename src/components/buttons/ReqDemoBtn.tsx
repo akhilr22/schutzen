@@ -1,7 +1,11 @@
 import "./button.css";
-export default function ReqDemoBtn() {
+interface ReqDemoBtnProps {
+  show?: boolean; // Optional prop, defaults to true
+}
+
+export default function ReqDemoBtn({show=false}:ReqDemoBtnProps) {
   return (
-    <div className="hidden sm:block md:mr-3 mx-2">
+    <div className={`${show ? 'block' : 'hidden'}  sm:block md:mr-3 mx-2`}>
       <button className="uiverse relative rounded-full overflow-hidden bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] ">
         <div className="wrapper relative  mx-auto flex justify-center items-center">
           <a>
