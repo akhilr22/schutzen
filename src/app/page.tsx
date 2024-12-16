@@ -1,13 +1,13 @@
 import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
 import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
-import Image from "next/image";
+// import Image from "next/image";
 
 import homeBg from "@/app/assets/home-bg.png";
 
 
 
-import webImg from "@/app/assets/SchutzenWebsite-000.png";
+// import webImg from "@/app/assets/SchutzenWebsite-000.png";
 export default function Home() {
   return (
     <>

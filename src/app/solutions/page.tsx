@@ -5,7 +5,7 @@ import { homePageData } from "./../data/Data";
  import cornerImg from "@/app/assets/box-icon-preview.png";
  import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
  import homeContent1 from "@/app/assets/hompage-content1.png";
-import homeContent2 from "@/app/assets/hompage-content2.png";
+// import homeContent2 from "@/app/asse/ts/hompage-content2.png";
 
 export default function page() {
   return (
