@@ -153,9 +153,9 @@ export default function CareersForm() {
             <button type="submit" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full">
               Apply
             </button>
-            <button type="button" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full">
+            {/* <button type="button" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 rounded-full">
               Book Demo
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

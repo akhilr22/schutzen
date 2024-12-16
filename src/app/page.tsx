@@ -4,8 +4,7 @@ import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import Image from "next/image";
 
 import homeBg from "@/app/assets/home-bg.png";
-import homeContent1 from "@/app/assets/hompage-content1.png";
-import homeContent2 from "@/app/assets/hompage-content2.png";
+
 
 
 import webImg from "@/app/assets/SchutzenWebsite-000.png";
@@ -107,7 +106,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up">
+      {/* <div className="flex justify-end sm:mx-12 xl:mx-0 overflow-x-hidden" data-aos="zoom-in-up">
         <div className="flex w-full xl:w-5/6 ">
           <div
             className="load-more-banner w-full  rounded-3xl m-2 xl:mr-12 flex mt-11 mr-0 "
@@ -179,14 +178,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
-      ></div>
+      ></div> */}
 
-      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+      {/* <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Wireless Vital Signs Monitoring
         </h1>
@@ -253,9 +252,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className=" h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden "
         style={{
           backgroundImage: `url(${homeContent2.src})`,
@@ -288,11 +287,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate ">
-        <span>Patient Monitoring for Hospitals and Beyond</span>
-      </div>
+    
       
     </>
   );
