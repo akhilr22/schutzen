@@ -72,7 +72,7 @@ export default function page() {
       >
         <div className="flex justify-around text-start mt-10">
           {" "}
-          <div className="md:w-1/4 text-sm md:text-xl text-[#2ccdb5] flex">
+          <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex">
             <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
             <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
           </div>
@@ -84,7 +84,7 @@ export default function page() {
         ></div>{" "}
         <div className="flex justify-center text-start ">
           {" "}
-          <div className="md:w-2/6 text-sm md:text-xl text-[#2ccdb5] flex my-5">
+          <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
             <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
             <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
           </div>
@@ -96,7 +96,7 @@ export default function page() {
         <div className="flex justify-around text-start ">
           {" "}
           <div></div>
-          <div className="md:w-1/4 text-sm md:text-xl text-[#2ccdb5] flex my-5">
+          <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
             <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
             <span>Seamless integration with existing systems for effortless adoption</span>{" "}
           </div>

@@ -88,7 +88,7 @@ export default function page() {
         data-aos="fade-right"
       ></div> 
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
-        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-[36px] py-2" data-aos="zoom-in-up">
           Wireless Vital Signs Monitoring
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
@@ -102,25 +102,25 @@ export default function page() {
           <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto ">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
@@ -128,25 +128,25 @@ export default function page() {
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-32 sm:h-32 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg"></div>
