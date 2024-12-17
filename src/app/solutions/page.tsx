@@ -404,7 +404,7 @@ export default function page() {
       {/* <div
         className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
-      ></div>  */}
+      ></div> 
       {/* <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Wireless Vital Signs Monitoring
