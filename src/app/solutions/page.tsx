@@ -1,17 +1,20 @@
-import Image from 'next/image'
-import React from 'react'
-import { homePageData } from "./../data/Data";
+// import Image from 'next/image'
+import React from "react";
+// import { homePageData } from "./../data/Data";
 
- import cornerImg from "@/app/assets/box-icon-preview.png";
- import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
- import homeContent1 from "@/app/assets/hompage-content1.png";
+//  import cornerImg from "@/app/assets/box-icon-preview.png";
+//  import footerImg from "@/app/assets/Schutzen Website.pdf-image-002.jpg";
+import homeContent1 from "@/app/assets/hompage-content1.png";
+import Image from "next/image";
 // import homeContent2 from "@/app/asse/ts/hompage-content2.png";
-
+// import bg from "@/app/assets/aboutUs_bg.png";
+// import bg2 from "@/app/assets/aboutBg-2.png";
+import boxIcon from "@/app/assets/box-cornner.png";
 export default function page() {
   return (
-     <div className='{my-40}'>
-       <div className="text-center justify-center scroll_animate overflow-x-hidden">
-        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
+    <div className="{my-40}">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+        <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Patient monitoring solutions
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
@@ -21,12 +24,10 @@ export default function page() {
             make a type specimen book. It has survived not only five centuries,
           </span>
         </div>
-        <div>
-          
-        </div>
-      </div> 
+        <div></div>
+      </div>
 
-        {/* <div className="footer ">
+      {/* <div className="footer ">
           <div className="flex scroll_animate">
             <div className="h-full flex-1 footer-box">
               <div className="w-full h-[500px] mx-auto relative">
@@ -279,7 +280,7 @@ export default function page() {
       <div
         className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
-      ></div> 
+      ></div>
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Features
@@ -347,47 +348,55 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div
         className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
-      ></div> 
+      ></div>
 
-<div className="text-center justify-center scroll_animate overflow-x-hidden">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <ul>
-            <li>
-              test
-            </li>
-            <li>
-              test
-            </li>
-            <li>
-              test
-            </li>
-            <li>
-              test
-            </li>
-          </ul>
+            <div className="flex justify-around text-start mt-10">
+              {" "}
+              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
+                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+              </div>
           
+            </div>
+    
+            <div className="flex justify-center text-start ">
+              {" "}
+              <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+              </div>
+            </div>
+         
+            <div className="flex justify-around text-start ">
+              {" "}
+           
+              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                <span>Seamless integration with existing systems for effortless adoption</span>{" "}
+              </div>
+            </div>
+          
+          </ul>
         </div>
-        <div>
-        
-        </div>
-      </div> 
+   
+      </div>
 
-      
-
-  
-        {/* <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
+      {/* <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
           <span>Patient Monitoring for Hospitals and Beyond</span>
         </div> */}
-  
-        {/* <div className="flex scroll_animate w-full">
+
+      {/* <div className="flex scroll_animate w-full">
        
           <div className="h-full basis-1/4 flex-grow footer-box">
             <div className="w-full h-[500px] mx-auto relative">
@@ -453,12 +462,10 @@ export default function page() {
           </div>
         </div> */}
 
-           {/* <div
+      {/* <div
         className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
       ></div> */}
-  
-
 
       {/* <div
         className=" h-auto pt-20 sm:px-15 md:px-25 mx-2 sm:mx-6 md:mx-12 rounded-2xl scroll_animate overflow-x-hidden "
@@ -494,8 +501,6 @@ export default function page() {
           </div>
         </div>
       </div> */}
-
-
-  </div>
-  )
+    </div>
+  );
 }

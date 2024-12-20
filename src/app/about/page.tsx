@@ -104,7 +104,8 @@ export default function page() {
         <div
           className="stripe_full mx-auto rounded-full scroll_animate overflow-x-hidden h-[1px] w-full mt-4"
           data-aos="fade-right"
-        ></div>
+        >
+        </div>
         <div className="mt-16 md:mt-28 flex justify-center items-center">
           <div
             className=" w-5/6 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
