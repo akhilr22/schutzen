@@ -310,7 +310,7 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={heartRate} alt="heartRateIco"/>
+                <Image src={heartRate} alt="heartRateIco" className="h-4/5"/>
                 <span>Heart Rate</span>
 
                 </div>
@@ -320,7 +320,7 @@ export default function page() {
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate"/>
+                <Image src={respiratoryRate} alt="respiratoryRate" className="h-4/5"/>
                 <span>Respiratory Rate</span>
 
                 </div>
@@ -330,7 +330,7 @@ export default function page() {
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature"/>
+                <Image src={bodyTemperature} alt="bodyTemperature" className="h-4/5"/>
                 <span>Body Temperature </span>
 
                 </div>
@@ -340,7 +340,7 @@ export default function page() {
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture"/>
+                <Image src={bodyPosture} alt="bodyPosture" className="h-4/5"/>
                 <span>Body Posture </span>
 
                 </div>
@@ -352,7 +352,7 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco"/>
+                <Image src={fallDetection} alt="heartRateIco" className="h-4/5"/>
                 <span>Fall Detection </span>
 
                 </div>
@@ -362,7 +362,7 @@ export default function page() {
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco"/>
+                <Image src={activity} alt="heartRateIco" className="h-4/5"/>
                 <span>Activity</span>
 
                 </div>
@@ -372,7 +372,7 @@ export default function page() {
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco"/>
+                <Image src={bloodPressure} alt="heartRateIco" className="h-4/5"/>
                 <span>Blood Pressure</span>
 
                 </div>
@@ -382,7 +382,7 @@ export default function page() {
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={oxygenSaturation} alt="heartRateIco"/>
+                <Image src={oxygenSaturation} alt="heartRateIco" className="h-4/5"/>
                 <span>Oxygen Saturation</span>
 
                 </div>
