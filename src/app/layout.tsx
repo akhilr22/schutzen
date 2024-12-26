@@ -6,7 +6,7 @@ import { Footer } from "@/components/_partials/footer/Footer";
 import Navbar from "@/components/_partials/navbar/Navbar";
 
 export const metadata: Metadata = {
-  title: "Schutzen Website",
+  title: "Schutzen Health",
   description: "Schutzen Website",
 };
 
