@@ -397,7 +397,7 @@ export default function page() {
         data-aos="fade-right"
       ></div>
 
-      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>

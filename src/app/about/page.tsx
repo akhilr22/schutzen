@@ -1,8 +1,8 @@
 import React from "react";
 import bg from "@/app/assets/aboutUs_bg.png";
 import bg2 from "@/app/assets/aboutBg-2.png";
-import boxIcon from "@/app/assets/box-cornner.png";
-import Image from "next/image";
+// import boxIcon from "@/app/assets/box-cornner.png";
+// import Image from "next/image";
 export default function page() {
   return (
     <div>
@@ -73,8 +73,8 @@ export default function page() {
         <div className="flex justify-around text-start mt-10">
           {" "}
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex">
-            <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-            <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 max-h-4  rounded-full mr-3 "></div>
+          <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
           </div>
           <div></div>
         </div>
@@ -85,8 +85,8 @@ export default function page() {
         <div className="flex justify-center text-start ">
           {" "}
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-            <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-            <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-6 max-h-4 rounded-full mr-3 "></div>
+          <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
           </div>
         </div>
         <div
@@ -97,8 +97,8 @@ export default function page() {
           {" "}
           <div></div>
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-            <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-            <span>Seamless integration with existing systems for effortless adoption</span>{" "}
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 max-h-4 rounded-full mr-3 "></div>
+          <span>Seamless integration with existing systems for effortless adoption</span>{" "}
           </div>
         </div>
         <div
@@ -124,15 +124,15 @@ export default function page() {
               <div className="mt-6 w-full flex justify-center">
                 <div className="ml-6 text-[#2ccdb5] text-[12px] md:text-2xl">
                   <div className="flex items-center">
-                    <Image src={boxIcon} alt="boxImg" className="w-6 h-6 mr-3" />
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Enhance patient experiences and satisfaction</p>
                   </div>
                   <div className="flex items-center mt-2">
-                    <Image src={boxIcon} alt="boxImg" className="w-6 h-6 mr-3" />
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Improve operational efficiency and reduce costs</p>
                   </div>
                   <div className="flex items-center mt-2">
-                    <Image src={boxIcon} alt="boxImg" className="w-6 h-6 mr-3" />
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
                   </div>
                 </div>
