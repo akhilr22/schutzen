@@ -4,7 +4,7 @@ import Image from "next/image";
 import schutzenImg from "@/app/assets/schutzen-img.png";
 // import schutzenLogo from "@/app/assets/schutzen-logo.png";
 import MenuBtn from "@/components/buttons/MenuBtn";
-import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import SlideBar from "@/components/ui/slidemenu/SlideBar";
 import { useState } from "react";
 import { redirect } from 'next/navigation'
@@ -60,7 +60,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <ReqDemoBtn />
+        {/* <ReqDemoBtn /> */}
         {/* Sidebar component for mobile */}
         <MenuBtn isOpen={isOpen} setOpen={setOpen} />
 

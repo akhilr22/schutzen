@@ -1,6 +1,6 @@
 import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
-import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 // import Image from "next/image";
 import Image from "next/image";
 
@@ -40,9 +40,9 @@ export default function Home() {
               <p>{homePageData.banner.home_p_text1}</p>
             </span>
           </div>
-          <div className="justify-center flex mx-auto">
+          {/* <div className="justify-center flex mx-auto">
             <ReqDemoBtn />
-          </div>
+          </div> */}
         </div>
       </div>
 

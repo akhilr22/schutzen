@@ -4,7 +4,7 @@ import calenderIcon from "@/app/assets/calendar.png";
 import email from "@/app/assets/email-icon.png";
 import phone from "@/app/assets/telephone.png";
 import Image from "next/image";
-import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 const Page = () => {
   return (
     <>
@@ -47,9 +47,9 @@ const Page = () => {
                 </span>
               </p>
              </div>
-              <div className="xl:my-8 my-3">
+              {/* <div className="xl:my-8 my-3">
                 <ReqDemoBtn show={true} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Page = () => {
           >
             <div className="w-full h-full bg-black rounded-full flex items-center justify-center text-center overflow-hidden">
               <Image src={email} alt="email" className="md:w-4 md:h-4 xl:w-6 xl:h-6 w-4 h-4 mr-2" />
-              <span className="text-xl md:text-[18px] xl:text-3xl text-white">hasan@schutzenhealth.com</span>
+              <span className="text-xl md:text-[18px] xl:text-3xl text-white">info@schutzenhealth.com</span>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import schutzenImg from "@/app/assets/schutzen-img.png";
-import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 import "@/components/_partials/footer/footer.css";
 import facebookImg from "@/app/assets/facebook.png";
 import twitter from "@/app/assets/twitter.png";
@@ -84,9 +84,9 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="">
+          {/* <div className="">
             <ReqDemoBtn />
-          </div>
+          </div> */}
         </div>
         <div
           className="stripe_line mx-auto rounded-full my-5 scroll_animate overflow-x-hidden h-[2px] w-2/3"

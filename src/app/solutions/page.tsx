@@ -10,6 +10,19 @@ import Image from "next/image";
 // import bg from "@/app/assets/aboutUs_bg.png";
 // import bg2 from "@/app/assets/aboutBg-2.png";
 import boxIcon from "@/app/assets/box-cornner.png";
+import heartRate from "@/app/assets/heartRate.png";
+import respiratoryRate from "@/app/assets/respiratoryRate.png";
+import bodyTemperature from "@/app/assets/bodyTemperature.png";
+import bodyPosture from "@/app/assets/bodyPosture.png";
+import fallDetection from "@/app/assets/fallDetection.png";
+import activity from "@/app/assets/activity.png";
+import bloodPressure from "@/app/assets/bloodPressure.png";
+import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
+
+
+
+
+
 export default function page() {
   return (
     <div className="{my-40}">
@@ -19,9 +32,7 @@ export default function page() {
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
+          This solution is an advanced remote monitoring system that provides continuous and efficient visibility into a patient&#39;s health.
           </span>
         </div>
         <div></div>
@@ -287,9 +298,8 @@ export default function page() {
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
+          The following solution monitors different vital signs concurrently, as well as other features with the
+          support of third-party devices
           </span>
         </div>
         <div>
@@ -299,25 +309,41 @@ export default function page() {
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
                 data-aos="fade-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={heartRate} alt="heartRateIco"/>
+                <span>Heart Rate</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={respiratoryRate} alt="respiratoryRate"/>
+                <span>Respiratory Rate</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bodyTemperature} alt="bodyTemperature"/>
+                <span>Body Temperature </span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bodyPosture} alt="bodyPosture"/>
+                <span>Body Posture </span>
+
+                </div>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
@@ -325,25 +351,41 @@ export default function page() {
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={fallDetection} alt="heartRateIco"/>
+                <span>Fall Detection </span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={activity} alt="heartRateIco"/>
+                <span>Activity</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bloodPressure} alt="heartRateIco"/>
+                <span>Blood Pressure</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={oxygenSaturation} alt="heartRateIco"/>
+                <span>Oxygen Saturation</span>
+
+                </div>
               </div>
             </div>
           </div>
