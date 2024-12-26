@@ -46,25 +46,7 @@ const Page = () => {
                   demo
                 </span>
               </p>
-             </div>
-              {/* <div className="xl:my-8 my-3">
-                <ReqDemoBtn show={true} />
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
-        <div className="  w-2/3 md:w-1/2 h-full  mx-auto my-5 xl:px-8 text-start">
-          <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center md:text-start">
-            Feel free to reach out to us using any of these methods. Our team is always available to offer personalized
-            support and guidance.
-          </h1>
-        </div>
-        <div className="stripe_line_vertical hidden md:block w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
-        <div className="stripe_line md:hidden w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
-        <div className="xl:w-1/2  h-36 px-1  xl:px-8 flex flex-col items-center justify-center gap-4">
+              {/* <div className="xl:w-1/2  h-36 px-1  xl:px-8 flex flex-col items-center justify-center gap-4"> */}
           {/* Email */}
           <div
             className=" w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
@@ -86,7 +68,26 @@ const Page = () => {
               <span className="text-xl md:text-[18px] xl:text-3xl text-white">+91 9025250901</span>
             </div>
           </div>
+        {/* </div> */}
+             </div>
+              {/* <div className="xl:my-8 my-3">
+                <ReqDemoBtn show={true} />
+              </div> */}
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
+        {/* <div className="  w-2/3 md:w-1/2 h-full  mx-auto my-5 xl:px-8 text-start">
+          <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center md:text-start">
+            Feel free to reach out to us using any of these methods. Our team is always available to offer personalized
+            support and guidance.
+          </h1>
+        </div> */}
+        {/* <div className="stripe_line_vertical hidden md:block w-full h-[1px] md:w-[1px]  md:min-h-96"></div> */}
+        {/* <div className="stripe_line md:hidden w-full h-[1px] md:w-[1px]  md:min-h-96"></div> */}
+   
       </div>
 
       <div className="flex mx-auto justify-center w-4/5 md:w-5/12 ">

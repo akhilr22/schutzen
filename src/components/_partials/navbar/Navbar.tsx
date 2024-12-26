@@ -42,7 +42,17 @@ export default function Navbar() {
                 <span>Home</span>
               </li>
               <li onClick={()=> redirect('/solutions')}>
-                <span>Solutions</span>
+                <div>
+                  <span>Solutions</span>
+                  <div>
+                      <ul className="flex flex-col">
+                    <li>abc</li>
+                    <li>abc</li>
+                  </ul>
+                  </div>
+                
+                </div>
+                
               </li>
               <li onClick={()=> redirect('/about')}>
                 <span>About</span>

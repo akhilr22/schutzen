@@ -8,8 +8,8 @@ import homeContent1 from "@/app/assets/hompage-content1.png";
 import Image from "next/image";
 // import homeContent2 from "@/app/asse/ts/hompage-content2.png";
 // import bg from "@/app/assets/aboutUs_bg.png";
-// import bg2 from "@/app/assets/aboutBg-2.png";
-import boxIcon from "@/app/assets/box-cornner.png";
+//  import bg2 from "@/app/assets/aboutBg-2.png";
+// import boxIcon from "@/app/assets/box-cornner.png";
 import heartRate from "@/app/assets/heartRate.png";
 import respiratoryRate from "@/app/assets/respiratoryRate.png";
 import bodyTemperature from "@/app/assets/bodyTemperature.png";
@@ -25,7 +25,7 @@ import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 export default function page() {
   return (
-    <div className="{my-40}">
+    <div className="my-40">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Patient monitoring solutions
@@ -402,33 +402,35 @@ export default function page() {
           Usability
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
-          <ul>
-            <div className="flex justify-around text-start mt-10">
+        <ul className=" items-start m-0">
+            <li>
               {" "}
-              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+              <div className="">
+                {" "}
+                <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
+                  {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                   */}
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+                </div>
               </div>
-          
-            </div>
-    
-            <div className="flex justify-center text-start ">
-              {" "}
-              <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+            </li>
+            <li>
+                {" "}
+                <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+                </div>
+            </li>
+            <li>
+              <div className=" ">
+                {" "}
+                <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <span>Seamless integration with existing systems for effortless adoption</span>{" "}
+                </div>
               </div>
-            </div>
-         
-            <div className="flex justify-around text-start ">
-              {" "}
-           
-              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Seamless integration with existing systems for effortless adoption</span>{" "}
-              </div>
-            </div>
-          
+            </li>
           </ul>
         </div>
    
