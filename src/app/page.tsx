@@ -17,20 +17,20 @@ import global_accredition from "@/app/assets/global_accredition.png";
 export default function Home() {
   return (
     <>
-      <div
-        className="dashboard rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden"
+     <div
+        className=" rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden h-3/5 xl:min-h-screen "
         style={{
           backgroundImage: `url(${homeBg.src})`,
           backgroundSize: "cover", // Ensures the image covers the entire area
-          backgroundPosition: "center", // Centers the image
+          backgroundPosition: 'center 13%', // Adjusts the vertical position
           backgroundRepeat: "no-repeat", // Prevents tiling
         }}
-      >
+      > 
         
         <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
-          <div className="bg-[#000000] min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
+          {/* <div className="min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
-          </div>
+          </div> */}
 
           <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center min-h-fit sm:mt-14 overflow-x-hidden">
+      <div className="flex justify-center min-h-fit sm:mt-14 overflow-x-hidden overflow-y-hidden">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex h-full">
             <div className="sm:w-1/2 w-full flex flex-col h-full">

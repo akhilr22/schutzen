@@ -50,7 +50,7 @@ const Page = () => {
               {/* <div className="xl:my-8 my-3">
                 <ReqDemoBtn show={true} />
               </div> */}
-              <div className=" flex flex-col gap-3 ">
+              <div className=" flex  flex-col gap-3 mx-auto justify-center items-center">
                 <div
                   className=" mt-5 w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
                   data-aos="fade-right"

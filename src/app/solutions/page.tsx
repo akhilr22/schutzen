@@ -310,8 +310,8 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={heartRate} alt="heartRateIco" className="h-4/5"/>
-                <span>Heart Rate</span>
+                <Image src={heartRate} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Heart Rate</span>
 
                 </div>
               </div>
@@ -320,8 +320,8 @@ export default function page() {
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate" className="h-4/5"/>
-                <span>Respiratory Rate</span>
+                <Image src={respiratoryRate} alt="respiratoryRate" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Respiratory Rate</span>
 
                 </div>
               </div>
@@ -330,8 +330,8 @@ export default function page() {
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature" className="h-4/5"/>
-                <span>Body Temperature </span>
+                <Image src={bodyTemperature} alt="bodyTemperature" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Body Temperature </span>
 
                 </div>
               </div>
@@ -340,8 +340,8 @@ export default function page() {
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture" className="h-4/5"/>
-                <span>Body Posture </span>
+                <Image src={bodyPosture} alt="bodyPosture" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Body Posture </span>
 
                 </div>
               </div>
@@ -352,8 +352,8 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco" className="h-4/5"/>
-                <span>Fall Detection </span>
+                <Image src={fallDetection} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Fall Detection </span>
 
                 </div>
               </div>
@@ -362,8 +362,8 @@ export default function page() {
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco" className="h-4/5"/>
-                <span>Activity</span>
+                <Image src={activity} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
 
                 </div>
               </div>
@@ -372,8 +372,8 @@ export default function page() {
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco" className="h-4/5"/>
-                <span>Blood Pressure</span>
+                <Image src={bloodPressure} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Blood Pressure</span>
 
                 </div>
               </div>
@@ -382,8 +382,8 @@ export default function page() {
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={oxygenSaturation} alt="heartRateIco" className="h-4/5"/>
-                <span>Oxygen Saturation</span>
+                <Image src={oxygenSaturation} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
 
                 </div>
               </div>
@@ -410,7 +410,7 @@ export default function page() {
                 <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
                   {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
                    */}
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3"></div>
                   <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
                 </div>
               </div>
@@ -418,7 +418,7 @@ export default function page() {
             <li>
                 {" "}
                 <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3 "></div>
                   <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
                 </div>
             </li>
@@ -426,7 +426,7 @@ export default function page() {
               <div className=" ">
                 {" "}
                 <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3"></div>
                   <span>Seamless integration with existing systems for effortless adoption</span>{" "}
                 </div>
               </div>
