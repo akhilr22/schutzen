@@ -1,13 +1,12 @@
 import "./button.css";
-interface ReqDemoBtnProps {
-  show?: boolean; // Optional prop, defaults to true
-}
 
-export default function ReqDemoBtn({show=false}:ReqDemoBtnProps) {
+
+export default function ReqDemoBtn() {
   return (
-    <div className={`${show ? 'block' : 'hidden'}  sm:block md:mr-3 mx-2`}>
-      <button className="uiverse relative rounded-full overflow-hidden bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] ">
-        <div className="wrapper relative  mx-auto flex justify-center items-center">
+    <div className='nav-icon'>
+       <div className="min-w-32"></div>
+      {/* <button className="uiverse relative rounded-full overflow-hidden bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6]  ">
+        <div className="wrapper relative  mx-auto  justify-center items-center">
           <a>
             
             <span className="hidden custom-md:inline "> Request </span> <span> Demo</span>
@@ -25,7 +24,7 @@ export default function ReqDemoBtn({show=false}:ReqDemoBtnProps) {
           <div className="circle circle-2 absolute" />
           <div className="circle circle-1 absolute" />
         </div>
-      </button>
+      </button> */}
     </div>
   );
 }

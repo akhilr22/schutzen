@@ -8,20 +8,36 @@ import homeContent1 from "@/app/assets/hompage-content1.png";
 import Image from "next/image";
 // import homeContent2 from "@/app/asse/ts/hompage-content2.png";
 // import bg from "@/app/assets/aboutUs_bg.png";
-// import bg2 from "@/app/assets/aboutBg-2.png";
-import boxIcon from "@/app/assets/box-cornner.png";
+//  import bg2 from "@/app/assets/aboutBg-2.png";
+// import boxIcon from "@/app/assets/box-cornner.png";
+import heartRate from "@/app/assets/heartRate.png";
+import respiratoryRate from "@/app/assets/respiratoryRate.png";
+import bodyTemperature from "@/app/assets/bodyTemperature.png";
+import bodyPosture from "@/app/assets/bodyPosture.png";
+import fallDetection from "@/app/assets/fallDetection.png";
+import activity from "@/app/assets/activity.png";
+import bloodPressure from "@/app/assets/bloodPressure.png";
+import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
+
+
+
+
+
 export default function page() {
   return (
-    <div className="{my-40}">
+    <div className="md:my-40">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
-          Patient monitoring solutions
+        Rapid Screening Solution
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
+          This solution patient screening device that works even without an internet connection and which
+          allows caregivers to record vital signs directly on the device and share the data online when internet
+access is available. This portability makes it ideal for use in even the most remote locations, enabling
+healthcare professionals to instantly transmit patient information to doctors anywhere in the world.
+It is designed for ease of use and quick deployment, allowing healthcare teams to screen hundreds
+of patients rapidly with minimal training.
           </span>
         </div>
         <div></div>
@@ -287,9 +303,8 @@ export default function page() {
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
+          The following solution monitors different vital signs concurrently, as well as other features with the
+          support of third-party devices
           </span>
         </div>
         <div>
@@ -299,25 +314,41 @@ export default function page() {
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
                 data-aos="fade-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={heartRate} alt="heartRateIco" className="h-4/5"/>
+                <span>Heart Rate</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={respiratoryRate} alt="respiratoryRate" className="h-4/5"/>
+                <span>Respiratory Rate</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bodyTemperature} alt="bodyTemperature" className="h-4/5"/>
+                <span>Body Temperature </span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bodyPosture} alt="bodyPosture" className="h-4/5"/>
+                <span>Body Posture </span>
+
+                </div>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
@@ -325,25 +356,41 @@ export default function page() {
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={fallDetection} alt="heartRateIco" className="h-4/5"/>
+                <span>Fall Detection </span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={activity} alt="heartRateIco" className="h-4/5"/>
+                <span>Activity</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={bloodPressure} alt="heartRateIco" className="h-4/5"/>
+                <span>Blood Pressure</span>
+
+                </div>
               </div>
               <div
                 className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-black rounded-lg">
+                <Image src={oxygenSaturation} alt="heartRateIco" className="h-4/5"/>
+                <span>Oxygen Saturation</span>
+
+                </div>
               </div>
             </div>
           </div>
@@ -355,38 +402,40 @@ export default function page() {
         data-aos="fade-right"
       ></div>
 
-      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
-          <ul>
-            <div className="flex justify-around text-start mt-10">
+        <ul className=" items-start m-0">
+            <li>
               {" "}
-              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
+              <div className="">
+                {" "}
+                <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
+                  {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                   */}
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>{" "}
+                </div>
               </div>
-          
-            </div>
-    
-            <div className="flex justify-center text-start ">
-              {" "}
-              <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+            </li>
+            <li>
+                {" "}
+                <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  <span> <span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>{" "}
+                </div>
+            </li>
+            <li>
+              <div className=" ">
+                {" "}
+                <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>{" "}
+                </div>
               </div>
-            </div>
-         
-            <div className="flex justify-around text-start ">
-              {" "}
-           
-              <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                <Image src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                <span>Seamless integration with existing systems for effortless adoption</span>{" "}
-              </div>
-            </div>
-          
+            </li>
           </ul>
         </div>
    

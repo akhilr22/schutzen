@@ -1,9 +1,15 @@
 import { homePageData } from "./data/Data";
 import "@/app/css/home.css";
-import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 // import Image from "next/image";
+import Image from "next/image";
 
 import homeBg from "@/app/assets/home-bg.png";
+import innovative_technology from "@/app/assets/innovative_technology.png";
+import streamlined_workflow from "@/app/assets/streamlined_workflow.png";
+import improved_patient_outcomes from "@/app/assets/improved_patient_outcomes.png";
+import global_accredition from "@/app/assets/global_accredition.png";
+
 
 
 
@@ -34,9 +40,9 @@ export default function Home() {
               <p>{homePageData.banner.home_p_text1}</p>
             </span>
           </div>
-          <div className="justify-center flex mx-auto">
+          {/* <div className="justify-center flex mx-auto">
             <ReqDemoBtn />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -48,7 +54,9 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5] dark:bg-black dark:text-white  w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full ">
-                      <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
+                <Image src={innovative_technology} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
+
+                      {/* <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div> */}
                       <div className="h-1/2 flex-1 mt-3">
                         <h1>{homePageData.whyChooseUs.title_1}</h1>
                         <p>{homePageData.whyChooseUs.desc_1}</p>
@@ -62,7 +70,8 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                      <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
+                <Image src={improved_patient_outcomes} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
+
                       <div className="h-1/2 flex-  mt-3">
                         <h1>{homePageData.whyChooseUs.title_2}</h1>
                         <p>{homePageData.whyChooseUs.desc_2}</p>
@@ -78,7 +87,7 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                      <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
+                    <Image src={streamlined_workflow} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3">
                         <h1>{homePageData.whyChooseUs.title_3}</h1>
                         <p>{homePageData.whyChooseUs.desc_3}</p>
@@ -92,7 +101,7 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                      <div className="h-1/2 bg-black   dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div>
+                    <Image src={global_accredition} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3">
                         <h1>{homePageData.whyChooseUs.title_4}</h1>
                         <p>{homePageData.whyChooseUs.desc_4}</p>
