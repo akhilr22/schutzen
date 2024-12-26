@@ -41,14 +41,14 @@ export default function Navbar() {
               <li onClick={() => redirect("/")}>
                 <span>Home</span>
               </li>
-              <li className="relative group" onClick={() => redirect("/solutions")}>
+              <li className="relative group" >
                 <span>Solutions</span>
                 <div className="absolute w-56 hidden mt-[4px] group-hover:block py-[5px] px-2 justify-center border-2 bg-[#fefaf5] dark:bg-[#181817] text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-[12px]">
                   <div className="text-xs md:text-sm  hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]">
-                    Solution 1
+                  Patient monitoring
                   </div>
-                  <div className="text-xs md:text-sm hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]">
-                    Solution 2
+                  <div className="text-xs md:text-sm hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]" onClick={() => redirect("/rapid_screening_solution")}> 
+                  Rapid Screening Solution
                   </div>
                 </div>
               </li>
