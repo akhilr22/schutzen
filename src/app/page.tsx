@@ -58,8 +58,8 @@ export default function Home() {
 
                       {/* <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div> */}
                       <div className="h-1/2 flex-1 mt-3">
-                        <h1>{homePageData.whyChooseUs.title_1}</h1>
-                        <p>{homePageData.whyChooseUs.desc_1}</p>
+                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_1}</h1>
+                        <p className="italic">{homePageData.whyChooseUs.desc_1}</p>
                       </div>
                     </div>
                   </div>
@@ -73,8 +73,8 @@ export default function Home() {
                 <Image src={improved_patient_outcomes} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
 
                       <div className="h-1/2 flex-  mt-3">
-                        <h1>{homePageData.whyChooseUs.title_2}</h1>
-                        <p>{homePageData.whyChooseUs.desc_2}</p>
+                        <h1  className="font-bold text-md">{homePageData.whyChooseUs.title_2}</h1>
+                        <p className="italic">{homePageData.whyChooseUs.desc_2}</p>
                       </div>
                     </div>
                   </div>
@@ -89,8 +89,8 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                     <Image src={streamlined_workflow} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3">
-                        <h1>{homePageData.whyChooseUs.title_3}</h1>
-                        <p>{homePageData.whyChooseUs.desc_3}</p>
+                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_3}</h1>
+                        <p className="italic">{homePageData.whyChooseUs.desc_3}</p>
                       </div>
                     </div>
                   </div>
@@ -103,8 +103,8 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                     <Image src={global_accredition} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3">
-                        <h1>{homePageData.whyChooseUs.title_4}</h1>
-                        <p>{homePageData.whyChooseUs.desc_4}</p>
+                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_4}</h1>
+                        <p className="italic">{homePageData.whyChooseUs.desc_4}</p>
                       </div>
                     </div>
                   </div>
