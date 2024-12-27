@@ -13,9 +13,9 @@ export default function page() {
           backgroundRepeat: "no-repeat", // Prevents tiling
         }}
       >
-        <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-32">
+        <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-32 sm:mb-14">
           <h1 className="text-xl md:text-5xl font-bold  mb-6">Transforming Healthcare through Innovation</h1>
-          <span className="text-[14px] md:text-2xl">
+          <span className="text-[14px] md:text-[24px] leading-tight">
             At Schutzen Healthtech, we&apos;re driven by a singular mission, to revolutionize healthcare delivery
             through cutting-edge technology. We believe that innovation and compassion go hand-in-hand, and our goal is
             to empower hospitals to provide exceptional patient care.
@@ -73,7 +73,7 @@ export default function page() {
         <div className="flex justify-around text-start mt-10">
           {" "}
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex">
-          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 max-h-4  rounded-full mr-3 "></div>
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 max-w-5 min-h-5 max-h-5  rounded-full mr-3 "></div>
           <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
           </div>
           <div></div>
@@ -85,7 +85,7 @@ export default function page() {
         <div className="flex justify-center text-start ">
           {" "}
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-6 max-h-4 rounded-full mr-3 "></div>
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 max-w-5 min-h-5 max-h-5 rounded-full mr-3 "></div>
           <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function page() {
           {" "}
           <div></div>
           <div className="md:w-1/4 italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 max-h-4 rounded-full mr-3 "></div>
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 max-w-5 min-h-5 max-h-5 rounded-full mr-3 "></div>
           <span>Seamless integration with existing systems for effortless adoption</span>{" "}
           </div>
         </div>
@@ -114,15 +114,15 @@ export default function page() {
             <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
               <div className="text-center mx-auto">
                 <div className="pt-4">
-                  <span className="text-xl md:text-5xl font-bold block mb-1">Empowering Healthcare Excellence</span>
+                  <span className="text-xl xl:text-5xl font-bold block mb-1">Empowering Healthcare Excellence</span>
                 </div>
-                <span className="text-sm md:text-2xl w-4/5 md:w-full  block mx-auto">
+                <span className="text-sm xl:text-2xl w-4/5 xl:w-full  block mx-auto">
                   By leveraging technology and innovation, we enable hospitals to
                 </span>
               </div>
 
               <div className="mt-6 w-full flex justify-center">
-                <div className="ml-6 text-[#2ccdb5] text-[12px] md:text-2xl">
+                <div className="ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
                   <div className="flex items-center">
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Enhance patient experiences and satisfaction</p>

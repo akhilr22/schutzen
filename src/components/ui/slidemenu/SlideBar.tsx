@@ -3,7 +3,7 @@ import { MenuBtnProps } from "@/interface";
 import schutzenImg from "@/app/assets/schutzen-img.png";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -12,27 +12,28 @@ const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as Element;
-  
+
       // Prevent closing if clicking on the toggle button
-      if (target.closest(".sidebar-toggle")) {  
+      if (target.closest(".sidebar-toggle")) {
         return;
       }
-  
+
       // Close sidebar if clicking outside of it
       if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
         setOpen(false);
       }
     };
-  
+
     if (isOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
     }
-  
+
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, [isOpen, setOpen]);
-  
+  const [submenuOpen, setSubmenuOpen] = useState(false);
+
   return (
     <>
       <div className="sm:hidden bg-gray-100">
@@ -59,16 +60,36 @@ const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
               >
                 <a className="block hover:text-indigo-400">Home</a>
               </li>
-              <li
-                className="mb-2"
-                onClick={() => {
-                  setOpen(false);
-                  redirect("/solutions");
-                }}
-              >
-                <a href="#" className="block hover:text-indigo-400">
+              <li className="mb-2 relative">
+                <a className="block cursor-pointer hover:text-indigo-400" onClick={() => setSubmenuOpen(!submenuOpen)}>
                   Solutions
                 </a>
+
+                {/* Submenu */}
+                <ul
+                  className={`${
+                    submenuOpen ? "block" : "hidden"
+                  } mt-2 space-y-2 bg-gray-800 p-2 rounded-md shadow-lg`}
+                >
+                  <li
+                    className="hover:text-indigo-500 cursor-pointer text-sm"
+                    onClick={() => {
+                      setSubmenuOpen(false);
+                      redirect("/rapid_screening_solution");
+                    }}
+                  >
+                    Rapid Screening Solution
+                  </li>
+                  <li
+                    className="hover:text-indigo-500 cursor-pointer text-sm"
+                    onClick={() => {
+                      setSubmenuOpen(false);
+                      redirect("/patient_monitoring");
+                    }}
+                  >
+                    Patient Monitoring
+                  </li>
+                </ul>
               </li>
               <li
                 className="mb-2"

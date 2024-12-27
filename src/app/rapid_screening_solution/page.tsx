@@ -315,8 +315,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={heartRate} alt="heartRateIco" className="h-4/5"/>
-                <span>Heart Rate</span>
+                <Image src={heartRate} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Heart Rate</span>
 
                 </div>
               </div>
@@ -325,8 +325,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate" className="h-4/5"/>
-                <span>Respiratory Rate</span>
+                <Image src={respiratoryRate} alt="respiratoryRate"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Respiratory Rate</span>
 
                 </div>
               </div>
@@ -335,8 +335,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature" className="h-4/5"/>
-                <span>Body Temperature </span>
+                <Image src={bodyTemperature} alt="bodyTemperature"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Body Temperature </span>
 
                 </div>
               </div>
@@ -345,8 +345,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture" className="h-4/5"/>
-                <span>Body Posture </span>
+                <Image src={bodyPosture} alt="bodyPosture"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Body Posture </span>
 
                 </div>
               </div>
@@ -357,8 +357,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco" className="h-4/5"/>
-                <span>Fall Detection </span>
+                <Image src={fallDetection} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Fall Detection </span>
 
                 </div>
               </div>
@@ -367,8 +367,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco" className="h-4/5"/>
-                <span>Activity</span>
+                <Image src={activity} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
 
                 </div>
               </div>
@@ -377,8 +377,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco" className="h-4/5"/>
-                <span>Blood Pressure</span>
+                <Image src={bloodPressure} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Blood Pressure</span>
 
                 </div>
               </div>
@@ -387,8 +387,8 @@ of patients rapidly with minimal training.
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={oxygenSaturation} alt="heartRateIco" className="h-4/5"/>
-                <span>Oxygen Saturation</span>
+                <Image src={oxygenSaturation} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
+                <span className="text-[9px] sm:text-sm  text-center top-0"  >Oxygen Saturation</span>
 
                 </div>
               </div>
@@ -406,7 +406,7 @@ of patients rapidly with minimal training.
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>
-        <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
+        <div className="mx-auto text-start md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
         <ul className=" items-start m-0">
             <li>
               {" "}
@@ -415,15 +415,15 @@ of patients rapidly with minimal training.
                 <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex">
                   {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
                    */}
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
-                  <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>{" "}
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
+                  <span><span className="font-bold">Effortless :</span>Combines multiple lab functions into a single device for enhanced convenience.</span>{" "}
                 </div>
               </div>
             </li>
             <li>
                 {" "}
                 <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
                   <span> <span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>{" "}
                 </div>
             </li>
@@ -431,7 +431,7 @@ of patients rapidly with minimal training.
               <div className=" ">
                 {" "}
                 <div className="italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3"></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
                   <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>{" "}
                 </div>
               </div>

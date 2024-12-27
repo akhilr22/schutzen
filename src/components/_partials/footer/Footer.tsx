@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import schutzenImg from "@/app/assets/schutzen-img.png";
@@ -50,7 +51,7 @@ export const Footer = () => {
 
           {/* Centered nav items */}
 
-          <div className="footer-nav-list">
+          <div className="footer-nav-list mx-auto">
             <div className="">
               <ul className=" sm:flex sm:space-x-0 md:space-x-3 custom-md:space-x-5 lg:space-x-10 py-[5px] px-2 justify-center border-2  text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-[28px] text-center ">
                 <li>
@@ -84,7 +85,7 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="">
+          <div className="hidden sm:block">
             <ReqDemoBtn />
           </div>
         </div>
