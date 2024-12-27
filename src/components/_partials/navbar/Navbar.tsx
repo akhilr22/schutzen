@@ -39,7 +39,12 @@ export default function Navbar() {
         <div className="nav-list">
           <div className="gradient-border">
             <ul>
-              <li onClick={() => redirect("/")}>
+              <li
+                onClick={() => {
+                  setMenuOpen(false);
+                  redirect("/");
+                }}
+              >
                 <span>Home</span>
               </li>
               <li className="relative group">
@@ -52,9 +57,15 @@ export default function Navbar() {
                 <div
                   className={`absolute w-full md:w-56 ${
                     menuOpen ? "block" : "hidden"
-                  } mt-2 group-hover:block py-2 px-4 justify-center border-2 bg-[#fefaf5] dark:bg-[#181817] text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-lg md:mt-[4px]`}
+                  } mt-2 group-hover:block py-2 px-4 justify-center hidden border-2 bg-[#fefaf5] dark:bg-[#181817] text-[#56c1af] dark:text-[#56c1af] border-transparent rounded-lg md:mt-[4px]`}
                 >
-                  <div className="text-xs md:text-sm hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]">
+                  <div
+                    onClick={() => {
+                      setMenuOpen(false);
+                      redirect("/rapid_screening_solution");
+                    }}
+                    className="text-xs md:text-sm hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]"
+                  >
                     Patient Monitoring
                   </div>
                   <div
@@ -69,13 +80,28 @@ export default function Navbar() {
                 </div>
               </li>
 
-              <li onClick={() => redirect("/about")}>
+              <li
+                onClick={() => {
+                  setMenuOpen(false);
+                  redirect("/about");
+                }}
+              >
                 <span>About</span>
               </li>
-              <li onClick={() => redirect("/careers")}>
+              <li
+                onClick={() => {
+                  setMenuOpen(false);
+                  redirect("/careers");
+                }}
+              >
                 <span>Careers</span>
               </li>
-              <li onClick={() => redirect("/contact-us")}>
+              <li
+                onClick={() => {
+                  setMenuOpen(false);
+                  redirect("/contact-us");
+                }}
+              >
                 <span>
                   Contact <span className="hidden custom-md:inline ">us</span>
                 </span>
