@@ -18,12 +18,13 @@ const Page = () => {
           width: "100%",
         }}
       >
-        <div className="flex-1 text-center mx-auto justify-center sm:mt-20 xl:mt-32 xl:pb-4">
-          <h2 className="sm:text-5xl text-xl font-bold sm:font-normal p-4">Get in Touch with Us</h2>
+        <div className="flex-1 text-center mx-auto justify-center sm:mt-20 xl:mt-10 xl:pb-4 w-2/3">
+          {/* <h1 className="sm:text-5xl text-xl font-bold sm:font-normal p-4">Get in Touch with Us</h1> */}
+          <h1 className="text-2xl md:text-5xl font-bold m-3">Get in Touch with Us</h1>
           <div className=" mx-8 md:w-1/2 text-center md:mx-auto justify-center sm:text-xl text-[13px]">
             <p>
               <span>
-                we&apos;re here to help you with any questions or inquiries you have about our solutions. Whether you
+                We are here to help you with any questions or inquiries you have about our solutions. Whether you
                 need technical support, product information, or a consultation on how our solutions can improve patient
                 care, we are ready to assist you.
               </span>

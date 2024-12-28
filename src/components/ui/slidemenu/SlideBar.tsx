@@ -61,7 +61,7 @@ const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
                 <a className="block hover:text-indigo-400">Home</a>
               </li>
               <li className="mb-2 relative">
-                <a className="block cursor-pointer hover:text-indigo-400" onClick={() => setSubmenuOpen(!submenuOpen)}>
+                <a className="block cursor-pointer hover:text-indigo-400" >
                   Solutions
                 </a>
 
@@ -74,8 +74,8 @@ const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
                   <li
                     className="hover:text-indigo-500 cursor-pointer text-sm"
                     onClick={() => {
-                      setSubmenuOpen(false);
                       redirect("/rapid_screening_solution");
+                      setSubmenuOpen(!submenuOpen)
                     }}
                   >
                     Rapid Screening Solution
@@ -83,8 +83,8 @@ const SlideBar: React.FC<MenuBtnProps> = ({ isOpen, setOpen }) => {
                   <li
                     className="hover:text-indigo-500 cursor-pointer text-sm"
                     onClick={() => {
-                      setSubmenuOpen(false);
                       redirect("/patient_monitoring");
+                      setSubmenuOpen(!submenuOpen)
                     }}
                   >
                     Patient Monitoring
