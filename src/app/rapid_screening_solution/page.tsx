@@ -25,23 +25,30 @@ import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 export default function page() {
   return (
-    <div className="md:my-40">
+    <div className="md:my-5">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
-        <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
-        Rapid Screening Solution
-        </h1>
-        <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
-          <span className="">
-          This solution patient screening device that works even without an internet connection and which
-          allows caregivers to record vital signs directly on the device and share the data online when internet
-access is available. This portability makes it ideal for use in even the most remote locations, enabling
-healthcare professionals to instantly transmit patient information to doctors anywhere in the world.
-It is designed for ease of use and quick deployment, allowing healthcare teams to screen hundreds
-of patients rapidly with minimal training.
-          </span>
-        </div>
-        <div></div>
-      </div>
+  <h1
+    className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2"
+    data-aos="zoom-in-up"
+  >
+    Rapid Screening Solution
+  </h1>
+  <div
+    className="mx-auto text-center md:w-3/5 lg:w-2/5 mt-3 px-4 leading-relaxed"
+    data-aos="zoom-in-up"
+  >
+    <p>
+      This solution is a patient screening device that works even without an
+      internet connection and allows caregivers to record vital signs directly
+      on the device. It can share the data online when internet access is
+      available. This portability makes it ideal for use in even the most
+      remote locations, enabling healthcare professionals to instantly transmit
+      patient information to doctors anywhere in the world. It is designed for
+      ease of use and quick deployment, allowing healthcare teams to screen
+      hundreds of patients rapidly with minimal training.
+    </p>
+  </div>
+</div>
 
       {/* <div className="footer ">
           <div className="flex scroll_animate">

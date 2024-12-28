@@ -21,8 +21,46 @@ export default function page() {
             to empower hospitals to provide exceptional patient care.
           </span>
         </div>
+        <div className="flex justify-center w-9/12 mx-auto mt-14 sm:mt-0">
+            <div
+            className=" w-5/6 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
+            data-aos="fade-right"
+            >
+            <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
+              <div className="text-center mx-auto">
+                <div className="pt-4">
+                  <span className="text-xl xl:text-5xl font-bold block mb-1">Empowering Healthcare Excellence</span>
+                </div>
+                <span className="text-sm xl:text-2xl w-4/5 xl:w-full  block mx-auto">
+                  By leveraging technology and innovation, we enable hospitals to
+                </span>
+              </div>
+
+              <div className="mt-6 w-full flex justify-center">
+                <div className="ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
+                  <div className="flex items-center">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                    <p>Enhance patient experiences and satisfaction</p>
+                  </div>
+                  <div className="flex items-center mt-2">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                    <p>Improve operational efficiency and reduce costs</p>
+                  </div>
+                  <div className="flex items-center mt-2">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                    <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
-      <div className="flex justify-center w-9/12 mx-auto mt-14 sm:mt-0">
+      </div>
+     
+      <div className="mt-16 md:mt-28 flex justify-center items-center">
+          
+          </div>
+      {/* <div className="flex justify-center w-9/12 mx-auto mt-14 sm:mt-0">
         <div className="text-start w-3/5 my-auto">
           <h1 className="font-bold text-xl md:text-2xl xl:text-5xl mb-5">
             Collaborating with Pioneering Solution Providers
@@ -46,12 +84,12 @@ export default function page() {
             Foster a culture of continuous improvement and innovation
           </h1>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className="stripe_line mx-auto rounded-full my-5 scroll_animate overflow-x-hidden h-[2px] w-2/3 mt-20"
         data-aos="fade-right"
-      ></div>
-      <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-20 md:pt-32">
+      ></div> */}
+      {/* <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-20 md:pt-32">
         <h1 className="text-xl font-bold sm:font-normal sm:text-2xl md:text-3xl xl:text-5xl mb-2">
           Customized Solutions for Enhanced Care
         </h1>
@@ -61,9 +99,9 @@ export default function page() {
             Our expert team works closely with hospitals to understand their unique needs and requirements.
           </span>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className=" h-3/5 xl:min-h-screen bg-[length:100vw_250px] bg-[position:0_70%]  sm:bg-[length:100vw_310px]  sm:bg-[position:0_45%]   md:bg-[length:100vw_350px]  md:bg-[position:0_80%] xl:bg-[length:100vw_450px]  xl:bg-[position:0_80%] "
         style={{
           backgroundImage: `url(${bg2.src})`,
@@ -140,7 +178,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

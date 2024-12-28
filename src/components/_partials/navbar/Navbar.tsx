@@ -62,7 +62,7 @@ export default function Navbar() {
                   <div
                     onClick={() => {
                       setMenuOpen(false);
-                      redirect("/rapid_screening_solution");
+                      redirect("/patient_monitoring");
                     }}
                     className="text-xs md:text-sm hover:bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] px-2 py-1 hover:text-white hover:drop-shadow-3xl rounded-md duration-300 ease-in-out transform hover:-translate-y-[2px] cursor-pointer dark:hover:text-white dark:text-[#60dbd9]"
                   >

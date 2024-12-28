@@ -25,7 +25,7 @@ import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 export default function page() {
   return (
-    <div className="md:my-40">
+    <div className="md:my-5">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Patient monitoring solutions

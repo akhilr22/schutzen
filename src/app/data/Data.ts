@@ -1,7 +1,7 @@
 export const homePageData = {
     banner: {
-        home_h1_text1: "Simplify Your Monitoring Experience",
-        home_p_text1: "Schutzen transforms your facility's existing wireless network into a powerful, cost-effective, and easy-to-deploy FDA-cleared solution for vital signs monitoring",
+        home_h1_text1: "Redefining Wellness Solutions for Tomorrow",
+        home_p_text1: "Schutzen is reshaping the future of healthcare by offering disruptive technology and integrated health solutions. Our innovations are redefining how health is monitored and managed, ultimately transforming the way medical treatments are delivered.",
     },
     whyChooseUs: {
         img_url_1: "innovative_technology.png",
