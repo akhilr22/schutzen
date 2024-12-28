@@ -93,7 +93,7 @@ const Page = () => {
       </div>
 
       <div className="flex mx-auto justify-center w-4/5 md:w-5/12 ">
-        <span className="text-center text-xl">
+        <span className="text-center text-xl italic">
           We look forward to connecting with you and supporting your journey toward improved patient care. Thank you for
           considering us as your partner in patient monitoring.
         </span>
