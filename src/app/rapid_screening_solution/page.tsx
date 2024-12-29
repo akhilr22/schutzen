@@ -34,7 +34,7 @@ export default function page() {
     Rapid Screening Solution
   </h1>
   <div
-    className="mx-auto text-center md:w-3/5 lg:w-3/5 mt-3 px-4 leading-relaxed"
+    className="mx-auto text-balance text-[18px]  md:w-3/5 lg:w-3/5 mt-3 px-4 leading-relaxed"
     data-aos="zoom-in-up"
   > 
     <p>
@@ -309,7 +309,7 @@ export default function page() {
           Features
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
-          <span className="">
+          <span className="text-balance text-[18px]  ">
           The following solution monitors different vital signs concurrently, as well as other features with the
           support of third-party devices
           </span>
@@ -413,13 +413,13 @@ export default function page() {
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>
-        <div className="mx-auto text-start md:w-5/6 mt-3 px-6 sm:px-8 md:px-18 lg:px-24 xl:px-64 " data-aos="zoom-in-up">
+        <div className="mx-auto text-start md:w-5/6  px-6 sm:px-8 md:px-18 lg:px-24 xl:px-64 mt-8" data-aos="zoom-in-up">
         <ul className=" items-start m-0">
             <li>
               {" "}
               <div className="">
                 {" "}
-                <div className="italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex ">
+                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex ">
                   {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
                    */}
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
@@ -429,7 +429,7 @@ export default function page() {
             </li>
             <li>
                 {" "}
-                <div className=" italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                <div className=" italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
                   <span> <span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>{" "}
                 </div>
@@ -437,7 +437,7 @@ export default function page() {
             <li>
               <div className=" ">
                 {" "}
-                <div className="italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
                   <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>{" "}
                 </div>

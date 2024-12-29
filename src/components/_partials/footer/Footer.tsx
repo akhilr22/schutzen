@@ -13,7 +13,7 @@ import Link from "next/link";
 export const Footer = () => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   return (
-    <div className="mt-28 md:mt-32">
+    <div className="mt-20">
       <div
         className="bg-cover bg-center "
         style={{

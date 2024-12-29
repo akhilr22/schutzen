@@ -26,7 +26,7 @@ export default function page() {
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Patient monitoring solutions
         </h1>
-        <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
+        <div className="mx-auto text-balance text-[18px]   md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
             This solution is an advanced remote monitoring system that provides continuous and efficient visibility into
             a patient&#39;s health.
@@ -286,14 +286,14 @@ export default function page() {
         </div>
       </div>
       <div
-        className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
+        className="stripe_line h-[2px] w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
       ></div>
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Features
         </h1>
-        <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
+        <div className="mx-auto text-balance text-[18px]   md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
             The following solution monitors different vital signs concurrently, as well as other features with the
             support of third-party devices
@@ -403,19 +403,19 @@ export default function page() {
           Usability
         </h1>
         <div
-          className="mx-auto text-start md:w-3/5 mt-3 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 "
+          className="mx-auto text-start md:w-3/5 mt-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 "
           data-aos="zoom-in-up"
         >
           <ul className="items-start m-0 ">
             <li>
-              <div className="italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex ">
+              <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex ">
                 <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3"></div>
                 <span>Personalized solutions to streamline operations and reduce workload</span>{" "}
               </div>
             </li>
             <li>
               {" "}
-              <div className=" italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex my-5 ">
+              <div className=" italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5 ">
                 <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3 "></div>
                 <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
               </div>
@@ -423,7 +423,7 @@ export default function page() {
             <li>
               <div className=" ">
                 {" "}
-                <div className="italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex my-5">
+                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3"></div>
                   <span>Seamless integration with existing systems for effortless adoption</span>{" "}
                 </div>
