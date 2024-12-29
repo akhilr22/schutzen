@@ -27,16 +27,16 @@ export default function Home() {
         }}
       > 
         
-        <div className="w-3/4 md:w-3/5 mx-auto justify-center xl:py-14">
+        <div className="w-3/4 md:w-4/5 mx-auto justify-center ">
           {/* <div className="min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
           </div> */}
 
-          <div className="text-center mx-auto py-20 sm:py-32 md:py-36 lg:py-40">
-            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
+          <div className="text-center mx-auto py-20 sm:py-32 md:py-36 lg:py-28">
+            <h1 className="font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white">
               {homePageData.banner.home_h1_text1}
             </h1>
-            <span className="block mx-auto max-w-xl ">
+            <span className="block mx-auto max-w-screen-md mt-36 text-xl">
               <p>{homePageData.banner.home_p_text1}</p>
             </span>
           </div>
