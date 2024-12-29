@@ -406,7 +406,7 @@ export default function page() {
           className="mx-auto text-start md:w-3/5 mt-3 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 "
           data-aos="zoom-in-up"
         >
-          <ul className="items-start m-0 flex-1 ">
+          <ul className="items-start m-0 ">
             <li>
               <div className="italic text-start text-sm md:text-[16px] text-[#2ccdb5] flex ">
                 <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3"></div>
