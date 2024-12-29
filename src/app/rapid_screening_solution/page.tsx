@@ -413,7 +413,7 @@ export default function page() {
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Usability
         </h1>
-        <div className="mx-auto text-start md:w-3/5 mt-3 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 " data-aos="zoom-in-up">
+        <div className="mx-auto text-start md:w-5/6 mt-3 px-6 sm:px-8 md:px-18 lg:px-24 xl:px-64 " data-aos="zoom-in-up">
         <ul className=" items-start m-0">
             <li>
               {" "}
