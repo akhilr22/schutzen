@@ -21,7 +21,7 @@ export default function page() {
             to empower hospitals to provide exceptional patient care.
           </span>
         </div>
-        {/* <div className="mt-16 md:mt-28 flex justify-center items-center">
+        <div className="mt-16 md:mt-28 flex justify-center items-center">
           <div
             className=" w-5/6 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
             data-aos="fade-right"
@@ -29,7 +29,7 @@ export default function page() {
             <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
               <div className="text-center mx-auto">
                 <div className="pt-4">
-                  <span className="text-2xl xl:text-5xl font-bold block mb-1">Empowering Healthcare Excellence</span>
+                  <span className="text-xl xl:text-5xl font-bold block mb-1">Empowering Healthcare Excellence</span>
                 </div>
                 <span className="text-sm xl:text-2xl w-4/5 xl:w-full  block mx-auto">
                   By leveraging technology and innovation, we enable hospitals to
@@ -54,49 +54,7 @@ export default function page() {
               </div>
             </div>
           </div>
-        </div> */}
-
-<div className="mt-16 md:mt-28 flex justify-center items-center">
-            <div
-            className=" w-5/6 sm:w-3/5 sm:h-96 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
-            data-aos="fade-right"
-            >
-            <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
-              <div className="text-center mx-auto">
-                <div className="pt-4">
-                  <span className="text-xl xl:text-5xl font-bold block mb-1">Values</span>
-                </div>
-                {/* <span className="text-sm xl:text-2xl w-4/5 xl:w-full  block mx-auto">
-                  By leveraging technology and innovation, we enable hospitals to
-                </span> */}
-              </div>
-
-              <div className="mt-6 w-full flex justify-center mb-5">
-                <div className="ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
-                  <div className="flex items-center">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
-                    <p>Innovation: Continuously pioneering new solutions that enhance patient care and transform
-                    healthcare systems.</p>
-                  </div>
-                  <div className="flex items-center mt-2">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
-                    <p>Integrity: Upholding the highest standards of ethics and transparency in everything we do.</p>
-                  </div>
-                  <div className="flex items-center mt-2">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
-                    <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
-                  </div>
-                  {/* <div className="flex items-center mt-2"> */}
-                  {/* <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
-                    <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
-                  </div> */}
-                  
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+        </div>
       </div>
       <div className="text-center justify-between w-5/6 md:w-2/3   mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-10 sm:mb-14">
           <h1 className="text-3xl md:text-5xl font-bold  mb-6">Vision</h1>
