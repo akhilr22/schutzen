@@ -25,7 +25,7 @@ import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 export default function page() {
   return (
-    <div className="md:my-40">
+    <div className="md:my-10">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
         Rapid Screening Solution
@@ -309,9 +309,9 @@ of patients rapidly with minimal training.
         </div>
         <div>
           <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
-            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto ">
+            <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto ">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -321,7 +321,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -331,7 +331,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -341,7 +341,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -351,9 +351,9 @@ of patients rapidly with minimal training.
                 </div>
               </div>
             </div>
-            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
+            <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -363,7 +363,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -373,7 +373,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
@@ -383,7 +383,7 @@ of patients rapidly with minimal training.
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">

@@ -19,20 +19,17 @@ import activity from "@/app/assets/activity.png";
 import bloodPressure from "@/app/assets/bloodPressure.png";
 import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
-
-
-
-
 export default function page() {
   return (
-    <div className="md:my-40">
+    <div className="md:my-10">
       <div className="text-center justify-center scroll_animate overflow-x-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Patient monitoring solutions
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-          This solution is an advanced remote monitoring system that provides continuous and efficient visibility into a patient&#39;s health.
+            This solution is an advanced remote monitoring system that provides continuous and efficient visibility into
+            a patient&#39;s health.
           </span>
         </div>
         <div></div>
@@ -298,93 +295,97 @@ export default function page() {
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
-          The following solution monitors different vital signs concurrently, as well as other features with the
-          support of third-party devices
+            The following solution monitors different vital signs concurrently, as well as other features with the
+            support of third-party devices
           </span>
         </div>
         <div>
           <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
-            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto ">
+            <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto ">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={heartRate} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Heart Rate</span>
-
+                  <Image src={heartRate} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto" />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Heart Rate</span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Respiratory Rate</span>
-
+                  <Image
+                    src={respiratoryRate}
+                    alt="respiratoryRate"
+                    className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"
+                  />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Respiratory Rate</span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Body Temperature </span>
-
+                  <Image
+                    src={bodyTemperature}
+                    alt="bodyTemperature"
+                    className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"
+                  />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Body Temperature </span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Body Posture </span>
-
+                  <Image src={bodyPosture} alt="bodyPosture" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto" />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Body Posture </span>
                 </div>
               </div>
             </div>
-            <div className="h-auto  mb-9 flex xl:w-3/5  justify-around  mx-auto">
+            <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto">
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Fall Detection </span>
-
+                  <Image src={fallDetection} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto" />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Fall Detection </span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
-
+                  <Image src={activity} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto" />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Blood Pressure</span>
-
+                  <Image src={bloodPressure} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto" />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Blood Pressure</span>
                 </div>
               </div>
               <div
-                className="w-20 h-20 sm:w-36 sm:h-36 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
+                className="w-20 h-20 sm:sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={oxygenSaturation} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
-
+                  <Image
+                    src={oxygenSaturation}
+                    alt="heartRateIco"
+                    className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"
+                  />
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
                 </div>
               </div>
             </div>
@@ -402,7 +403,7 @@ export default function page() {
           Usability
         </h1>
         <div className="mx-auto text-center md:w-2/5 mt-3 px-6" data-aos="zoom-in-up">
-        <ul className=" items-start m-0">
+          <ul className=" items-start m-0">
             <li>
               {" "}
               <div className="">
@@ -416,11 +417,11 @@ export default function page() {
               </div>
             </li>
             <li>
-                {" "}
-                <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3 "></div>
-                  <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
-                </div>
+              {" "}
+              <div className=" italic text-sm md:text-[16px] text-[#2ccdb5] flex my-5 text-start">
+                <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 rounded-full mr-3 "></div>
+                <span>Advanced diagnostic and therapeutic technologies for improved patient outcomes</span>{" "}
+              </div>
             </li>
             <li>
               <div className=" ">
@@ -433,7 +434,6 @@ export default function page() {
             </li>
           </ul>
         </div>
-   
       </div>
 
       {/* <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
