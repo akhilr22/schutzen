@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "@/app/assets/aboutUs_bg.png";
-import bg2 from "@/app/assets/aboutBg-2.png";
+// import bg2 from "@/app/assets/aboutBg-2.png";
 // import boxIcon from "@/app/assets/box-cornner.png";
 // import Image from "next/image";
 export default function page() {
@@ -31,7 +31,7 @@ provided.
         </div>
         <div className="mt-16 md:mt-28 flex justify-center items-center">
             <div
-            className=" w-5/6 sm:w-3/5 sm:h-80 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
+            className=" w-5/6 sm:w-3/5 sm:h-96 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
             data-aos="fade-right"
             >
             <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
@@ -44,10 +44,10 @@ provided.
                 </span> */}
               </div>
 
-              <div className="mt-6 w-full flex justify-center">
+              <div className="mt-6 w-full flex justify-center mb-5">
                 <div className="ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
                   <div className="flex items-center">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
                     <p>Innovation: Continuously pioneering new solutions that enhance patient care and transform
                     healthcare systems.</p>
                   </div>
@@ -59,10 +59,10 @@ provided.
                   <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
                   </div>
-                  <div className="flex items-center mt-2">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                  {/* <div className="flex items-center mt-2"> */}
+                  {/* <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
-                  </div>
+                  </div> */}
                   
                   
                 </div>

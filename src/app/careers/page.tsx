@@ -53,7 +53,7 @@ export default function page() {
         {/* <h1 className="w-full mx-auto flex justify-center text-xl my-5 font-bold sm:text-3xl md:text-4xl xl:text-5xl">Share Your CV </h1> */}
 
         <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
-        <div className="  w-2/3 md:w-1/2 h-full  my-5 xl:px-8 text-start  ">
+        <div className="  w-2/3 md:w-1/2 h-full mx-auto md:mx-0  my-5 xl:px-8 md:text-start  ">
           <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center xl:text-start ">
             Feel free to reach out to us using any of these methods. Our team is always available to offer personalized
             support and guidance.
@@ -69,7 +69,7 @@ export default function page() {
           >
             <div className="w-full h-full sm:px-3  rounded-full flex items-center justify-center text-center overflow-hidden">
               <Image src={email} alt="email" className="md:w-4 md:h-4 xl:w-6 xl:h-6 w-4 h-4 mr-2" />
-              <span className="text-xl md:text-[18px] xl:text-2xl text-white ">info@schutzenhealth.com</span>
+              <span className="text-md md:text-[18px] xl:text-2xl text-white ">info@schutzenhealth.com</span>
             </div>
           </div>
 

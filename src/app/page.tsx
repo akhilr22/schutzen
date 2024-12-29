@@ -27,12 +27,12 @@ export default function Home() {
         }}
       > 
         
-        <div className="w-3/4 md:w-3/5 mx-auto justify-center py-14">
+        <div className="w-3/4 md:w-3/5 mx-auto justify-center xl:py-14">
           {/* <div className="min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
           </div> */}
 
-          <div className="text-center mx-auto py-32 sm:py-36 md:py-40 lg:py-44">
+          <div className="text-center mx-auto py-20 sm:py-32 md:py-36 lg:py-40">
             <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
               {homePageData.banner.home_h1_text1}
             </h1>
@@ -46,18 +46,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center min-h-fit sm:mt-14 overflow-x-hidden overflow-y-hidden">
+      <div className="flex justify-center sm:mt-14 overflow-x-hidden min-h-[1100px] ">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
-          <div className="sm:flex h-full">
+          <div className="sm:flex ">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
               <div className="p-4 flex-grow-[6]" data-aos="fade-right">
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5] dark:bg-black dark:text-white  w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full ">
-                <Image src={innovative_technology} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
+                <Image src={innovative_technology} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
 
                       {/* <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div> */}
-                      <div className="h-1/2 flex-1 mt-3">
+                      <div className="h-1/2 flex-1 mt-3 overflow-hidden">
                         <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_1}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_1}</p>
                       </div>
@@ -70,9 +70,9 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                <Image src={improved_patient_outcomes} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
+                <Image src={improved_patient_outcomes} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
 
-                      <div className="h-1/2 flex-  mt-3">
+                      <div className="h-1/2 flex-1  overflow-hidden mt-3">
                         <h1  className="font-bold text-md">{homePageData.whyChooseUs.title_2}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_2}</p>
                       </div>
@@ -87,8 +87,8 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                    <Image src={streamlined_workflow} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
-                      <div className="h-1/2 flex-1  mt-3">
+                    <Image src={streamlined_workflow} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md sm:p-0" />
+                      <div className="h-1/2 flex-1  mt-3  overflow-hidden">
                         <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_3}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_3}</p>
                       </div>
@@ -101,8 +101,8 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                    <Image src={global_accredition} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0" />
-                      <div className="h-1/2 flex-1  mt-3">
+                    <Image src={global_accredition} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
+                      <div className="h-1/2 flex-1  mt-3  overflow-hidden">
                         <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_4}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_4}</p>
                       </div>
