@@ -7,37 +7,41 @@ export default function page() {
   return (
     <div>
       <div
-        className="h-3/5 xl:min-h-screen  bg-[length:100vw_250px] bg-[position:0_20%]  sm:bg-[length:100vw_310px]  sm:bg-[position:0_45%]   md:bg-[length:100vw_350px]  md:bg-[position:0_80%] xl:bg-[length:100vw_450px]  xl:bg-[position:0_80%]" 
+        className="h-3/5 xl:min-h-screen  bg-[length:100vw_250px] bg-[position:0_20%]  sm:bg-[length:100vw_310px]  sm:bg-[position:0_45%]   md:bg-[length:100vw_350px]  md:bg-[position:0_80%] xl:bg-[length:100vw_450px]  xl:bg-[position:0_80%]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundRepeat: "no-repeat", // Prevents tiling
         }}
       >
-        <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-10 sm:mb-14">
-          <h1 className="text-xl md:text-5xl font-bold  mb-6">Vision</h1>
-          <span className="text-[14px] md:text-[24px] leading-tight">
-          Our goal is to lead the transformation of healthcare by developing innovative technological solutions
-that empower individuals to manage and improve their health. We envision a future where we
-benefit both healthcare providers and patients, driving efficiency and enhancing the quality of care
-provided.
+        <div className="text-center justify-between w-5/6 md:w-2/3   mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-10 sm:mb-14">
+          <h1 className="text-3xl md:text-5xl font-bold  mb-6">Vision</h1>
+          <span className="text-[14px] md:text-[24px] leading-tight"> 
+            Our goal is to lead the transformation of healthcare by developing innovative technological solutions that
+            empower individuals to manage and improve their health. We envision a future where we benefit both
+            healthcare providers and patients, driving efficiency and enhancing the quality of care provided.
           </span>
         </div>
-        <div className="stripe_line h-1 w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden aos-init aos-animate" data-aos="fade-right"></div>
-        <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-10 sm:mb-14">
-          <h1 className="text-xl md:text-5xl font-bold  mb-6">Mission</h1>
+        <div
+          className="stripe_line h-[2px] w-5/6 md:w-2/3  mx-auto rounded-full my-5 scroll_animate overflow-x-hidden aos-init aos-animate"
+          data-aos="fade-right"
+        ></div>
+        <div className="text-center justify-between w-5/6 md:w-2/3  mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-10 sm:mb-14">
+          <h1 className="text-3xl md:text-5xl font-bold  mb-6">Mission</h1>
           <span className="text-[14px] md:text-[24px] leading-tight">
-          Our mission is to advance healthcare through the commercialization of innovative technologies that deliver tangible clinical outcomes. We aim to achieve this by collaborating with the right partners to identify critical gaps in care and address them with precision.
+            Our mission is to advance healthcare through the commercialization of innovative technologies that deliver
+            tangible clinical outcomes. We aim to achieve this by collaborating with the right partners to identify
+            critical gaps in care and address them with precision.
           </span>
         </div>
         <div className="mt-16 md:mt-28 flex justify-center items-center">
-            <div
-            className=" w-5/6 sm:w-3/5 sm:h-96 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
+          <div
+            className=" w-5/6 sm:w-3/5  p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[60px] scroll_animate mx-auto"
             data-aos="fade-right"
-            >
-            <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-5 sm:p-0">
+          >
+            <div className="w-full h-full bg-black rounded-[60px] flex flex-col items-center justify-center p-3 sm:p-0">
               <div className="text-center mx-auto">
                 <div className="pt-4">
-                  <span className="text-xl xl:text-5xl font-bold block mb-1">Values</span>
+                  <span className="text-3xl xl:text-5xl font-bold block ">Values</span>
                 </div>
                 {/* <span className="text-sm xl:text-2xl w-4/5 xl:w-full  block mx-auto">
                   By leveraging technology and innovation, we enable hospitals to
@@ -45,33 +49,33 @@ provided.
               </div>
 
               <div className="mt-6 w-full flex justify-center mb-5">
-                <div className="ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
+                <div className="md:ml-6 text-[#2ccdb5] text-[12px] xl:text-2xl">
                   <div className="flex items-center">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
-                    <p>Innovation: Continuously pioneering new solutions that enhance patient care and transform
-                    healthcare systems.</p>
+                    <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
+                    <p>
+                      Innovation: Continuously pioneering new solutions that enhance patient care and transform
+                      healthcare systems.
+                    </p>
                   </div>
                   <div className="flex items-center mt-2">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                    <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
                     <p>Integrity: Upholding the highest standards of ethics and transparency in everything we do.</p>
                   </div>
                   <div className="flex items-center mt-2">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
+                    <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] min-w-5 min-h-5 max-w-5 max-h-5 rounded-full mr-3 "></div>
                     <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
                   </div>
                   {/* <div className="flex items-center mt-2"> */}
                   {/* <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] w-5 h-5 rounded-full mr-3 "></div>
                     <p>Stay ahead of the curve in an ever-evolving healthcare landscape.</p>
                   </div> */}
-                  
-                  
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-     
+
       {/* <div className="mt-16 md:mt-28 flex justify-center items-center">
           
           </div> */}
