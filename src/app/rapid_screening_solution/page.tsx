@@ -17,7 +17,7 @@ import bodyPosture from "@/app/assets/bodyPosture.png";
 import fallDetection from "@/app/assets/fallDetection.png";
 import activity from "@/app/assets/activity.png";
 import bloodPressure from "@/app/assets/bloodPressure.png";
-import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
+// import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 
 
@@ -389,7 +389,7 @@ export default function page() {
 
                 </div>
               </div>
-              <div
+              {/* <div
                 className="w-20 h-20 sm:sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
@@ -398,7 +398,7 @@ export default function page() {
                 <span className="text-[9px] sm:text-sm  text-center top-0"  >Oxygen Saturation</span>
 
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
