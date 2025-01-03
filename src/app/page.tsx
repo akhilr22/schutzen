@@ -8,7 +8,7 @@ import homeBg from "@/app/assets/home-bg.png";
 import innovative_technology from "@/app/assets/innovative_technology.png";
 import streamlined_workflow from "@/app/assets/streamlined_workflow.png";
 import improved_patient_outcomes from "@/app/assets/improved_patient_outcomes.png";
-import global_accredition from "@/app/assets/global_accredition.png";
+import global_accreditation from "@/app/assets/global_accreditation.png";
 
 
 
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full">
                   <div className="bg-[#fefaf5]  dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                     <div className="flex flex-col h-full">
-                    <Image src={global_accredition} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
+                    <Image src={global_accreditation} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3  overflow-hidden">
                         <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_4}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_4}</p>
