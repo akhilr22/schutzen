@@ -322,40 +322,40 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={heartRate} alt="heartRateIco" className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Heart Rate</span>
+                 <Image src={heartRate} alt="heartRateIco" className=" mx-auto"/>{/* //h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 */}
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Heart Rate</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Respiratory Rate</span>
+                <Image src={respiratoryRate} alt="respiratoryRate"  className="mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Respiratory Rate</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Body Temperature </span>
+                <Image src={bodyTemperature} alt="bodyTemperature"  className="mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Body Temperature </span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Body Posture </span>
+                <Image src={bodyPosture} alt="bodyPosture"  className="mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Body Posture </span>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto">
@@ -364,30 +364,30 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Fall Detection </span>
+                <Image src={fallDetection} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap" >Fall Detection </span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
+                <Image src={activity} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco"  className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"/>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Blood Pressure</span>
+                <Image src={bloodPressure} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Blood Pressure</span>
               </div>
               {/* <div
                 className="w-20 h-20 sm:sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
