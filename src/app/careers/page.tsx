@@ -53,14 +53,14 @@ export default function page() {
         {/* <h1 className="w-full mx-auto flex justify-center text-xl my-5 font-bold sm:text-3xl md:text-4xl xl:text-5xl">Share Your CV </h1> */}
 
         <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
-        <div className="  w-2/3 md:w-1/2 h-full mx-auto md:mx-0  my-5 xl:px-8 md:text-start  ">
-          <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center xl:text-start ">
+        <div className="  w-2/3 md:w-1/2 h-full mx-auto md:mx-0   my-5 xl:px-8 md:text-start  ">
+          <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center xl:text-start  ">
             Feel free to reach out to us using any of these methods. Our team is always available to offer personalized
             support and guidance.
           </h1>
         </div>
-        <div className="stripe_line_vertical hidden md:block w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
-        <div className="stripe_line md:hidden w-full h-[1px] md:w-[1px]  md:min-h-96"></div>
+        <div className="stripe_line_vertical hidden md:block w-full h-[2px] md:w-[2px]  md:min-h-96"></div>
+        <div className="stripe_line md:hidden w-full h-[2px] md:w-[2px]  md:min-h-96"></div>
         <div className="xl:w-1/2  h-36 px-1  xl:px-8 flex flex-col items-center justify-center gap-4">
           {/* Email */}
           <div

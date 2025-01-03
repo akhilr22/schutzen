@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
      <div
-        className=" rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden h-3/5 xl:min-h-screen "
+        className=" rounded-b-[40px] mx:0 sm:mx-12 overflow-x-hidden h-2/5  "
         style={{
           backgroundImage: `url(${homeBg.src})`,
           backgroundSize: "cover", // Ensures the image covers the entire area
@@ -27,16 +27,16 @@ export default function Home() {
         }}
       > 
         
-        <div className="w-3/4 md:w-3/5 mx-auto justify-center xl:py-14">
+        <div className="w-3/4 md:w-4/5 mx-auto justify-center ">
           {/* <div className="min-h-72 rounded-3xl text-center border-green-500 flex items-center justify-center">
             banner image or video to run
           </div> */}
 
-          <div className="text-center mx-auto py-20 sm:py-32 md:py-36 lg:py-40">
-            <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
+          <div className="text-center mx-auto py-20 sm:py-32 md:py-36 ">
+            <h1 className="font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white">
               {homePageData.banner.home_h1_text1}
             </h1>
-            <span className="block mx-auto max-w-xl ">
+            <span className="block mx-auto max-w-screen-md mt-36 text-xl">
               <p>{homePageData.banner.home_p_text1}</p>
             </span>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center sm:mt-14 overflow-x-hidden min-h-[1100px] ">
+      <div className="flex justify-center sm:mt-14 overflow-x-hidden min-h-[800px] ">
         <div className="w-full sm:w-4/6 h-fit md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[980px]">
           <div className="sm:flex ">
             <div className="sm:w-1/2 w-full flex flex-col h-full">
@@ -58,7 +58,7 @@ export default function Home() {
 
                       {/* <div className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div> */}
                       <div className="h-1/2 flex-1 mt-3 overflow-hidden">
-                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_1}</h1>
+                        <h1 className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_1}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_1}</p>
                       </div>
                     </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 <Image src={improved_patient_outcomes} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
 
                       <div className="h-1/2 flex-1  overflow-hidden mt-3">
-                        <h1  className="font-bold text-md">{homePageData.whyChooseUs.title_2}</h1>
+                        <h1  className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_2}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_2}</p>
                       </div>
                     </div>
@@ -89,7 +89,7 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                     <Image src={streamlined_workflow} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3  overflow-hidden">
-                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_3}</h1>
+                        <h1 className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_3}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_3}</p>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ export default function Home() {
                     <div className="flex flex-col h-full">
                     <Image src={global_accreditation} alt="upload" className="h-1/2  bg-black dark:bg-[#171616] flex-1 rounded-md  sm:p-0" />
                       <div className="h-1/2 flex-1  mt-3  overflow-hidden">
-                        <h1 className="font-bold text-md">{homePageData.whyChooseUs.title_4}</h1>
+                        <h1 className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_4}</h1>
                         <p className="italic">{homePageData.whyChooseUs.desc_4}</p>
                       </div>
                     </div>
