@@ -409,13 +409,13 @@ export default function page() {
         data-aos="fade-right"
       ></div>
 
-      <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
+<div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
   <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
     Usability
   </h1>
-  <div className="text-start" data-aos="zoom-in-up">
-    <ul className="flex-1 w-5/6 sm:w-4/6 md:w-3/6  mx-auto  justify-center items-start text-center" id="ul22">
-      <li>
+  <div className="text-start md:w-5/6 mx-auto" data-aos="zoom-in-up">
+    <ul className="w-3/5 mx-auto flex flex-col items-center" id="ul22">
+      <li className="w-full text-center">
         <div className="">
           <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
             <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
@@ -423,15 +423,15 @@ export default function page() {
           </div>
         </div>
       </li>
-      <li>
-        <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+      <li className="w-full my-5 text-center">
+        <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
           <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
           <span><span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>
         </div>
       </li>
-      <li>
+      <li className="w-full my-5 text-center">
         <div className="">
-          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
             <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
             <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>
           </div>
