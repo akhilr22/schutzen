@@ -13,7 +13,7 @@ export default function page() {
           backgroundRepeat: "no-repeat", // Prevents tiling
         }}
       >
-        <div className="text-center justify-between w-2/3 mx-auto pt-10 sm:pt-14 md:pt-20 xl:pt-32 sm:mb-14">
+        <div className="text-center justify-between w-2/3 mx-auto pt-5 sm:mb-14">
           <h1 className="text-xl md:text-5xl font-bold  mb-6">Transforming Healthcare through Innovation</h1>
           <span className="text-[14px] md:text-[24px] leading-tight">
             At Schutzen Healthtech, we&apos;re driven by a singular mission, to revolutionize healthcare delivery
