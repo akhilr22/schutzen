@@ -16,7 +16,9 @@ export default function Navbar() {
     <>
       <div className="navbar mt-8 mb-16">
         {/* Logo on the left */}
-        <div className="nav-icon">
+        <div className="nav-icon" onClick={() => {
+                  redirect("/");
+                }}>
           <Image
             className="nav-logo hidden sm:block"
             src={schutzenImg}
