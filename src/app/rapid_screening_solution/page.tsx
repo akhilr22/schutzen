@@ -11,13 +11,16 @@ import Image from "next/image";
 //  import bg2 from "@/app/assets/aboutBg-2.png";
 // import boxIcon from "@/app/assets/box-cornner.png";
 import heartRate from "@/app/assets/heartRate.png";
-import respiratoryRate from "@/app/assets/respiratoryRate.png";
+// import respiratoryRate from "@/app/assets/respiratoryRate.png";
 import bodyTemperature from "@/app/assets/bodyTemperature.png";
-import bodyPosture from "@/app/assets/bodyPosture.png";
-import fallDetection from "@/app/assets/fallDetection.png";
-import activity from "@/app/assets/activity.png";
+// import bodyPosture from "@/app/assets/bodyPosture.png";
+import blood_glucose from "@/app/assets/blood_glucose.png";
+import Ausculation from "@/app/assets/Ausculation.png";
 import bloodPressure from "@/app/assets/bloodPressure.png";
-// import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
+import ECG from "@/app/assets/ECG.png";
+
+
+import oxygenSaturation from "@/app/assets/oxygenSaturation.png";
 
 
 
@@ -322,40 +325,40 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                 <Image src={heartRate} alt="heartRateIco" className=" mx-auto"/>{/* //h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 */}
+                 <Image src={bloodPressure} alt="heartRateIco" className=" mx-auto"/>{/* //h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 */}
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Heart Rate</span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Blood Pressure</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={respiratoryRate} alt="respiratoryRate"  className="mx-auto"/>
+                <Image src={ECG} alt="respiratoryRate"  className="mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Respiratory Rate</span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">ECG</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-down-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyTemperature} alt="bodyTemperature"  className="mx-auto"/>
+                <Image src={oxygenSaturation} alt="bodyTemperature"  className="mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Body Temperature </span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap"> SpO2</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bodyPosture} alt="bodyPosture"  className="mx-auto"/>
+                <Image src={heartRate} alt="bodyPosture"  className="mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Body Posture </span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap"> Pulse Rate </span>
               </div>
             </div>
             <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto">
@@ -364,30 +367,30 @@ export default function page() {
                 data-aos="fade-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={fallDetection} alt="heartRateIco"  className=" mx-auto"/>
+                <Image src={blood_glucose} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap" >Fall Detection </span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap" >Blood Glucose </span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-right"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={activity} alt="heartRateIco"  className=" mx-auto"/>
+                <Image src={Ausculation} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0">Activity</span>
+                <span className="text-[9px] sm:text-sm  text-center top-0">Ausculation</span>
               </div>
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
                 data-aos="fade-up-left"
               >
                 <div className="w-full h-full bg-black rounded-lg">
-                <Image src={bloodPressure} alt="heartRateIco"  className=" mx-auto"/>
+                <Image src={bodyTemperature} alt="heartRateIco"  className=" mx-auto"/>
 
                 </div>
-                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Blood Pressure</span>
+                <span className="text-[9px] sm:text-sm  text-center top-0 whitespace-nowrap">Temperature</span>
               </div>
               {/* <div
                 className="w-20 h-20 sm:sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate"
@@ -409,37 +412,44 @@ export default function page() {
         data-aos="fade-right"
       ></div>
 
-<div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
-  <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
-    Usability
-  </h1>
-  <div className="text-start md:w-5/6 mx-auto" data-aos="zoom-in-up">
-    <ul className="w-3/5 mx-auto flex flex-col items-center" id="ul22">
-      <li className="w-full text-center">
-        <div className="">
-          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
-            <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
-            <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>
-          </div>
+      <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
+        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
+          Usability
+        </h1>
+        <div className="mx-auto text-start md:w-5/6  px-6 sm:px-8 md:px-18 lg:px-24 xl:px-64 mt-8" data-aos="zoom-in-up">
+        <ul className=" items-start m-0">
+            <li>
+              {" "}
+              <div className="">
+                {" "}
+                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex ">
+                  {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
+                   */}
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
+                  <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>{" "}
+                </div>
+              </div>
+            </li>
+            <li>
+                {" "}
+                <div className=" italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
+                  <span> <span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>{" "}
+                </div>
+            </li>
+            <li>
+              <div className=" ">
+                {" "}
+                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
+                  <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>{" "}
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li className="w-full my-5 text-center">
-        <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
-          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
-          <span><span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>
-        </div>
-      </li>
-      <li className="w-full my-5 text-center">
-        <div className="">
-          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
-            <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
-            <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+   
+      </div>
 
       {/* <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
           <span>Patient Monitoring for Hospitals and Beyond</span>
