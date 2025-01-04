@@ -410,43 +410,36 @@ export default function page() {
       ></div>
 
       <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
-        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
-          Usability
-        </h1>
-        <div className="mx-auto text-start md:w-5/6  px-6 sm:px-8 md:px-18 lg:px-24 xl:px-64 mt-8" data-aos="zoom-in-up">
-        <ul className=" items-start m-0">
-            <li>
-              {" "}
-              <div className="">
-                {" "}
-                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex ">
-                  {/* < src={boxIcon} alt="boxImg" className="w-10 h-10 pb-3 mr-3" />
-                   */}
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
-                  <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>{" "}
-                </div>
-              </div>
-            </li>
-            <li>
-                {" "}
-                <div className=" italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
-                  <span> <span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>{" "}
-                </div>
-            </li>
-            <li>
-              <div className=" ">
-                {" "}
-                <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
-                  <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full "></div>
-                  <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>{" "}
-                </div>
-              </div>
-            </li>
-          </ul>
+  <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
+    Usability
+  </h1>
+  <div className="text-start" data-aos="zoom-in-up">
+    <ul className="flex-1 w-5/6 sm:w-4/6 md:w-3/6  mx-auto  justify-center items-start text-center" id="ul22">
+      <li>
+        <div className="">
+          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex">
+            <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
+            <span><span className="font-bold">Effortless : </span>Combines multiple lab functions into a single device for enhanced convenience.</span>
+          </div>
         </div>
-   
-      </div>
+      </li>
+      <li>
+        <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+          <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
+          <span><span className="font-bold">Faster : </span> Measures 7 vital signs in under 7 minutes for quick and efficient results.</span>
+        </div>
+      </li>
+      <li>
+        <div className="">
+          <div className="italic text-start text-sm md:text-[18px] text-[#2ccdb5] flex my-5">
+            <div className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] max-w-5 max-h-5 min-w-5 min-h-5 mr-3 rounded-full"></div>
+            <span><span className="font-bold">Error-Free : </span> Ensures accurate data recording with tamper-proof features for reliable results.</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
       {/* <div className=" sm:text-2xl md:text-3xl xl:text-4xl font-bold my-12 text-center scroll_animate">
           <span>Patient Monitoring for Hospitals and Beyond</span>
