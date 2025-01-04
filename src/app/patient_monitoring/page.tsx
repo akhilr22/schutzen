@@ -30,13 +30,7 @@ export default function page() {
           <span className="">
           Our wireless remote monitoring solution revolutionizes patient care with a wearable biosensor patch that tracks eight vital parameters in real-time, allowing mobility and seamless data access through cloud integration. It features customizable thresholds with instant alerts via multiple channels, enhancing patient safety by reducing emergencies and ICU readmissions. The system automates vital collection, boosts nursing productivity, integrates with EHR/EMR systems, and transforms wards into smart high-dependency units. Backed by 24/7 command center support and insurance coverage, it ensures reliable, efficient, and cost-effective healthcare delivery in hospitals, homes, and ambulances.
             This solution is an advanced remote monitoring system that provides continuous and efficient visibility into
-            a patient&#39;s health.Our wireless remote monitoring solution revolutionizes patient care with a wearable
-            biosensor patch that tracks eight vital parameters in real-time, allowing mobility and seamless data access
-            through cloud integration. It features customizable thresholds with instant alerts via multiple channels,
-            enhancing patient safety by reducing emergencies and ICU readmissions. The system automates vital
-            collection, boosts nursing productivity, integrates with EHR/EMR systems, and transforms wards into smart
-            high-dependency units. Backed by 24/7 command center support and insurance coverage, it ensures reliable,
-            efficient, and cost-effective healthcare delivery in hospitals, homes, and ambulances.
+            a patient&#39;s health.
           </span>
         </div>
         <div></div>
