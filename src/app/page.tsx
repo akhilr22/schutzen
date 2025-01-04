@@ -54,7 +54,7 @@ export default function Home() {
                         <Image
                           src={innovative_technology}
                           alt="upload"
-                          className="bg-black dark:bg-[#171616] rounded-md sm:p-0 h-80 w-auto" // Adjust height
+                          className="bg-black dark:bg-[#171616] rounded-md sm:p-0 h-80 w-auto  object-cover" // Adjust height
                         />
                       </div>
                       {/* <div className="h-1/2 bg-black dark:bg-[#171616] flex-1 rounded-md p-20 sm:p-0">screen</div> */}
@@ -75,7 +75,7 @@ export default function Home() {
                         <Image
                           src={improved_patient_outcomes}
                           alt="upload"
-                          className="bg-black dark:bg-[#171616] rounded-md sm:p-0 h-80 w-auto" // Adjust height
+                          className="bg-black dark:bg-[#171616] rounded-md sm:p-0 h-80 w-auto  object-cover" // Adjust height
                         />
                       </div>
                       <div className="h-1/2 flex-1 overflow-hidden mt-3">
@@ -96,7 +96,7 @@ export default function Home() {
                       <Image
                         src={streamlined_workflow}
                         alt="upload"
-                        className="  bg-black dark:bg-[#171616] h-80 w-auto rounded-md sm:p-0"
+                        className="  bg-black dark:bg-[#171616] h-80 w-auto rounded-md sm:p-0 object-cover"
                       />
                       <div className="h-1/2 flex-1  mt-3  overflow-hidden">
                         <h1 className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_3}</h1>
@@ -114,7 +114,7 @@ export default function Home() {
                       <Image
                         src={global_accreditation}
                         alt="upload"
-                        className="  bg-black dark:bg-[#171616]  h-80 w-auto rounded-md  sm:p-0"
+                        className="  bg-black dark:bg-[#171616]  h-80 w-auto rounded-md  sm:p-0  object-cover"
                       />
                       <div className="min-h-1/2 flex-1  mt-3  overflow-hidden ">
                         <h1 className="font-bold text-md mb-[11px]">{homePageData.whyChooseUs.title_4}</h1>
