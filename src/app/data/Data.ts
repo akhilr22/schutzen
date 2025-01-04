@@ -11,7 +11,7 @@ export const homePageData = {
         title_2: "Improved Patient Outcomes",
         desc_2: "In the healthcare sector, improved patient outcomes are the ultimate goal, and timely, data-driven interventions play a pivotal role in achieving this. With the integration of enhanced monitoring technologies, healthcare providers can track patient conditions in real-time, gaining critical insights that allow for informed decision.",
         img_url_3: "",
-        title_3: "Streamlined Workflows",
+        title_3: "Streamlined Workflow",
         desc_3: "In the healthcare sector, administrative tasks often take valuable time away from patient care. By streamlining workflows with automated reporting and alerts, our solutions significantly reduce the burden on healthcare professionals, allowing them to focus more on delivering high-quality care",
         img_url_4: "",
         title_4: "Global Accreditation",

@@ -24,7 +24,7 @@ export default function page() {
     <div className="md:my-5">
       <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
         <h1 className="font-bold text-2xl my-5 mx-2 sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
-          Patient monitoring solutions
+          Patient Monitoring Solution
         </h1>
         <div className="mx-auto text-balance text-[18px]   md:w-3/6 mt-3 px-6" data-aos="zoom-in-up">
           <span className="">
@@ -290,7 +290,7 @@ export default function page() {
         className="stripe_line h-[2px] w-2/3 mx-auto rounded-full my-5 scroll_animate overflow-x-hidden"
         data-aos="fade-right"
       ></div>
-      <div className="text-center justify-center scroll_animate overflow-x-hidden">
+      <div className="text-center justify-center scroll_animate overflow-x-hidden overflow-y-hidden">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl py-2" data-aos="zoom-in-up">
           Features
         </h1>
@@ -301,7 +301,7 @@ export default function page() {
           </span>
         </div>
         <div>
-          <div className="sm:mx-auto h-auto py-20 mx-2 scroll_animate">
+          <div className="sm:mx-auto py-20 mx-2 scroll_animate">
             <div className="h-auto  mb-9 flex xl:w-4/5  justify-around  mx-auto ">
               <div
                 className="w-20 h-20 sm:w-44 sm:h-44 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-lg scroll_animate "
