@@ -1,11 +1,15 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { Resolver, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Image from "next/image";
 import { validationSchema } from "@/Utils/ValidationSchema";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import upload from "@/app/assets/upload.png";
+import { ref, uploadBytesResumable, getDownloadURL, UploadTask } from 'firebase/storage';
+import { collection, addDoc } from 'firebase/firestore';
+import { db,storage } from "@/Firebase/config"; // Adjust path as needed
 
 // Define the form data structure
 interface FormData {
@@ -25,7 +29,10 @@ export default function CareersForm() {
   } = useForm<FormData>({
     resolver: yupResolver(validationSchema) as unknown as Resolver<FormData>, // Ensure proper typing
   });
-
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [resume, setResume] = useState<File | null>(null);
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
   const fullNameRef = useRef<HTMLInputElement | null>(null);
   const mobileNumberRef = useRef<HTMLInputElement | null>(null);
   const emailRef = useRef<HTMLInputElement | null>(null);
@@ -38,9 +45,58 @@ export default function CareersForm() {
     }
   };
 
+
+
+ 
+  
+
+
   const onSubmit = (data: FormData) => {
-    console.log("Form Submitted:", data);
-    // Handle form submission logic here (e.g., API call)
+  
+    if (!resume) {
+      alert("Please upload a resume");
+      return;
+    }
+  
+    try {
+      // Create a storage reference
+      const storageRef = ref(storage, `resumes/${Date.now()}-${resume.name}`);
+      const uploadTask: UploadTask = uploadBytesResumable(storageRef, resume);
+  
+      // Monitor upload progress
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          const progress: number = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          setUploadProgress(progress);
+        },
+        (error: Error) => {
+          console.error("Upload error:", error);
+          alert("Error uploading file");
+        },
+        async () => {
+          // Get file download URL
+          const downloadURL: string = await getDownloadURL(uploadTask.snapshot.ref);
+  
+          // Save metadata to Firestore
+          await addDoc(collection(db, "careers"), {
+            name,
+            email,
+            resumeURL: downloadURL,
+            timestamp: new Date(),
+          });
+  
+          alert("Resume uploaded successfully!");
+          setName("");
+          setEmail("");
+          setResume(null);
+          setUploadProgress(0);
+        }
+      );
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to upload resume");
+    }
   };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>, fieldName: keyof FormData) => {
