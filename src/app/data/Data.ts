@@ -15,7 +15,7 @@ export const homePageData = {
         desc_3: "In the healthcare sector, administrative tasks often take valuable time away from patient care. By streamlining workflows with automated reporting and alerts, our solutions significantly reduce the burden on healthcare professionals, allowing them to focus more on delivering high-quality care",
         img_url_4: "",
         title_4: "Global Accreditation",
-        desc_4: "In the healthcare sector, the reliability and efficacy of medical products are critical to ensuring patient safety and quality care. Our products are built on a foundation of innovation and trust, backed by 21 USA patents and a range of global accreditations.",
+        desc_4: "In the healthcare sector, the reliability and efficacy of medical products are critical to ensuring patient safety and quality care. Our products are built on a foundation of innovation and trust, backed by USA patents and a range of global accreditations.",
     },
     monitoring: {
         // Add monitoring-related data here if needed
