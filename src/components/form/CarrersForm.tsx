@@ -1,15 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { Resolver, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
 import Image from "next/image";
-import { validationSchema } from "@/Utils/ValidationSchema";
 import React, { useRef, useState } from "react";
 import upload from "@/app/assets/upload.png";
-import { ref, uploadBytesResumable, getDownloadURL, UploadTask } from 'firebase/storage';
-import { collection, addDoc } from 'firebase/firestore';
-import { db,storage } from "@/Firebase/config"; // Adjust path as needed
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { BlobServiceClient } from "@azure/storage-blob";
+import { CosmosClient } from "@azure/cosmos";
+import axios from "axios";
 
 // Define the form data structure
 interface FormData {
@@ -20,94 +19,131 @@ interface FormData {
   resume?: File; // Required by validation schema
 }
 
+const onClickFocus = (inputRef: React.RefObject<HTMLInputElement>) => {
+  if (inputRef.current) {
+    inputRef.current.focus();
+  }
+};
+
+// Validation Schema
+const validationSchema = Yup.object({
+  fullName: Yup.string().required("Full name is required").min(3, "Full name must be at least 3 characters"),
+  mobileNumber: Yup.string()
+    .required("Mobile number is required")
+    .matches(/^[0-9]{10}$/, "Enter a valid 10-digit mobile number"),
+  email: Yup.string().email("Invalid email").required("Email is required"),
+  coverLetter: Yup.mixed()
+    .test(
+      "fileSize",
+      "File size is too large (max 5MB)",
+      (value) => !value || (value instanceof File && value.size <= 5 * 1024 * 1024)
+    )
+    .test(
+      "fileType",
+      "Unsupported file format",
+      (value) => !value || (value instanceof File && ["application/pdf", "application/msword"].includes(value.type))
+    ),
+  resume: Yup.mixed()
+    .required("Resume is required")
+    .test(
+      "fileSize",
+      "File size is too large (max 5MB)",
+      (value) => value instanceof File && value.size <= 5 * 1024 * 1024
+    )
+    .test(
+      "fileType",
+      "Unsupported file format",
+      (value) => value instanceof File && ["application/pdf", "application/msword"].includes(value.type)
+    ),
+});
+
 export default function CareersForm() {
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    formState: { errors },
-  } = useForm<FormData>({
-    resolver: yupResolver(validationSchema) as unknown as Resolver<FormData>, // Ensure proper typing
-  });
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [resume, setResume] = useState<File | null>(null);
-  const [uploadProgress, setUploadProgress] = useState<number>(0);
   const fullNameRef = useRef<HTMLInputElement | null>(null);
   const mobileNumberRef = useRef<HTMLInputElement | null>(null);
   const emailRef = useRef<HTMLInputElement | null>(null);
-  const coverLetterRef = useRef<HTMLInputElement | null>(null);
-  const resumeRef = useRef<HTMLInputElement | null>(null);
+  const [resume, setResume] = useState<File | null>(null);
+  const [coverLetter, setCoverLetter] = useState<File | null>(null);
 
-  const handleDivClick = (inputRef: React.RefObject<HTMLInputElement>) => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  };
+// Azure Configuration
+const AZURE_STORAGE_CONNECTION_STRING = process.env.NEXT_PUBLIC_AZURE_STORAGE_CONNECTION_STRING as string;
+const COSMOS_DB_ENDPOINT = process.env.NEXT_PUBLIC_COSMOS_DB_ENDPOINT as string;
+const COSMOS_DB_KEY = process.env.NEXT_PUBLIC_COSMOS_DB_KEY as string;
+const DATABASE_ID = process.env.NEXT_PUBLIC_DBID as string;
+const CONTAINER_ID = process.env.NEXT_PUBLIC_CONTAINER_ID as string;
 
 
 
- 
+
+
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      mobileNumber: "",
+      email: "",
+      coverLetter: null as File | null,
+      resume: null as File | null,
+    },
+    validationSchema,
+    onSubmit: async (values) => {
+      console.log("Form Submitted:", values);
+
+      try {
+        const uploadFile = async (file: File, containerName: string, blobName: string) => {
+          
+          const response = await axios.post(`/api/generateSASToken`,{containerName, blobName});
+          const { url,sasToken } = response.data;
+          try {
+            const uploadResponse = await axios.put(url, file, {
+              headers: {
+                "x-ms-blob-type": "BlockBlob", // Required by Azure Blob Storage
+                "Content-Type": file.type,    // Ensure the content type matches the file
+              },
+            });
+            console.log("File uploaded successfully:", uploadResponse.status);
+          } catch (error) {
+            console.error("Error uploading file:", error);
+          }
+          return url; // Return the uploaded file URL
+        };
+
+        const coverLetterUrl = values.coverLetter
+          ? await uploadFile(values.coverLetter, "coverletter", `${values.fullName}_coverLetter`)
+          : null;
+
+        const resumeUrl = values.resume
+          ? await uploadFile(values.resume, "resume", `${values.fullName}_resume`)
+          : null;
+
+
+          const data = {
+            name:values.fullName,
+            email: values.email,
+            phone: values.mobileNumber,
+            resumeUrl:resumeUrl,
+            coverLetterUrl:coverLetterUrl,
+          };
+
+          try {
+            const res = await axios.post(`/api/cosmos`, data);
+            debugger
+          } catch (error) {
+            console.error("Error submitting application:", error);
+          }
+
+        console.log("Files uploaded successfully:", {  resumeUrl,coverLetterUrl });
+      } catch (error) {
+        console.error("Error submitting application:", error);
+      }
   
-
-
-  const onSubmit = (data: FormData) => {
-  
-    if (!resume) {
-      alert("Please upload a resume");
-      return;
-    }
-  
-    try {
-      // Create a storage reference
-      const storageRef = ref(storage, `resumes/${Date.now()}-${resume.name}`);
-      const uploadTask: UploadTask = uploadBytesResumable(storageRef, resume);
-  
-      // Monitor upload progress
-      uploadTask.on(
-        "state_changed",
-        (snapshot) => {
-          const progress: number = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          setUploadProgress(progress);
-        },
-        (error: Error) => {
-          console.error("Upload error:", error);
-          alert("Error uploading file");
-        },
-        async () => {
-          // Get file download URL
-          const downloadURL: string = await getDownloadURL(uploadTask.snapshot.ref);
-  
-          // Save metadata to Firestore
-          await addDoc(collection(db, "careers"), {
-            name,
-            email,
-            resumeURL: downloadURL,
-            timestamp: new Date(),
-          });
-  
-          alert("Resume uploaded successfully!");
-          setName("");
-          setEmail("");
-          setResume(null);
-          setUploadProgress(0);
-        }
-      );
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Failed to upload resume");
-    }
-  };
-
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>, fieldName: keyof FormData) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      setValue(fieldName, file); // Set file into the form state
-    }
-  };
+    },
+  });
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="m-5 mx-10 md:m-20 md:mx-52  xl:m-20 xl:mx-52">
+    <form
+      onSubmit={formik.handleSubmit}
+      className="m-5 mx-10 md:m-20 md:mx-52  xl:m-20 xl:mx-52"
+      encType="multipart/form-data"
+    >
       <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[50px] h-full">
         <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[50px] p-4 flex flex-col">
           <div className="p-0">
@@ -116,95 +152,119 @@ export default function CareersForm() {
             {/* Full Name Field */}
             <div
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
-              onClick={() => handleDivClick(fullNameRef)}
+              onClick={() => onClickFocus(fullNameRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                 <label className="text-gray-500 dark:text-gray-300 text-xl">Full name*</label>
                 <input
                   type="text"
-                  {...register("fullName")}
-                  ref={fullNameRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
+                  ref={fullNameRef}
+                  id="fullName"
+                  name="fullName" // Add this
+                  value={formik.values.fullName}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                 />
-                {errors.fullName && <span className="text-red-500 text-sm">{errors.fullName.message}</span>}
+                {formik.touched.fullName && formik.errors.fullName && (
+                  <p className="text-red-500 text-sm">{formik.errors.fullName}</p>
+                )}
               </div>
             </div>
 
             {/* Mobile Number Field */}
             <div
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
-              onClick={() => handleDivClick(mobileNumberRef)}
+              onClick={() => onClickFocus(mobileNumberRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                 <label className="text-gray-500 dark:text-gray-300 text-xl">Mobile Number*</label>
                 <input
                   type="text"
-                  {...register("mobileNumber")}
-                  ref={mobileNumberRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
+                  ref={mobileNumberRef}
+                  id="mobileNumber"
+                  name="mobileNumber" // Add this
+                  value={formik.values.mobileNumber}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                 />
-                {errors.mobileNumber && <span className="text-red-500 text-sm">{errors.mobileNumber.message}</span>}
+                {formik.touched.mobileNumber && formik.errors.mobileNumber && (
+                  <p className="text-red-500 text-sm">{formik.errors.mobileNumber}</p>
+                )}
               </div>
             </div>
 
             {/* Email Field */}
             <div
               className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
-              onClick={() => handleDivClick(emailRef)}
+              onClick={() => onClickFocus(emailRef)}
             >
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex flex-col">
                 <label className="text-gray-500 dark:text-gray-300 text-xl">Email ID*</label>
                 <input
                   type="email"
-                  {...register("email")}
-                  ref={emailRef}
                   className="bg-transparent border-none outline-none text-black dark:text-white"
+                  id="email"
+                  name="email" // Add this
+                  ref={emailRef}
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                 />
-                {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
+                {formik.touched.email && formik.errors.email && (
+                  <p className="text-red-500 text-sm">{formik.errors.email}</p>
+                )}
               </div>
             </div>
 
             {/* File Upload: Cover Letter */}
-            <div
-              className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
-              onClick={() => handleDivClick(coverLetterRef)}
-            >
+            <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
                 <label htmlFor="coverLetter" className="text-gray-500 dark:text-gray-300 text-xl">
-                  Cover Letter*
+                  {formik.values.coverLetter?.name || "Cover Letter*"}
                 </label>
                 <input
                   type="file"
                   id="coverLetter"
                   className="hidden"
-                  ref={coverLetterRef}
-                  onChange={(e) => handleFileUpload(e, "coverLetter")}
+                  name="coverLetter" // Add this
+                  onChange={(e) => {
+                    if (e.target.files && e.target.files[0]) {
+                      formik.setFieldValue("coverLetter", e.target.files[0]);
+                    }
+                  }}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-                {errors.coverLetter && <span className="text-red-500 text-sm">{errors.coverLetter.message}</span>}
               </div>
             </div>
+            {formik.touched.coverLetter && formik.errors.coverLetter && (
+              <p className="text-red-500 text-sm">{formik.errors.coverLetter}</p>
+            )}
 
             {/* File Upload: Resume */}
-            <div
-              className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer"
-              onClick={() => handleDivClick(resumeRef)}
-            >
+            <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
               <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
                 <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">
-                  Resume*
+                  {resume?.name ? resume?.name : "Resume*"}
                 </label>
                 <input
                   type="file"
                   id="resume"
                   className="hidden"
-                  ref={resumeRef}
-                  onChange={(e) => handleFileUpload(e, "resume")}
+                  name="resume" // Add this
+                  onChange={(e) => {
+                    if (e.target.files && e.target.files[0]) {
+                      formik.setFieldValue("resume", e.target.files[0]);
+                    }
+                  }}
                 />
                 <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
-                {errors.resume && <span className="text-red-500 text-sm">{errors.resume.message}</span>}
               </div>
             </div>
+            {formik.touched.resume && formik.errors.resume && (
+              <p className="text-red-500 text-sm">{formik.errors.resume}</p>
+            )}
 
             <button type="submit" className="bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] p-2 px-5 mr-3 rounded-full">
               Apply
