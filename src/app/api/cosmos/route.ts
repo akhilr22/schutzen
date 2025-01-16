@@ -2,15 +2,16 @@
 import { addDocument, Document } from "../../lib/cosmos";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextRequest, res: NextResponse) {
-  debugger;
+export async function POST(req: NextRequest) {
   const { name, email, phone, resumeUrl, coverLetterUrl } = await req.json();
 
+  // Check for required fields
   if (!name || !email || !phone) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
   try {
+    // Create the document to be added to Cosmos DB
     const document: Document = {
       id: crypto.randomUUID(),
       name,
@@ -21,12 +22,14 @@ export async function POST(req: NextRequest, res: NextResponse) {
       createdAt: new Date(),
     };
 
+    // Add the document to Cosmos DB
     const result = await addDocument(document);
 
-    NextResponse.json({ message: "Document added successfully", result }, { status: 200 });
+    // Send success response
+    return NextResponse.json({ message: "Document added successfully", result }, { status: 200 });
   } catch (error) {
     console.error(error);
-    NextResponse.json({ error: "Error adding document" }, { status: 500 });
+    // Send error response
+    return NextResponse.json({ error: "Error adding document" }, { status: 500 });
   }
-  NextResponse.json({ message: "Document added successfully okay" }, { status: 200 });
 }
