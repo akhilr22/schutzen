@@ -386,8 +386,8 @@ export default function page() {
                     alt="heartRateIco"
                     className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"
                   />
-                  <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
                 </div>
+                  <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
               </div>
             </div>
           </div>

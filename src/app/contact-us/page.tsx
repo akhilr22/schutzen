@@ -1,12 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import contactBg from "@/app/assets/contact-gradient.png";
 import calenderIcon from "@/app/assets/calendar.png";
-import email from "@/app/assets/email-icon.png";
-import phone from "@/app/assets/telephone.png";
+// import email from "@/app/assets/email-icon.png";
+// import phone from "@/app/assets/telephone.png";
 import Image from "next/image";
 import RequestDemo from "@/components/form/RequestDemo";
 // import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+// import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
+import "./contact.css";
 const Page = () => {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
   return (
     <>
       <div
@@ -49,10 +58,35 @@ const Page = () => {
                   </span>
                 </p>
               </div>
+              <div className="nav-icon mt-8">
+                <div className="min-w-32"></div>
+                <button
+                  className="uiverse relative rounded-full overflow-hidden bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6]  "
+                  onClick={onOpenModal}
+                >
+                  <div className="wrapper relative  mx-auto  justify-center items-center">
+                    <a>
+                      <span className="hidden custom-md:inline "> Request </span> <span> Demo</span>
+                    </a>
+                    <div className="circle circle-12 absolute" />
+                    <div className="circle circle-11 absolute" />
+                    <div className="circle circle-10 absolute" />
+                    <div className="circle circle-9 absolute" />
+                    <div className="circle circle-8 absolute" />
+                    <div className="circle circle-7 absolute" />
+                    <div className="circle circle-6 absolute" />
+                    <div className="circle circle-5 absolute" />
+                    <div className="circle circle-4 absolute" />
+                    <div className="circle circle-3 absolute" />
+                    <div className="circle circle-2 absolute" />
+                    <div className="circle circle-1 absolute" />
+                  </div>
+                </button>
+              </div>
               {/* <div className="xl:my-8 my-3">
                 <ReqDemoBtn show={true} />
               </div> */}
-              <div className=" flex  flex-col gap-3 mx-auto justify-center items-center">
+              {/* <div className=" flex  flex-col gap-3 mx-auto justify-center items-center">
                 <div
                   className=" mt-5 w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
                   data-aos="fade-right"
@@ -63,7 +97,7 @@ const Page = () => {
                   </div>
                 </div>
 
-                {/* Phone */}
+              
                 <div
                   className=" w-full xl:w-4/5 sm:h-11 p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-full scroll_animate"
                   data-aos="fade-right"
@@ -73,12 +107,22 @@ const Page = () => {
                     <span className="text-xl md:text-[18px] xl:text-xl text-white">+91 9025250901</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-      <RequestDemo/>
+        <Modal
+          open={open}
+          onClose={onCloseModal}
+          center
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+        >
+          <RequestDemo />
+        </Modal>
       </div>
 
       <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
