@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { sentMail } from "@/app/lib/sentmail";
 import { addDocument, Document } from "../../lib/cosmos";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -24,12 +25,12 @@ export async function POST(req: NextRequest) {
 
     // Add the document to Cosmos DB
     const result = await addDocument(document);
-
+    await sentMail(document);
     // Send success response
     return NextResponse.json({ message: "Document added successfully", result }, { status: 200 });
   } catch (error) {
     console.error(error);
     // Send error response
-    return NextResponse.json({ error: "Error adding document" }, { status: 500 });
+    return NextResponse.json({ message: "Error adding document",error }, { status: 500 });
   }
 }

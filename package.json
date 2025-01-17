@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/communication-email": "^1.0.0",
     "@azure/cosmos": "^4.2.0",
     "@azure/storage-blob": "^12.26.0",
     "@hookform/resolvers": "^3.10.0",
+    "@sendgrid/mail": "^8.1.4",
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "core-js": "^3.38.1",

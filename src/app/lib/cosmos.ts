@@ -14,11 +14,12 @@ export interface Document {
 }
 
 export const addDocument = async (document: Document) => {
+  debugger
   const connectionString = process.env.AZURE_COSMOS_DB_CONNECTION_STRING as string;
   const client = new CosmosClient(connectionString);
 
-  const database = client.database("test");
-  const container = database.container("data");
+  const database = client.database("schutzen");
+  const container = database.container("careers");
 
   try {
     const { resource } = await container.items.create(document);
