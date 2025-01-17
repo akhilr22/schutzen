@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
 
     // Add the document to Cosmos DB
     const result = await addDocument(document);
-    await sentMail(document);
+    // await sentMail(document);
     // Send success response
     return NextResponse.json({ message: "Document added successfully", result }, { status: 200 });
   } catch (error) {
