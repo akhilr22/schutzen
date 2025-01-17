@@ -25,7 +25,28 @@ export async function POST(req: NextRequest) {
 
     // Add the document to Cosmos DB
     const result = await addDocument(document);
-    // await sentMail(document);
+    await sentMail(document);
+
+
+  
+
+    // const ownerEmail = "info@schutzen.com"; // Replace with your email
+    // const subject = "New Resume Submission";
+    // const body = `
+    //   A new resume has been submitted:
+    //   Name: ${name}
+    //   Email: ${email}
+    //   Phone: ${phone}
+    //   Resume: ${resumeUrl}
+    //   Cover Letter: ${coverLetterUrl || "Not provided"}
+    // `;
+  
+    // await sendEmail(ownerEmail, subject, body, "info@schutzen.com");
+
+
+
+
+
     // Send success response
     return NextResponse.json({ message: "Document added successfully", result }, { status: 200 });
   } catch (error) {

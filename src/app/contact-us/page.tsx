@@ -4,6 +4,7 @@ import calenderIcon from "@/app/assets/calendar.png";
 import email from "@/app/assets/email-icon.png";
 import phone from "@/app/assets/telephone.png";
 import Image from "next/image";
+import RequestDemo from "@/components/form/RequestDemo";
 // import ReqDemoBtn from "@/components/buttons/ReqDemoBtn";
 const Page = () => {
   return (
@@ -24,9 +25,9 @@ const Page = () => {
           <div className=" mx-8 md:w-1/2 text-center md:mx-auto justify-center sm:text-xl text-[13px]">
             <p>
               <span>
-                We are here to help you with any questions or inquiries you have about our solutions. Whether you
-                need technical support, product information, or a consultation on how our solutions can improve patient
-                care, we are ready to assist you.
+                We are here to help you with any questions or inquiries you have about our solutions. Whether you need
+                technical support, product information, or a consultation on how our solutions can improve patient care,
+                we are ready to assist you.
               </span>
             </p>
           </div>
@@ -76,6 +77,8 @@ const Page = () => {
             </div>
           </div>
         </div>
+
+      <RequestDemo/>
       </div>
 
       <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">

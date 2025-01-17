@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+} 
 /* Style for WebKit-based browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */

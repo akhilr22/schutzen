@@ -4,6 +4,7 @@ import "./css/globals.css";
 import AOSInit from "@/Utils/AOSInit";
 import { Footer } from "@/components/_partials/footer/Footer";
 import Navbar from "@/components/_partials/navbar/Navbar";
+// import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Schutzen Health",

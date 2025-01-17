@@ -73,7 +73,7 @@ export default function CareersForm() {
     },
     validationSchema,
     onSubmit: async (values) => {
-setIsLoader(true);
+      setIsLoader(true);
       try {
         const uploadFile = async (file: File, containerName: string, blobName: string) => {
           const response = await axios.post(`/api/generateSASToken`, { containerName, blobName });
@@ -133,7 +133,7 @@ setIsLoader(true);
 
   return (
     <>
-    {isLoader && <Loader />}
+      {isLoader && <Loader />}
       <form
         onSubmit={formik.handleSubmit}
         className="m-5 mx-10 md:m-20 md:mx-52  xl:m-20 xl:mx-52"
@@ -214,49 +214,53 @@ setIsLoader(true);
               </div>
 
               {/* File Upload: Cover Letter */}
-              <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
-                <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
-                  <label htmlFor="coverLetter" className="text-gray-500 dark:text-gray-300 text-xl">
-                    {formik.values.coverLetter?.name || "Cover Letter*"}
-                  </label>
-                  <input
-                    type="file"
-                    id="coverLetter"
-                    className="hidden"
-                    name="coverLetter" // Add this
-                    onChange={(e) => {
-                      if (e.target.files && e.target.files[0]) {
-                        formik.setFieldValue("coverLetter", e.target.files[0]);
-                      }
-                    }}
-                  />
-                  <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
+              <label htmlFor="coverLetter" className="w-full h-full">
+                <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
+                  <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
+                    <span className="text-gray-500 dark:text-gray-300 text-xl">
+                      {formik.values.coverLetter?.name || "Cover Letter*"}
+                    </span>
+                    <input
+                      type="file"
+                      id="coverLetter"
+                      className="hidden"
+                      name="coverLetter"
+                      onChange={(e) => {
+                        if (e.target.files && e.target.files[0]) {
+                          formik.setFieldValue("coverLetter", e.target.files[0]);
+                        }
+                      }}
+                    />
+                    <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
+                  </div>
                 </div>
-              </div>
+              </label>
+
               {formik.touched.coverLetter && formik.errors.coverLetter && (
                 <p className="text-red-500 text-sm">{formik.errors.coverLetter}</p>
               )}
 
               {/* File Upload: Resume */}
-              <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
-                <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
-                  <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">
+              <label htmlFor="resume" className="text-gray-500 dark:text-gray-300 text-xl">
+                <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
+                  <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
                     {formik.values.resume?.name || "Resume*"}
-                  </label>
-                  <input
-                    type="file"
-                    id="resume"
-                    className="hidden"
-                    name="resume" // Add this
-                    onChange={(e) => {
-                      if (e.target.files && e.target.files[0]) {
-                        formik.setFieldValue("resume", e.target.files[0]);
-                      }
-                    }}
-                  />
-                  <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
+
+                    <input
+                      type="file"
+                      id="resume"
+                      className="hidden"
+                      name="resume" // Add this
+                      onChange={(e) => {
+                        if (e.target.files && e.target.files[0]) {
+                          formik.setFieldValue("resume", e.target.files[0]);
+                        }
+                      }}
+                    />
+                    <Image src={upload} alt="upload" className="w-7 h-7 ml-auto" />
+                  </div>
                 </div>
-              </div>
+              </label>
               {formik.touched.resume && formik.errors.resume && (
                 <p className="text-red-500 text-sm">{formik.errors.resume}</p>
               )}
