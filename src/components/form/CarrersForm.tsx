@@ -245,7 +245,6 @@ export default function CareersForm() {
                 <div className="p-[1px] bg-gradient-to-r from-[#6dbd49] to-[#3bc2d6] rounded-[28px] h-full mb-3 cursor-pointer">
                   <div className="bg-[#fefaf5] dark:bg-black dark:text-white w-full h-full rounded-[26px] p-4 flex items-center">
                     {formik.values.resume?.name || "Resume*"}
-
                     <input
                       type="file"
                       id="resume"
