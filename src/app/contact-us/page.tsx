@@ -111,20 +111,18 @@ const Page = () => {
             </div>
           </div>
         </div>
-
-        <Modal
-          open={open}
-          onClose={onCloseModal}
-          center
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-        >
-          <RequestDemo />
-        </Modal>
       </div>
-
+      <Modal
+        open={open}
+        onClose={onCloseModal}
+        center
+        classNames={{
+          overlay: "customOverlay",
+          modal: "customModal",
+        }}
+      >
+        <RequestDemo />
+      </Modal>
       <div className="md:flex justify-between mx-10 mt-8 xl:my-14 xl:mx-40  items-center   ">
         {/* <div className="  w-2/3 md:w-1/2 h-full  mx-auto my-5 xl:px-8 text-start">
           <h1 className="text-[16px] md:text-2xl xl:text-5xl text-center md:text-start">
