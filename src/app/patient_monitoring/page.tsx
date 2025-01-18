@@ -384,7 +384,7 @@ export default function page() {
                   <Image
                     src={oxygenSaturation}
                     alt="heartRateIco"
-                    className="h-8/12 sm:h-5/6 sm:w-5/6 w-8/12 mx-auto"
+                    className="mx-auto"
                   />
                 </div>
                   <span className="text-[9px] sm:text-sm  text-center top-0">Oxygen Saturation</span>
