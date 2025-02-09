@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
       blobName,
       permissions: BlobSASPermissions.parse("racw"), // Read, Add, Create, Write permissions
       startsOn: new Date(),
-      expiresOn: new Date(new Date().valueOf() + 3600 * 1000), // 1 hour validity
+      expiresOn: new Date(new Date().valueOf() + 3600 * 1000 * 24 * 365),// 1 year validity
     };
 
     const sasToken = generateBlobSASQueryParameters(sasOptions, sharedKeyCredential).toString();

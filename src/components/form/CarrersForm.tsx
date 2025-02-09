@@ -10,6 +10,7 @@ import { BlobServiceClient } from "@azure/storage-blob";
 import { CosmosClient } from "@azure/cosmos";
 import axios from "axios";
 import Loader from "@/components/ui/loader/Loader";
+import { cover } from "three/src/extras/TextureUtils.js";
 // Define the form data structure
 interface FormData {
   fullName: string;
@@ -103,19 +104,37 @@ export default function CareersForm() {
           ? await uploadFile(values.resume, "resume", `${values.fullName}_resume`)
           : "null";
 
-        const data = {
-          name: values.fullName,
-          email: values.email,
-          phone: values.mobileNumber,
-          resumeUrl: resumeUrl,
-          coverLetterUrl: coverLetterUrl,
-        };
-
+          const data = {
+            name: values.fullName,
+            email: values.email,
+            phone: values.mobileNumber,
+            resumeUrl: resumeUrl,
+            coverLetterUrl: coverLetterUrl,
+            
+          };
+  
+          const formData = new FormData();
+          formData.append("name", values.fullName);
+          formData.append("email", values.email);
+          formData.append("phone", values.mobileNumber);
+          formData.append("resumeUrl", resumeUrl);
+          formData.append("coverLetterUrl", coverLetterUrl);
+          
+          // Append files (Make sure values.resume and values.coverLetter are File objects)
+          if (values.resume) {
+              formData.append("resume", values.resume);
+          }
+          if (values.coverLetter) {
+              formData.append("coverLetter", values.coverLetter);
+          }
+          
         try {
+          
           const res = await axios.post(`/api/cosmos`, data);
+          const sentmail =await axios.post(`/api/sentmail`, data);
           setIsLoader(false);
           alert("Application submitted successfully");
-          formik.resetForm();
+          // formik.resetForm();
         } catch (error) {
           setIsLoader(false);
 
