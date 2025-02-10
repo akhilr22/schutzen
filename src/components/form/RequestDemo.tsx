@@ -51,7 +51,6 @@ export default function RequestDemo(): JSX.Element {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Form submitted:", formData);
       try {
         const res = await axios.post(`/api/contactus`, formData);
         alert("Form submitted successfully!");
