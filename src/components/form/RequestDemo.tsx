@@ -3,6 +3,7 @@
 "use client";
 import axios from "axios";
 import React, { useState } from "react";
+import Loader from "../ui/loader/Loader";
 
 interface FormData {
   name: string;
@@ -15,6 +16,8 @@ interface FormData {
 }
 
 export default function RequestDemo(): JSX.Element {
+    const [isLoader, setIsLoader] = useState(false);
+  
   const [formData, setFormData] = useState<FormData>({
     name: "",
     companyName: "",
@@ -50,9 +53,12 @@ export default function RequestDemo(): JSX.Element {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoader(true);
     if (validate()) {
       try {
         const res = await axios.post(`/api/contactus`, formData);
+        setIsLoader(false);
+
         alert("Form submitted successfully!");
         setFormData({
           name: "",
@@ -64,15 +70,20 @@ export default function RequestDemo(): JSX.Element {
           description: "",
         });
       } catch (error) {
+        setIsLoader(false);
         console.error(error);
       }
     } else {
+      setIsLoader(false);
       console.error("Validation failed:", errors);
     }
   };
 
   return (
+    <>
+      {isLoader && <Loader />}
     <div>
+      
       <form
         className=""
         encType="multipart/form-data"
@@ -163,5 +174,5 @@ export default function RequestDemo(): JSX.Element {
         </div>
       </form>
     </div>
-  );
+    </>);
 }

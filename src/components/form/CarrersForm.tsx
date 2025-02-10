@@ -134,7 +134,7 @@ export default function CareersForm() {
           const sentmail =await axios.post(`/api/sentmail`, data);
           setIsLoader(false);
           alert("Application submitted successfully");
-          // formik.resetForm();
+          formik.resetForm();
         } catch (error) {
           setIsLoader(false);
 
