@@ -4,12 +4,11 @@ import "./css/globals.css";
 import AOSInit from "@/Utils/AOSInit";
 import { Footer } from "@/components/_partials/footer/Footer";
 import Navbar from "@/components/_partials/navbar/Navbar";
+import { metadata } from "./metadata";
 // import { Inter } from 'next/font/google'
 
-export const metadata: Metadata = {
-  title: "Schutzen Health",
-  description: "Schutzen Website",
-};
+export const metadataConfig: Metadata = metadata;
+
 
 export default function RootLayout({
   children,
@@ -18,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark ">
+        <head>
+        {/* Next.js will automatically use the metadata here */}
+      </head>
       <AOSInit />
       <body className={` bg-[#fefaf5] dark:bg-[#000000] dark:text-white `}>
         
