@@ -4,8 +4,7 @@ import "./css/globals.css";
 import AOSInit from "@/Utils/AOSInit";
 import { Footer } from "@/components/_partials/footer/Footer";
 import Navbar from "@/components/_partials/navbar/Navbar";
-// import { metadata } from "./metadata";
-// import { Inter } from 'next/font/google'
+
 
 // export const metadataConfig: Metadata = metadata;
 export const metadata: Metadata = {
