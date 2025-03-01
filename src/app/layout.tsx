@@ -23,6 +23,9 @@ export const metadata: Metadata = {
    "Schutzen Health",
    "Advanced Remote Patient Monitoring"
   ],
+  icons:{
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Schutzen Health - Redefining Healthcare with Smart Monitoring",
     description:
